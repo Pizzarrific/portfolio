@@ -1,0 +1,2014 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Uzair Mohammed · AI Engineer</title>
+<meta name="description" content="Uzair Mohammed · AI Engineer specializing in machine learning, computer vision, NLP and full stack systems. Open to opportunities.">
+<meta name="author" content="Uzair Mohammed">
+<meta name="keywords" content="Uzair Mohammed, AI Engineer, Machine Learning Engineer, Computer Vision, NLP, Full Stack Developer, Bangalore">
+<meta name="robots" content="index, follow">
+<!-- If you host this at a custom domain, add a matching <link rel="canonical"> and og:url tag here. -->
+
+<!-- Open Graph / LinkedIn / Facebook -->
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Uzair Mohammed · AI Engineer">
+<meta property="og:description" content="AI Engineer specializing in machine learning, computer vision, NLP and full stack systems. 2026 graduate, open to opportunities.">
+<meta property="og:site_name" content="Uzair Mohammed">
+<meta property="profile:first_name" content="Uzair">
+<meta property="profile:last_name" content="Mohammed">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Uzair Mohammed · AI Engineer">
+<meta name="twitter:description" content="AI Engineer specializing in machine learning, computer vision, NLP and full stack systems.">
+
+<!-- Favicon (inline, matches site accent) -->
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23090c11'/%3E%3Ctext x='16' y='22' font-family='Space Grotesk,sans-serif' font-size='16' font-weight='700' fill='%23a78bfa' text-anchor='middle'%3EU%3C/text%3E%3C/svg%3E">
+
+<!-- Structured data for search engines -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Uzair Mohammed",
+  "jobTitle": "AI Engineer",
+  "description": "AI Engineer specializing in machine learning, computer vision, NLP and full stack systems.",
+  "email": "mailto:mohammeduzair873@gmail.com",
+  "address": {"@type": "PostalAddress", "addressLocality": "Bangalore", "addressCountry": "IN"},
+  "sameAs": [
+    "https://www.linkedin.com/in/uzair-mohammed-9060b9308/",
+    "https://github.com/Pizzarrific"
+  ],
+  "knowsAbout": ["Machine Learning", "Computer Vision", "Natural Language Processing", "Full Stack Development", "Python", "React"]
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+/* ============ TOKENS ============ */
+:root{
+  --bg:#090c11;
+  --bg-alt:#0c1017;
+  --surface:#11151d;
+  --surface-2:#161b25;
+  --border:#212836;
+  --border-hover:#37455a;
+  --text:#e9edf3;
+  --text-dim:#8b96a8;
+  --text-faint:#57616f;
+  --accent:#a78bfa;
+  --accent-soft:#453a6b;
+  --accent-glow:rgba(167,139,250,0.18);
+  --warm:#ff9d5c;
+  --warm-glow:rgba(255,157,92,0.14);
+  --line: rgba(233,237,243,0.08);
+  --font-display:'Space Grotesk', sans-serif;
+  --font-body:'Inter', sans-serif;
+  --font-mono:'JetBrains Mono', monospace;
+  --maxw: 1180px;
+  --ease-fluid: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-soft: cubic-bezier(0.22, 1, 0.36, 1);
+}
+*{box-sizing:border-box; margin:0; padding:0;}
+html{scroll-behavior:smooth;}
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto;}
+  *{animation-duration:0.01ms !important; animation-iteration-count:1 !important; transition-duration:0.01ms !important; scroll-behavior:auto !important;}
+}
+body{
+  background:var(--bg);
+  color:var(--text);
+  font-family:var(--font-body);
+  line-height:1.6;
+  overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
+}
+#world-bg{
+  position:fixed; inset:0; z-index:-1; overflow:hidden; pointer-events:none;
+}
+#world-bg svg{width:100%; height:100%; opacity:0.22;}
+#world-bg::after{
+  content:''; position:absolute; inset:0;
+  background:radial-gradient(ellipse 70% 60% at 50% 40%, var(--bg) 22%, transparent 68%);
+}
+.world-dots circle{fill:var(--text-faint); opacity:0.5;}
+.world-arcs path{fill:none; stroke:var(--accent); stroke-width:0.55; opacity:0.7; stroke-dasharray:3.5 3; animation:arc-flow 7s linear infinite;}
+.world-hubs .hub-node{fill:var(--accent); opacity:0.9;}
+.world-hubs .hub-home{fill:var(--accent); opacity:1; animation:hub-pulse 2.4s ease-in-out infinite;}
+@keyframes arc-flow{ to{ stroke-dashoffset:-65; } }
+@keyframes hub-pulse{
+  0%,100%{ filter:drop-shadow(0 0 1px var(--accent)); }
+  50%{ filter:drop-shadow(0 0 5px var(--accent)); }
+}
+::selection{background:var(--accent-glow); color:var(--accent);}
+a{color:inherit; text-decoration:none;}
+img{max-width:100%; display:block;}
+.wrap{max-width:var(--maxw); margin:0 auto; padding:0 32px;}
+@media (max-width:640px){.wrap{padding:0 20px;}}
+
+.mono{font-family:var(--font-mono);}
+.eyebrow{
+  font-family:var(--font-mono);
+  font-size:12px;
+  letter-spacing:0.14em;
+  text-transform:uppercase;
+  color:var(--accent);
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  margin-bottom:18px;
+}
+.eyebrow::before{
+  content:'';
+  width:6px; height:6px;
+  border-radius:50%;
+  background:var(--accent);
+  box-shadow:0 0 8px var(--accent);
+}
+.eyebrow.warm{color:var(--warm);}
+.eyebrow.warm::before{background:var(--warm); box-shadow:0 0 8px var(--warm);}
+
+h1,h2,h3,h4{font-family:var(--font-display); font-weight:600; letter-spacing:-0.01em;}
+.section-head{max-width:640px; margin-bottom:56px;}
+.section-head-row{display:flex; align-items:center; justify-content:space-between; gap:40px; margin-bottom:56px;}
+@media (max-width:900px){.section-head-row{flex-wrap:wrap;}}
+.section-illustration{width:150px; height:150px; flex-shrink:0; opacity:0.9;}
+.section-illustration svg{width:100%; height:100%;}
+@media (max-width:900px){.section-illustration{display:none;}}
+.mini-icon-badge{
+  width:48px; height:48px; border-radius:12px; background:var(--surface-2); border:1px solid var(--border);
+  display:flex; align-items:center; justify-content:center; margin-bottom:18px; color:var(--accent);
+}
+.scan-line{animation:scan-move 3s ease-in-out infinite;}
+@keyframes scan-move{0%,100%{transform:translateY(-38px); opacity:0;} 10%{opacity:0.8;} 50%{transform:translateY(0px); opacity:0.8;} 90%{opacity:0.8;} 100%{opacity:0;}}
+.trophy-glow{animation:trophy-shine 2.6s ease-in-out infinite;}
+@keyframes trophy-shine{0%,100%{opacity:0.4;} 50%{opacity:1;}}
+.section-title{font-size:clamp(28px,4vw,42px); line-height:1.15; margin-bottom:14px;}
+.section-sub{color:var(--text-dim); font-size:16px; max-width:560px;}
+section{position:relative; padding:120px 0;}
+@media (max-width:768px){ section{padding:80px 0;} }
+
+.btn{
+  font-family:var(--font-mono);
+  font-size:13px;
+  letter-spacing:0.03em;
+  padding:14px 26px;
+  border-radius:8px;
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  cursor:pointer;
+  border:1px solid var(--border);
+  transition:transform .45s var(--ease-fluid), border-color .3s ease, background .3s ease, box-shadow .45s ease;
+  position:relative;
+  will-change:transform;
+}
+.btn-primary{background:var(--text); color:var(--bg); border-color:var(--text);}
+.btn-primary:hover{box-shadow:0 10px 34px -8px var(--accent-glow);}
+.btn-ghost{color:var(--text); background:transparent;}
+.btn-ghost:hover{border-color:var(--border-hover);}
+
+/* reveal on scroll */
+.reveal{opacity:0; transform:translateY(28px) scale(0.99); transition:opacity .9s var(--ease-fluid), transform .9s var(--ease-fluid); transition-delay:var(--reveal-delay, 0s);}
+.reveal.in{opacity:1; transform:translateY(0) scale(1);}
+
+/* ============ NAV ============ */
+#navbar{
+  position:fixed; top:0; left:0; right:0; z-index:100;
+  backdrop-filter:blur(14px);
+  background:rgba(9,12,17,0.72);
+  border-bottom:1px solid transparent;
+  transition:border-color .3s ease, background .3s ease;
+}
+#navbar.scrolled{border-bottom-color:var(--line);}
+.nav-inner{display:flex; align-items:center; justify-content:space-between; height:68px;}
+.nav-logo{font-family:var(--font-mono); font-size:14px; letter-spacing:0.02em; color:var(--text);}
+.nav-logo span{color:var(--accent);}
+.nav-links{display:flex; gap:34px; list-style:none; position:relative;}
+.nav-indicator{
+  position:absolute; bottom:-4px; height:1px; background:var(--accent); border-radius:2px;
+  transition:left .5s var(--ease-fluid), width .5s var(--ease-fluid), opacity .3s ease;
+  opacity:0;
+}
+.nav-links a{
+  font-family:var(--font-mono); font-size:12.5px; letter-spacing:0.04em; text-transform:uppercase;
+  color:var(--text-dim); position:relative; padding:4px 0; transition:color .2s ease;
+}
+.nav-links a::after{
+  content:''; position:absolute; left:0; bottom:-4px; width:0; height:1px; background:var(--accent);
+  transition:width .25s ease;
+}
+.nav-links a:hover{color:var(--text);}
+.nav-links a:hover::after, .nav-links a.active::after{width:100%;}
+.nav-links a.active{color:var(--accent);}
+.nav-cta{font-family:var(--font-mono); font-size:12px; padding:9px 16px; border:1px solid var(--border); border-radius:6px; color:var(--text); transition:all .35s var(--ease-fluid);}
+.nav-cta:hover{border-color:var(--accent); color:var(--accent); transform:translateY(-1px);}
+.nav-cta-resume{margin-right:10px; color:var(--text-dim);}
+.nav-cta-resume:hover{border-color:var(--border-hover); color:var(--text);}
+@media (max-width:860px){
+  .nav-links{display:none;}
+  button.desktop-only{display:none !important;}
+  .nav-cta{padding:7px 12px; font-size:11px;}
+  .nav-cta-resume{margin-right:6px;}
+}
+
+/* ============ PIPELINE SPINE (signature element) ============ */
+#spine{
+  position:fixed; left:28px; top:50%; transform:translateY(-50%); z-index:90;
+  display:flex; flex-direction:column; align-items:center; gap:0;
+}
+.spine-node{
+  width:8px; height:8px; border-radius:50%;
+  background:var(--surface-2); border:1px solid var(--border-hover);
+  position:relative; transition:all .4s ease; cursor:pointer;
+}
+.spine-node.active{background:var(--accent); border-color:var(--accent); box-shadow:0 0 12px var(--accent-glow), 0 0 0 4px var(--accent-glow);}
+.spine-connector{width:1px; height:34px; background:var(--border);}
+.spine-connector .fill{width:100%; height:0%; background:var(--accent); transition:height .4s ease;}
+.spine-label{
+  position:absolute; left:22px; top:50%; transform:translateY(-50%);
+  font-family:var(--font-mono); font-size:10px; letter-spacing:0.06em; text-transform:uppercase;
+  color:var(--text-dim); white-space:nowrap; opacity:0; transition:opacity .2s ease;
+}
+.spine-node:hover .spine-label, .spine-node.active .spine-label{opacity:1;}
+@media (max-width:1100px){ #spine{display:none;} }
+
+/* ============ HERO ============ */
+#hero{
+  min-height:100vh; display:flex; align-items:center; position:relative;
+  padding-top:68px; overflow:hidden;
+}
+#hero-canvas{position:absolute; inset:0; width:100%; height:100%; z-index:0; opacity:0.55;}
+.hero-fade{position:absolute; inset:0; background:radial-gradient(ellipse 60% 50% at 50% 40%, transparent, var(--bg) 85%); z-index:1; pointer-events:none;}
+.hero-content{position:relative; z-index:2; width:100%; text-align:left; padding-top:40px; padding-bottom:40px; max-width:760px;}
+.cursor-glow{
+  position:absolute; width:520px; height:520px; border-radius:50%; z-index:1; pointer-events:none;
+  background:radial-gradient(circle, var(--accent-glow), transparent 70%);
+  transform:translate(-50%,-50%); opacity:0; transition:opacity .4s ease;
+  left:0; top:0;
+}
+.status-pill{
+  display:inline-flex; align-items:center; gap:9px;
+  font-family:var(--font-mono); font-size:12px; color:var(--text-dim);
+  border:1px solid var(--border); border-radius:100px; padding:7px 16px 7px 12px;
+  margin-bottom:32px;
+}
+.status-dot{width:7px; height:7px; border-radius:50%; background:#3ddc84; box-shadow:0 0 8px #3ddc84; animation:pulse 2s infinite;}
+@keyframes pulse{0%,100%{opacity:1;} 50%{opacity:0.4;}}
+.hero-name{font-size:clamp(48px,8vw,92px); line-height:0.98; letter-spacing:-0.02em; margin-bottom:20px;}
+.hero-role{
+  font-family:var(--font-mono); font-size:clamp(13px,1.6vw,17px); color:var(--accent);
+  letter-spacing:0.02em; margin-bottom:28px; display:flex; flex-wrap:wrap; gap:0 10px;
+}
+.hero-role .sep{color:var(--text-faint);}
+.hero-statement{font-size:clamp(17px,2vw,21px); color:var(--text-dim); max-width:620px; margin-bottom:44px; font-weight:400;}
+.hero-actions{display:flex; gap:16px; flex-wrap:wrap; margin-bottom:64px;}
+.hero-tags{display:flex; gap:10px; flex-wrap:wrap;}
+.tag{
+  font-family:var(--font-mono); font-size:11px; letter-spacing:0.05em; color:var(--text-faint);
+  border:1px solid var(--border); border-radius:5px; padding:6px 10px;
+}
+.scroll-cue{
+  position:absolute; bottom:36px; left:50%; transform:translateX(-50%); z-index:2;
+  display:flex; flex-direction:column; align-items:center; gap:8px; opacity:0.5;
+}
+.scroll-cue .line{width:1px; height:34px; background:linear-gradient(var(--accent), transparent); animation:scrolldrop 2s infinite;}
+@keyframes scrolldrop{0%{transform:scaleY(0); transform-origin:top;} 50%{transform:scaleY(1); transform-origin:top;} 51%{transform-origin:bottom;} 100%{transform:scaleY(0); transform-origin:bottom;}}
+
+/* ============ ABOUT ============ */
+#about{border-top:1px solid var(--line);}
+.about-grid{display:grid; grid-template-columns:1.3fr 1fr; gap:64px; align-items:start;}
+@media (max-width:860px){.about-grid{grid-template-columns:1fr; gap:40px;}}
+.about-text p{color:var(--text-dim); font-size:16.5px; margin-bottom:20px; max-width:560px;}
+.about-text strong{color:var(--text); font-weight:600;}
+.about-stats{display:flex; flex-direction:column; gap:0; border-top:1px solid var(--line);}
+.about-stat{display:flex; justify-content:space-between; align-items:baseline; padding:20px 0; border-bottom:1px solid var(--line);}
+.about-stat .num{font-family:var(--font-display); font-size:30px; color:var(--accent);}
+.about-stat .label{font-family:var(--font-mono); font-size:11.5px; letter-spacing:0.04em; text-transform:uppercase; color:var(--text-faint); text-align:right; max-width:170px;}
+.languages-block{padding-top:24px;}
+.languages-label{font-family:var(--font-mono); font-size:11px; letter-spacing:0.06em; text-transform:uppercase; color:var(--text-faint); margin-bottom:14px;}
+.language-list{display:flex; flex-direction:column; gap:0;}
+.language-item{display:flex; justify-content:space-between; align-items:center; padding:10px 0; border-top:1px solid var(--line); font-size:14px;}
+.jlpt-track{width:100%; max-width:320px; margin-top:6px; opacity:0.9;}
+.jlpt-track svg{width:100%; height:auto; display:block;}
+.language-item:first-child{border-top:none;}
+.lang-name{color:var(--text);}
+.lang-level{font-family:var(--font-mono); font-size:11.5px; color:var(--text-dim);}
+.lang-level.accent{color:var(--accent);}
+
+/* ============ PROFILE / TECH CATEGORIES ============ */
+#profile{background:var(--bg-alt); border-top:1px solid var(--line); border-bottom:1px solid var(--line);}
+.profile-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:1px; background:var(--line); border:1px solid var(--line); border-radius:14px; overflow:hidden;}
+@media (max-width:900px){.profile-grid{grid-template-columns:repeat(2,1fr);}}
+@media (max-width:560px){.profile-grid{grid-template-columns:1fr;}}
+.profile-card{background:var(--surface); padding:30px 26px; min-height:260px; display:flex; flex-direction:column; transition:background .4s var(--ease-fluid);}
+.profile-card:hover{background:var(--surface-2);}
+.profile-card .pc-icon{font-family:var(--font-mono); font-size:11px; color:var(--accent); letter-spacing:0.06em; margin-bottom:16px;}
+.profile-card h3{font-size:19px; margin-bottom:20px;}
+.profile-chip-list{display:flex; flex-direction:column; gap:2px;}
+.profile-chip{
+  font-family:var(--font-mono); font-size:12.5px; color:var(--text-dim);
+  padding:8px 0; border-top:1px solid var(--line); cursor:default;
+  position:relative; transition:color .2s ease, padding-left .2s ease;
+}
+.profile-chip:hover{color:var(--text); padding-left:6px;}
+.profile-chip:first-child{border-top:none;}
+.chip-tip{
+  display:none; font-family:var(--font-body); font-size:12.5px; color:var(--text-dim);
+  background:var(--surface-2); border:1px solid var(--border); border-radius:8px; padding:10px 12px;
+  margin-top:6px; line-height:1.5;
+}
+.profile-chip.open .chip-tip{display:block;}
+.profile-chip.open{color:var(--accent);}
+
+/* ============ EXPERIENCE ============ */
+#experience{border-top:1px solid var(--line);}
+.exp-card{
+  border:1px solid var(--border); border-radius:16px; background:linear-gradient(180deg, var(--surface), var(--bg-alt));
+  padding:0; overflow:hidden; cursor:pointer; transition:border-color .4s var(--ease-fluid), box-shadow .4s var(--ease-fluid);
+}
+.exp-card:hover{box-shadow:0 24px 60px -32px rgba(0,0,0,0.5);}
+.exp-card:hover{border-color:var(--border-hover);}
+.exp-head{display:flex; justify-content:space-between; align-items:flex-start; gap:24px; padding:36px 40px;}
+@media (max-width:640px){.exp-head{flex-direction:column; padding:28px 22px; gap:18px;}}
+.exp-head-left h3{font-size:26px; margin-bottom:6px;}
+.exp-head-left .exp-org{color:var(--accent); font-family:var(--font-mono); font-size:13.5px; margin-bottom:4px;}
+.exp-head-left .exp-meta{color:var(--text-faint); font-family:var(--font-mono); font-size:12px;}
+.exp-toggle{
+  width:38px; height:38px; border-radius:50%; border:1px solid var(--border);
+  display:flex; align-items:center; justify-content:center; flex-shrink:0;
+  transition:transform .35s ease, border-color .3s ease;
+}
+.exp-card.open .exp-toggle{transform:rotate(45deg); border-color:var(--accent); color:var(--accent);}
+.exp-stats-row{display:flex; gap:48px; padding:0 40px 32px; flex-wrap:wrap;}
+@media (max-width:640px){.exp-stats-row{padding:0 22px 26px; gap:28px;}}
+.exp-stat .n{font-family:var(--font-display); font-size:38px; color:var(--accent); line-height:1;}
+.exp-stat .l{font-family:var(--font-mono); font-size:11px; color:var(--text-faint); letter-spacing:0.04em; text-transform:uppercase; margin-top:6px; max-width:180px;}
+.exp-body{max-height:0; overflow:hidden; transition:max-height .5s cubic-bezier(.2,.7,.2,1);}
+.exp-card.open .exp-body{max-height:1600px;}
+.exp-body-inner{padding:0 40px 40px; border-top:1px solid var(--line);}
+@media (max-width:640px){.exp-body-inner{padding:0 22px 30px;}}
+.exp-body-inner{padding-top:32px;}
+.exp-bullets{list-style:none; display:flex; flex-direction:column; gap:14px; margin-bottom:40px;}
+.exp-bullets li{padding-left:22px; position:relative; color:var(--text-dim); font-size:15px;}
+.exp-bullets li::before{content:'→'; position:absolute; left:0; color:var(--accent); font-family:var(--font-mono);}
+.pipeline-row{
+  display:flex; align-items:center; gap:0; flex-wrap:wrap; padding:26px 22px;
+  background:var(--bg-alt); border:1px solid var(--line); border-radius:12px; margin-bottom:8px;
+}
+.pipeline-step{
+  font-family:var(--font-mono); font-size:11.5px; letter-spacing:0.03em; color:var(--text);
+  background:var(--surface-2); border:1px solid var(--border); padding:9px 14px; border-radius:7px;
+  white-space:nowrap;
+}
+.pipeline-arrow{color:var(--text-faint); padding:0 10px; font-family:var(--font-mono); font-size:14px;}
+@media (max-width:700px){.pipeline-row{flex-direction:column; align-items:stretch;} .pipeline-step{text-align:center;} .pipeline-arrow{text-align:center; padding:4px 0; transform:rotate(90deg);}}
+
+/* ============ PROJECTS ============ */
+#projects{background:var(--bg-alt); border-top:1px solid var(--line); border-bottom:1px solid var(--line);}
+.project-list{display:flex; flex-direction:column; gap:24px;}
+.project-card{
+  border:1px solid var(--border); border-radius:16px; background:var(--surface);
+  padding:40px; display:grid; grid-template-columns:1fr 1fr; gap:40px; transition:border-color .4s var(--ease-fluid), transform .5s var(--ease-fluid), box-shadow .5s var(--ease-fluid);
+}
+.project-card:hover{box-shadow:0 24px 60px -30px rgba(0,0,0,0.5);}
+.project-card:hover{border-color:var(--border-hover); transform:translateY(-3px);}
+@media (max-width:860px){.project-card{grid-template-columns:1fr; padding:28px 22px; gap:26px;}}
+.proj-index{font-family:var(--font-mono); font-size:12px; color:var(--text-faint); margin-bottom:14px;}
+.proj-icon{
+  width:44px; height:44px; border-radius:10px; background:var(--surface-2); border:1px solid var(--border);
+  display:flex; align-items:center; justify-content:center; margin-bottom:18px; color:var(--accent);
+  transition:transform .4s var(--ease-fluid), border-color .3s ease;
+}
+.project-card:hover .proj-icon{transform:translateY(-3px) rotate(-4deg); border-color:var(--accent);}
+.proj-title{font-size:24px; margin-bottom:14px;}
+.proj-desc{color:var(--text-dim); font-size:15px; margin-bottom:22px;}
+.proj-tags{display:flex; flex-wrap:wrap; gap:8px; margin-bottom:24px;}
+.proj-link{
+  font-family:var(--font-mono); font-size:12.5px; color:var(--accent); display:inline-flex; align-items:center; gap:6px;
+  border-bottom:1px solid var(--accent-soft); padding-bottom:2px; width:fit-content;
+}
+.proj-features{list-style:none; display:grid; grid-template-columns:1fr 1fr; gap:10px 18px; margin-bottom:24px;}
+.proj-features li{font-size:13.5px; color:var(--text-dim); padding-left:16px; position:relative;}
+.proj-features li::before{content:''; position:absolute; left:0; top:8px; width:4px; height:4px; border-radius:50%; background:var(--accent);}
+.proj-illustration{width:100%; opacity:0.85; margin-bottom:14px;}
+.proj-illustration svg{width:100%; height:auto; display:block;}
+.project-card:hover .proj-illustration{opacity:1;}
+.proj-flow{
+  display:flex; flex-direction:column; justify-content:center; gap:0; background:var(--bg-alt); border:1px solid var(--line); border-radius:10px; padding:18px 20px;
+}
+.proj-flow .fstep{font-family:var(--font-mono); font-size:11.5px; color:var(--text-dim); padding:7px 0; border-top:1px dashed var(--line); position:relative; padding-left:16px;}
+.proj-flow .fstep:first-child{border-top:none;}
+.proj-flow .fstep::before{content:'↓'; position:absolute; left:0; top:6px; color:var(--accent); font-size:10px;}
+.proj-flow .fstep:first-child::before{content:'';}
+
+/* ============ HOW I BUILD ============ */
+#howibuild{border-top:1px solid var(--line);}
+.build-pipeline{display:flex; align-items:stretch; gap:0; margin-bottom:6px;}
+@media (max-width:900px){.build-pipeline{flex-direction:column;}}
+.build-stage{
+  flex:1; border:1px solid var(--border); background:var(--surface); padding:28px 20px; text-align:center;
+  cursor:pointer; transition:all .25s ease; position:relative;
+}
+.build-stage:not(:last-child){border-right:none;}
+@media (max-width:900px){.build-stage:not(:last-child){border-right:1px solid var(--border); border-bottom:none;}}
+.build-stage:first-child{border-radius:12px 0 0 12px;}
+.build-stage:last-child{border-radius:0 12px 12px 0;}
+@media (max-width:900px){.build-stage:first-child{border-radius:12px 12px 0 0;} .build-stage:last-child{border-radius:0 0 12px 12px;}}
+.build-stage .bs-icon{width:26px; height:26px; margin:0 auto 12px; color:var(--text-faint); opacity:0.7; transition:color .25s ease, opacity .25s ease, transform .25s ease;}
+.build-stage .bs-icon svg{width:100%; height:100%;}
+.build-stage:hover .bs-icon{opacity:0.9; transform:translateY(-2px);}
+.build-stage .bs-num{font-family:var(--font-mono); font-size:11px; color:var(--text-faint); margin-bottom:10px;}
+.build-stage .bs-name{font-family:var(--font-display); font-size:17px;}
+.build-stage.active{background:var(--surface-2); border-color:var(--accent);}
+.build-stage.active .bs-num, .build-stage.active .bs-name{color:var(--accent);}
+.build-stage.active .bs-icon{color:var(--accent); opacity:1;}
+.build-detail{
+  border:1px solid var(--border); border-top:none; border-radius:0 0 12px 12px; padding:28px 32px;
+  color:var(--text-dim); font-size:15px; background:var(--bg-alt); min-height:64px;
+}
+@media (max-width:900px){.build-detail{border-top:1px solid var(--border); border-radius:12px; margin-top:8px;}}
+
+/* ============ SKILLS CONSTELLATION ============ */
+#skills{background:var(--bg-alt); border-top:1px solid var(--line); border-bottom:1px solid var(--line);}
+.skills-groups{display:grid; grid-template-columns:repeat(5,1fr); gap:20px;}
+@media (max-width:1000px){.skills-groups{grid-template-columns:repeat(2,1fr);}}
+@media (max-width:560px){.skills-groups{grid-template-columns:1fr;}}
+.skill-group{border:1px solid var(--border); border-radius:12px; padding:22px; background:var(--surface);}
+.skill-group h4{font-family:var(--font-mono); font-size:11px; letter-spacing:0.06em; text-transform:uppercase; color:var(--text-faint); margin-bottom:16px; display:flex; align-items:center; gap:8px;}
+.skill-group h4 svg{color:var(--accent); flex-shrink:0;}
+.skill-pills{display:flex; flex-wrap:wrap; gap:8px;}
+.skill-pill{
+  font-size:13px; color:var(--text-dim); border:1px solid var(--border); border-radius:100px; padding:6px 12px;
+  transition:all .25s ease; cursor:default;
+}
+.skill-pill:hover{border-color:var(--accent); color:var(--accent); background:var(--accent-glow); transform:translateY(-2px);}
+
+/* ============ EDUCATION ============ */
+#education{border-top:1px solid var(--line);}
+.edu-timeline{display:flex; flex-direction:column; gap:0; border-left:1px solid var(--line); margin-left:8px;}
+.edu-item{padding:0 0 40px 32px; position:relative;}
+.edu-item:last-child{padding-bottom:0;}
+.edu-item::before{content:''; position:absolute; left:-5.5px; top:4px; width:10px; height:10px; border-radius:50%; background:var(--bg); border:2px solid var(--accent);}
+.edu-item .edu-year{font-family:var(--font-mono); font-size:12px; color:var(--accent); margin-bottom:8px;}
+.edu-item h3{font-size:21px; margin-bottom:6px;}
+.edu-item .edu-org{color:var(--text-dim); font-size:14.5px; margin-bottom:10px;}
+.edu-score{display:inline-block; font-family:var(--font-mono); font-size:12px; color:var(--text); border:1px solid var(--border); border-radius:6px; padding:5px 12px;}
+
+/* ============ CERTIFICATIONS ============ */
+#certs{background:var(--bg-alt); border-top:1px solid var(--line); border-bottom:1px solid var(--line);}
+.cert-wall{display:flex; flex-direction:column; border:1px solid var(--border); border-radius:12px; overflow:hidden;}
+.cert-row{border-bottom:1px solid var(--line); background:var(--surface);}
+.cert-row:last-child{border-bottom:none;}
+.cert-row-head{display:flex; align-items:center; justify-content:space-between; padding:18px 26px; cursor:pointer; gap:20px;}
+.cert-row-head:hover{background:var(--surface-2);}
+.cert-title{font-size:14.5px; color:var(--text);}
+.cert-issuer{font-family:var(--font-mono); font-size:11px; color:var(--text-faint); margin-top:4px;}
+.cert-plus{font-family:var(--font-mono); color:var(--text-faint); transition:transform .3s ease; flex-shrink:0;}
+.cert-row.open .cert-plus{transform:rotate(45deg); color:var(--accent);}
+.cert-row-body{max-height:0; overflow:hidden; transition:max-height .35s ease;}
+.cert-row.open .cert-row-body{max-height:120px;}
+.cert-row-body p{padding:0 26px 18px; color:var(--text-dim); font-size:13.5px; max-width:560px;}
+
+/* ============ BEYOND CODE ============ */
+#beyond{
+  border-top:1px solid var(--line); position:relative; overflow:hidden;
+  background:radial-gradient(ellipse 80% 60% at 80% 20%, var(--warm-glow), transparent 60%), var(--bg);
+}
+.beyond-grid{display:grid; grid-template-columns:1fr 1fr; gap:60px; align-items:center;}
+@media (max-width:860px){.beyond-grid{grid-template-columns:1fr; gap:36px;}}
+.beyond-quote{
+  font-family:var(--font-display); font-size:clamp(22px,3vw,30px); line-height:1.4; color:var(--text);
+  border-left:2px solid var(--warm); padding-left:28px; margin:26px 0;
+}
+.beyond-visual{position:relative; height:280px; display:flex; align-items:center; justify-content:center;}
+.plane-svg{width:100%; max-width:340px;}
+.beyond-caption{font-family:var(--font-mono); font-size:12px; color:var(--text-faint); text-align:center; margin-top:18px;}
+
+/* ============ ACHIEVEMENTS ============ */
+#achievements{border-top:1px solid var(--line);}
+.ach-track{display:flex; gap:20px; overflow-x:auto; padding-bottom:12px; scrollbar-width:thin;}
+.ach-card{
+  min-width:250px; flex:0 0 auto; border:1px solid var(--border); border-radius:12px; padding:24px;
+  background:var(--surface); transition:border-color .25s ease, transform .25s ease;
+}
+.ach-card:hover{border-color:var(--accent); transform:translateY(-3px);}
+.ach-card .ac-tag{font-family:var(--font-mono); font-size:10.5px; color:var(--accent); letter-spacing:0.05em; margin-bottom:12px; text-transform:uppercase;}
+.ach-card h4{font-size:16px; line-height:1.4;}
+
+/* ============ CONTACT ============ */
+#contact{background:var(--bg-alt); border-top:1px solid var(--line);}
+.contact-head-row{display:flex; align-items:flex-start; justify-content:space-between; gap:20px;}
+.compact-illustration{width:82px; height:82px; flex-shrink:0; opacity:0.9; margin-top:2px;}
+.compact-illustration svg{width:100%; height:100%;}
+@media (max-width:760px){.compact-illustration{display:none;}}
+.contact-grid{display:grid; grid-template-columns:1fr 1fr; gap:64px;}
+@media (max-width:860px){.contact-grid{grid-template-columns:1fr; gap:40px;}}
+.contact-links{display:flex; flex-direction:column; gap:0; margin-top:32px;}
+.contact-quickfacts{display:flex; flex-wrap:wrap; gap:8px; margin-top:20px;}
+.contact-quickfacts .tag{background:var(--surface);}
+.contact-quickfacts .tag-link{color:var(--accent); border-color:var(--accent); transition:background .2s ease, color .2s ease;}
+.contact-quickfacts .tag-link:hover{background:var(--accent); color:var(--bg);}
+.contact-link{
+  display:flex; align-items:center; justify-content:space-between; padding:20px 0; border-top:1px solid var(--line);
+  font-family:var(--font-mono); font-size:14px; color:var(--text-dim); transition:color .2s ease, padding-left .2s ease;
+}
+.contact-link:hover{color:var(--accent); padding-left:6px;}
+.contact-link .cl-label{color:var(--text-faint); font-size:11px; text-transform:uppercase; letter-spacing:0.05em;}
+.form-field{margin-bottom:18px;}
+.form-field label{display:block; font-family:var(--font-mono); font-size:11px; color:var(--text-faint); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:8px;}
+.form-field input, .form-field textarea{
+  width:100%; background:var(--surface); border:1px solid var(--border); border-radius:8px; padding:13px 16px;
+  color:var(--text); font-family:var(--font-body); font-size:14.5px; transition:border-color .2s ease;
+}
+.form-field input:focus, .form-field textarea:focus{outline:none; border-color:var(--accent);}
+.form-field textarea{resize:vertical; min-height:110px;}
+#contact-status{font-family:var(--font-mono); font-size:12.5px; color:var(--accent); margin-top:14px; min-height:18px;}
+
+/* ============ FOOTER ============ */
+footer{padding:40px 0; border-top:1px solid var(--line);}
+.footer-inner{display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:16px;}
+.footer-inner .fmono{font-family:var(--font-mono); font-size:12px; color:var(--text-faint);}
+
+/* ============ HERO: LIVE CLOCK ============ */
+.status-pill{margin-bottom:14px;}
+.local-time{
+  font-family:var(--font-mono); font-size:11.5px; color:var(--text-faint);
+  letter-spacing:0.04em; margin-bottom:32px; display:flex; align-items:center; gap:8px;
+}
+.local-time .lt-dot{width:5px; height:5px; border-radius:50%; background:var(--text-faint);}
+
+/* ============ NAV: QUICK JUMP TRIGGER ============ */
+.nav-search-btn{
+  font-family:var(--font-mono); font-size:12px; display:inline-flex; align-items:center; gap:8px;
+  padding:8px 12px; border:1px solid var(--border); border-radius:6px; color:var(--text-dim);
+  background:transparent; cursor:pointer; transition:all .3s var(--ease-fluid);
+}
+.nav-search-btn:hover{border-color:var(--accent); color:var(--accent); transform:translateY(-1px);}
+.nav-search-btn .kbd{font-size:10px; color:var(--text-faint); border:1px solid var(--border); border-radius:4px; padding:1px 5px;}
+.nav-search-btn:hover .kbd{border-color:var(--accent-soft); color:var(--accent);}
+
+/* ============ COMMAND PALETTE ============ */
+#cmdk-overlay{
+  position:fixed; inset:0; z-index:200; background:rgba(9,12,17,0.72); backdrop-filter:blur(8px);
+  display:flex; align-items:flex-start; justify-content:center; padding-top:12vh;
+  opacity:0; pointer-events:none; transition:opacity .25s ease;
+}
+#cmdk-overlay.open{opacity:1; pointer-events:auto;}
+.cmdk-box{
+  width:92%; max-width:560px; background:var(--surface); border:1px solid var(--border-hover);
+  border-radius:14px; box-shadow:0 30px 80px -20px rgba(0,0,0,0.65);
+  transform:translateY(-14px) scale(0.98); transition:transform .3s var(--ease-fluid); overflow:hidden;
+}
+#cmdk-overlay.open .cmdk-box{transform:translateY(0) scale(1);}
+.cmdk-input-row{display:flex; align-items:center; gap:12px; padding:18px 20px; border-bottom:1px solid var(--line);}
+.cmdk-input-row svg{color:var(--text-faint); flex-shrink:0;}
+#cmdk-input{flex:1; background:transparent; border:none; outline:none; color:var(--text); font-family:var(--font-mono); font-size:15px;}
+#cmdk-input::placeholder{color:var(--text-faint);}
+.cmdk-esc{font-family:var(--font-mono); font-size:10px; color:var(--text-faint); border:1px solid var(--border); border-radius:5px; padding:3px 7px; flex-shrink:0;}
+#cmdk-results{max-height:360px; overflow-y:auto; padding:8px;}
+.cmdk-item{display:flex; align-items:center; gap:12px; padding:11px 12px; border-radius:8px; cursor:pointer; transition:background .15s ease;}
+.cmdk-item.active, .cmdk-item:hover{background:var(--surface-2);}
+.cmdk-item .ci-icon{
+  width:30px; height:30px; border-radius:7px; background:var(--bg-alt); border:1px solid var(--border);
+  display:flex; align-items:center; justify-content:center; color:var(--accent); flex-shrink:0;
+  font-family:var(--font-mono); font-size:10px; text-transform:uppercase;
+}
+.cmdk-item .ci-text{flex:1; min-width:0;}
+.cmdk-item .ci-title{font-size:14px; color:var(--text);}
+.cmdk-item .ci-sub{font-family:var(--font-mono); font-size:11px; color:var(--text-faint); margin-top:2px;}
+.cmdk-item .ci-go{font-family:var(--font-mono); font-size:11px; color:var(--text-faint);}
+.cmdk-empty{padding:34px 14px; text-align:center; font-family:var(--font-mono); font-size:12.5px; color:var(--text-faint);}
+.cmdk-hint-row{display:flex; gap:16px; padding:10px 20px; border-top:1px solid var(--line); font-family:var(--font-mono); font-size:10.5px; color:var(--text-faint);}
+.cmdk-hint-row kbd{border:1px solid var(--border); border-radius:4px; padding:1px 5px; margin-right:4px;}
+@media (max-width:640px){ .cmdk-hint-row span:nth-child(2){display:none;} }
+
+/* ============ CASE STUDY MODAL ============ */
+#case-study-overlay{
+  position:fixed; inset:0; z-index:210; background:rgba(9,12,17,0.8); backdrop-filter:blur(8px);
+  display:flex; align-items:flex-start; justify-content:center; padding:6vh 20px;
+  opacity:0; pointer-events:none; transition:opacity .3s ease;
+}
+#case-study-overlay.open{opacity:1; pointer-events:auto;}
+.cs-box{
+  position:relative; width:100%; max-width:760px; max-height:88vh; background:var(--surface);
+  border:1px solid var(--border-hover); border-radius:16px; box-shadow:0 40px 100px -20px rgba(0,0,0,0.7);
+  transform:translateY(-14px) scale(0.98); transition:transform .35s var(--ease-fluid); overflow:hidden;
+}
+#case-study-overlay.open .cs-box{transform:translateY(0) scale(1);}
+.cs-close{
+  position:absolute; top:18px; right:18px; width:36px; height:36px; border-radius:50%; z-index:2;
+  border:1px solid var(--border); background:var(--surface); color:var(--text-dim); font-size:20px; line-height:1;
+  cursor:pointer; transition:border-color .2s ease, color .2s ease;
+}
+.cs-close:hover{border-color:var(--accent); color:var(--accent);}
+.cs-scroll{max-height:88vh; overflow-y:auto; padding:44px 44px 40px;}
+@media (max-width:640px){.cs-scroll{padding:60px 24px 32px;}}
+.cs-eyebrow{font-family:var(--font-mono); font-size:11px; letter-spacing:0.05em; color:var(--accent); text-transform:uppercase; margin-bottom:12px;}
+.cs-head h2{font-size:clamp(22px,3vw,30px); margin-bottom:12px;}
+.cs-sub{color:var(--text-dim); font-size:15.5px; max-width:560px;}
+.cs-section{margin-top:36px; padding-top:28px; border-top:1px solid var(--line);}
+.cs-section h4{font-family:var(--font-mono); font-size:12px; letter-spacing:0.05em; text-transform:uppercase; color:var(--accent); margin-bottom:14px;}
+.cs-section p{color:var(--text-dim); font-size:15px; line-height:1.7;}
+.cs-list{list-style:none; display:flex; flex-direction:column; gap:12px; margin-top:4px;}
+.cs-list li{padding-left:22px; position:relative; color:var(--text-dim); font-size:14.5px; line-height:1.6;}
+.cs-list li::before{content:'→'; position:absolute; left:0; color:var(--accent); font-family:var(--font-mono);}
+.cs-list li strong{color:var(--text); font-weight:600;}
+.cs-flow{display:flex; align-items:center; gap:0; flex-wrap:wrap; padding:20px; background:var(--bg-alt); border:1px solid var(--line); border-radius:12px; margin-bottom:20px;}
+.cs-flow-step{
+  font-family:var(--font-mono); font-size:11px; letter-spacing:0.02em; color:var(--text);
+  background:var(--surface-2); border:1px solid var(--border); padding:8px 12px; border-radius:7px; white-space:nowrap;
+}
+.cs-flow-step.accent{border-color:var(--accent); color:var(--accent);}
+.cs-flow-arrow{color:var(--text-faint); padding:0 8px; font-family:var(--font-mono); font-size:13px;}
+@media (max-width:640px){.cs-flow{flex-direction:column; align-items:stretch;} .cs-flow-step{text-align:center;} .cs-flow-arrow{text-align:center; padding:4px 0; transform:rotate(90deg);}}
+.cs-box .proj-link{margin-top:36px;}
+
+/* ============ PROJECT CARD TILT ============ */
+.project-card{transform-style:preserve-3d;}
+.project-card.tilting{transition:box-shadow .3s ease, border-color .3s ease;}
+
+/* ============ ACHIEVEMENTS: DRAG SCROLL ============ */
+.ach-track{cursor:grab;}
+.ach-track.dragging{cursor:grabbing; user-select:none; scroll-behavior:auto;}
+.ach-card{user-select:none;}
+
+/* ============ CONFETTI ============ */
+#confetti-canvas{position:fixed; inset:0; z-index:250; pointer-events:none;}
+</style>
+</head>
+<body>
+<canvas id="confetti-canvas"></canvas>
+<div id="world-bg" aria-hidden="true">
+  <svg viewBox="0 0 360 145" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+    <g class="world-dots"><circle cx="3.2" cy="16.2" r="0.85"/><circle cx="6.4" cy="16.2" r="0.85"/><circle cx="9.6" cy="19.4" r="0.85"/><circle cx="16.0" cy="22.6" r="0.85"/><circle cx="19.2" cy="22.6" r="0.85"/><circle cx="19.2" cy="19.4" r="0.85"/><circle cx="19.2" cy="16.2" r="0.85"/><circle cx="19.2" cy="13.0" r="0.85"/><circle cx="22.4" cy="25.8" r="0.85"/><circle cx="22.4" cy="22.6" r="0.85"/><circle cx="22.4" cy="19.4" r="0.85"/><circle cx="22.4" cy="16.2" r="0.85"/><circle cx="22.4" cy="13.0" r="0.85"/><circle cx="25.6" cy="25.8" r="0.85"/><circle cx="25.6" cy="22.6" r="0.85"/><circle cx="25.6" cy="19.4" r="0.85"/><circle cx="25.6" cy="16.2" r="0.85"/><circle cx="25.6" cy="13.0" r="0.85"/><circle cx="28.8" cy="22.6" r="0.85"/><circle cx="28.8" cy="19.4" r="0.85"/><circle cx="28.8" cy="16.2" r="0.85"/><circle cx="28.8" cy="13.0" r="0.85"/><circle cx="32.0" cy="19.4" r="0.85"/><circle cx="32.0" cy="16.2" r="0.85"/><circle cx="32.0" cy="13.0" r="0.85"/><circle cx="35.2" cy="22.6" r="0.85"/><circle cx="35.2" cy="19.4" r="0.85"/><circle cx="35.2" cy="16.2" r="0.85"/><circle cx="35.2" cy="13.0" r="0.85"/><circle cx="38.4" cy="22.6" r="0.85"/><circle cx="38.4" cy="19.4" r="0.85"/><circle cx="38.4" cy="16.2" r="0.85"/><circle cx="41.6" cy="22.6" r="0.85"/><circle cx="41.6" cy="19.4" r="0.85"/><circle cx="41.6" cy="16.2" r="0.85"/><circle cx="44.8" cy="22.6" r="0.85"/><circle cx="44.8" cy="19.4" r="0.85"/><circle cx="44.8" cy="16.2" r="0.85"/><circle cx="48.0" cy="29.0" r="0.85"/><circle cx="48.0" cy="25.8" r="0.85"/><circle cx="48.0" cy="22.6" r="0.85"/><circle cx="48.0" cy="19.4" r="0.85"/><circle cx="48.0" cy="16.2" r="0.85"/><circle cx="51.2" cy="29.0" r="0.85"/><circle cx="51.2" cy="25.8" r="0.85"/><circle cx="51.2" cy="22.6" r="0.85"/><circle cx="51.2" cy="19.4" r="0.85"/><circle cx="51.2" cy="16.2" r="0.85"/><circle cx="54.4" cy="32.2" r="0.85"/><circle cx="54.4" cy="29.0" r="0.85"/><circle cx="54.4" cy="25.8" r="0.85"/><circle cx="54.4" cy="22.6" r="0.85"/><circle cx="54.4" cy="19.4" r="0.85"/><circle cx="54.4" cy="16.2" r="0.85"/><circle cx="57.6" cy="45.0" r="0.85"/><circle cx="57.6" cy="41.8" r="0.85"/><circle cx="57.6" cy="38.6" r="0.85"/><circle cx="57.6" cy="32.2" r="0.85"/><circle cx="57.6" cy="29.0" r="0.85"/><circle cx="57.6" cy="25.8" r="0.85"/><circle cx="57.6" cy="22.6" r="0.85"/><circle cx="57.6" cy="19.4" r="0.85"/><circle cx="57.6" cy="16.2" r="0.85"/><circle cx="57.6" cy="9.8" r="0.85"/><circle cx="60.8" cy="48.2" r="0.85"/><circle cx="60.8" cy="45.0" r="0.85"/><circle cx="60.8" cy="41.8" r="0.85"/><circle cx="60.8" cy="38.6" r="0.85"/><circle cx="60.8" cy="35.4" r="0.85"/><circle cx="60.8" cy="32.2" r="0.85"/><circle cx="60.8" cy="29.0" r="0.85"/><circle cx="60.8" cy="25.8" r="0.85"/><circle cx="60.8" cy="22.6" r="0.85"/><circle cx="60.8" cy="19.4" r="0.85"/><circle cx="60.8" cy="16.2" r="0.85"/><circle cx="60.8" cy="9.8" r="0.85"/><circle cx="60.8" cy="6.6" r="0.85"/><circle cx="64.0" cy="51.4" r="0.85"/><circle cx="64.0" cy="48.2" r="0.85"/><circle cx="64.0" cy="45.0" r="0.85"/><circle cx="64.0" cy="41.8" r="0.85"/><circle cx="64.0" cy="38.6" r="0.85"/><circle cx="64.0" cy="35.4" r="0.85"/><circle cx="64.0" cy="32.2" r="0.85"/><circle cx="64.0" cy="29.0" r="0.85"/><circle cx="64.0" cy="25.8" r="0.85"/><circle cx="64.0" cy="22.6" r="0.85"/><circle cx="64.0" cy="19.4" r="0.85"/><circle cx="64.0" cy="16.2" r="0.85"/><circle cx="64.0" cy="13.0" r="0.85"/><circle cx="67.2" cy="51.4" r="0.85"/><circle cx="67.2" cy="48.2" r="0.85"/><circle cx="67.2" cy="45.0" r="0.85"/><circle cx="67.2" cy="41.8" r="0.85"/><circle cx="67.2" cy="38.6" r="0.85"/><circle cx="67.2" cy="35.4" r="0.85"/><circle cx="67.2" cy="32.2" r="0.85"/><circle cx="67.2" cy="29.0" r="0.85"/><circle cx="67.2" cy="25.8" r="0.85"/><circle cx="67.2" cy="22.6" r="0.85"/><circle cx="67.2" cy="19.4" r="0.85"/><circle cx="67.2" cy="16.2" r="0.85"/><circle cx="67.2" cy="13.0" r="0.85"/><circle cx="70.4" cy="54.6" r="0.85"/><circle cx="70.4" cy="51.4" r="0.85"/><circle cx="70.4" cy="48.2" r="0.85"/><circle cx="70.4" cy="45.0" r="0.85"/><circle cx="70.4" cy="41.8" r="0.85"/><circle cx="70.4" cy="38.6" r="0.85"/><circle cx="70.4" cy="35.4" r="0.85"/><circle cx="70.4" cy="32.2" r="0.85"/><circle cx="70.4" cy="29.0" r="0.85"/><circle cx="70.4" cy="25.8" r="0.85"/><circle cx="70.4" cy="22.6" r="0.85"/><circle cx="70.4" cy="19.4" r="0.85"/><circle cx="70.4" cy="16.2" r="0.85"/><circle cx="70.4" cy="13.0" r="0.85"/><circle cx="70.4" cy="6.6" r="0.85"/><circle cx="73.6" cy="57.8" r="0.85"/><circle cx="73.6" cy="54.6" r="0.85"/><circle cx="73.6" cy="51.4" r="0.85"/><circle cx="73.6" cy="48.2" r="0.85"/><circle cx="73.6" cy="45.0" r="0.85"/><circle cx="73.6" cy="41.8" r="0.85"/><circle cx="73.6" cy="38.6" r="0.85"/><circle cx="73.6" cy="35.4" r="0.85"/><circle cx="73.6" cy="32.2" r="0.85"/><circle cx="73.6" cy="29.0" r="0.85"/><circle cx="73.6" cy="25.8" r="0.85"/><circle cx="73.6" cy="22.6" r="0.85"/><circle cx="73.6" cy="19.4" r="0.85"/><circle cx="73.6" cy="16.2" r="0.85"/><circle cx="73.6" cy="13.0" r="0.85"/><circle cx="76.8" cy="64.2" r="0.85"/><circle cx="76.8" cy="61.0" r="0.85"/><circle cx="76.8" cy="57.8" r="0.85"/><circle cx="76.8" cy="54.6" r="0.85"/><circle cx="76.8" cy="51.4" r="0.85"/><circle cx="76.8" cy="48.2" r="0.85"/><circle cx="76.8" cy="45.0" r="0.85"/><circle cx="76.8" cy="41.8" r="0.85"/><circle cx="76.8" cy="38.6" r="0.85"/><circle cx="76.8" cy="35.4" r="0.85"/><circle cx="76.8" cy="32.2" r="0.85"/><circle cx="76.8" cy="29.0" r="0.85"/><circle cx="76.8" cy="25.8" r="0.85"/><circle cx="76.8" cy="22.6" r="0.85"/><circle cx="76.8" cy="19.4" r="0.85"/><circle cx="76.8" cy="16.2" r="0.85"/><circle cx="76.8" cy="13.0" r="0.85"/><circle cx="80.0" cy="64.2" r="0.85"/><circle cx="80.0" cy="61.0" r="0.85"/><circle cx="80.0" cy="57.8" r="0.85"/><circle cx="80.0" cy="54.6" r="0.85"/><circle cx="80.0" cy="51.4" r="0.85"/><circle cx="80.0" cy="48.2" r="0.85"/><circle cx="80.0" cy="45.0" r="0.85"/><circle cx="80.0" cy="41.8" r="0.85"/><circle cx="80.0" cy="38.6" r="0.85"/><circle cx="80.0" cy="35.4" r="0.85"/><circle cx="80.0" cy="32.2" r="0.85"/><circle cx="80.0" cy="29.0" r="0.85"/><circle cx="80.0" cy="25.8" r="0.85"/><circle cx="80.0" cy="22.6" r="0.85"/><circle cx="80.0" cy="19.4" r="0.85"/><circle cx="80.0" cy="16.2" r="0.85"/><circle cx="80.0" cy="9.8" r="0.85"/><circle cx="80.0" cy="6.6" r="0.85"/><circle cx="83.2" cy="64.2" r="0.85"/><circle cx="83.2" cy="54.6" r="0.85"/><circle cx="83.2" cy="51.4" r="0.85"/><circle cx="83.2" cy="48.2" r="0.85"/><circle cx="83.2" cy="45.0" r="0.85"/><circle cx="83.2" cy="41.8" r="0.85"/><circle cx="83.2" cy="38.6" r="0.85"/><circle cx="83.2" cy="35.4" r="0.85"/><circle cx="83.2" cy="32.2" r="0.85"/><circle cx="83.2" cy="29.0" r="0.85"/><circle cx="83.2" cy="25.8" r="0.85"/><circle cx="83.2" cy="22.6" r="0.85"/><circle cx="83.2" cy="19.4" r="0.85"/><circle cx="83.2" cy="16.2" r="0.85"/><circle cx="86.4" cy="51.4" r="0.85"/><circle cx="86.4" cy="48.2" r="0.85"/><circle cx="86.4" cy="45.0" r="0.85"/><circle cx="86.4" cy="41.8" r="0.85"/><circle cx="86.4" cy="38.6" r="0.85"/><circle cx="86.4" cy="35.4" r="0.85"/><circle cx="86.4" cy="32.2" r="0.85"/><circle cx="86.4" cy="29.0" r="0.85"/><circle cx="86.4" cy="25.8" r="0.85"/><circle cx="86.4" cy="19.4" r="0.85"/><circle cx="86.4" cy="16.2" r="0.85"/><circle cx="86.4" cy="13.0" r="0.85"/><circle cx="86.4" cy="9.8" r="0.85"/><circle cx="86.4" cy="6.6" r="0.85"/><circle cx="86.4" cy="3.4" r="0.85"/><circle cx="89.6" cy="67.4" r="0.85"/><circle cx="89.6" cy="64.2" r="0.85"/><circle cx="89.6" cy="51.4" r="0.85"/><circle cx="89.6" cy="48.2" r="0.85"/><circle cx="89.6" cy="45.0" r="0.85"/><circle cx="89.6" cy="41.8" r="0.85"/><circle cx="89.6" cy="38.6" r="0.85"/><circle cx="89.6" cy="35.4" r="0.85"/><circle cx="89.6" cy="32.2" r="0.85"/><circle cx="89.6" cy="29.0" r="0.85"/><circle cx="89.6" cy="16.2" r="0.85"/><circle cx="89.6" cy="3.4" r="0.85"/><circle cx="92.8" cy="67.4" r="0.85"/><circle cx="92.8" cy="51.4" r="0.85"/><circle cx="92.8" cy="48.2" r="0.85"/><circle cx="92.8" cy="45.0" r="0.85"/><circle cx="92.8" cy="41.8" r="0.85"/><circle cx="92.8" cy="38.6" r="0.85"/><circle cx="92.8" cy="35.4" r="0.85"/><circle cx="92.8" cy="32.2" r="0.85"/><circle cx="92.8" cy="29.0" r="0.85"/><circle cx="92.8" cy="16.2" r="0.85"/><circle cx="92.8" cy="9.8" r="0.85"/><circle cx="92.8" cy="6.6" r="0.85"/><circle cx="92.8" cy="3.4" r="0.85"/><circle cx="96.0" cy="70.6" r="0.85"/><circle cx="96.0" cy="61.0" r="0.85"/><circle cx="96.0" cy="51.4" r="0.85"/><circle cx="96.0" cy="48.2" r="0.85"/><circle cx="96.0" cy="45.0" r="0.85"/><circle cx="96.0" cy="41.8" r="0.85"/><circle cx="96.0" cy="38.6" r="0.85"/><circle cx="96.0" cy="35.4" r="0.85"/><circle cx="96.0" cy="32.2" r="0.85"/><circle cx="96.0" cy="29.0" r="0.85"/><circle cx="96.0" cy="16.2" r="0.85"/><circle cx="96.0" cy="13.0" r="0.85"/><circle cx="96.0" cy="9.8" r="0.85"/><circle cx="96.0" cy="3.4" r="0.85"/><circle cx="99.2" cy="57.8" r="0.85"/><circle cx="99.2" cy="54.6" r="0.85"/><circle cx="99.2" cy="48.2" r="0.85"/><circle cx="99.2" cy="45.0" r="0.85"/><circle cx="99.2" cy="41.8" r="0.85"/><circle cx="99.2" cy="38.6" r="0.85"/><circle cx="99.2" cy="35.4" r="0.85"/><circle cx="99.2" cy="32.2" r="0.85"/><circle cx="99.2" cy="19.4" r="0.85"/><circle cx="99.2" cy="13.0" r="0.85"/><circle cx="99.2" cy="6.6" r="0.85"/><circle cx="99.2" cy="3.4" r="0.85"/><circle cx="99.2" cy="0.2" r="0.85"/><circle cx="102.4" cy="93.0" r="0.85"/><circle cx="102.4" cy="89.8" r="0.85"/><circle cx="102.4" cy="86.6" r="0.85"/><circle cx="102.4" cy="83.4" r="0.85"/><circle cx="102.4" cy="80.2" r="0.85"/><circle cx="102.4" cy="48.2" r="0.85"/><circle cx="102.4" cy="45.0" r="0.85"/><circle cx="102.4" cy="41.8" r="0.85"/><circle cx="102.4" cy="38.6" r="0.85"/><circle cx="102.4" cy="35.4" r="0.85"/><circle cx="102.4" cy="32.2" r="0.85"/><circle cx="102.4" cy="29.0" r="0.85"/><circle cx="102.4" cy="22.6" r="0.85"/><circle cx="102.4" cy="13.0" r="0.85"/><circle cx="102.4" cy="9.8" r="0.85"/><circle cx="102.4" cy="3.4" r="0.85"/><circle cx="102.4" cy="0.2" r="0.85"/><circle cx="105.6" cy="134.6" r="0.85"/><circle cx="105.6" cy="131.4" r="0.85"/><circle cx="105.6" cy="128.2" r="0.85"/><circle cx="105.6" cy="96.2" r="0.85"/><circle cx="105.6" cy="93.0" r="0.85"/><circle cx="105.6" cy="89.8" r="0.85"/><circle cx="105.6" cy="86.6" r="0.85"/><circle cx="105.6" cy="83.4" r="0.85"/><circle cx="105.6" cy="80.2" r="0.85"/><circle cx="105.6" cy="77.0" r="0.85"/><circle cx="105.6" cy="73.8" r="0.85"/><circle cx="105.6" cy="41.8" r="0.85"/><circle cx="105.6" cy="38.6" r="0.85"/><circle cx="105.6" cy="35.4" r="0.85"/><circle cx="105.6" cy="32.2" r="0.85"/><circle cx="105.6" cy="29.0" r="0.85"/><circle cx="105.6" cy="25.8" r="0.85"/><circle cx="105.6" cy="22.6" r="0.85"/><circle cx="105.6" cy="13.0" r="0.85"/><circle cx="105.6" cy="3.4" r="0.85"/><circle cx="105.6" cy="0.2" r="0.85"/><circle cx="108.8" cy="137.8" r="0.85"/><circle cx="108.8" cy="134.6" r="0.85"/><circle cx="108.8" cy="131.4" r="0.85"/><circle cx="108.8" cy="128.2" r="0.85"/><circle cx="108.8" cy="125.0" r="0.85"/><circle cx="108.8" cy="121.8" r="0.85"/><circle cx="108.8" cy="118.6" r="0.85"/><circle cx="108.8" cy="115.4" r="0.85"/><circle cx="108.8" cy="112.2" r="0.85"/><circle cx="108.8" cy="99.4" r="0.85"/><circle cx="108.8" cy="96.2" r="0.85"/><circle cx="108.8" cy="93.0" r="0.85"/><circle cx="108.8" cy="89.8" r="0.85"/><circle cx="108.8" cy="86.6" r="0.85"/><circle cx="108.8" cy="83.4" r="0.85"/><circle cx="108.8" cy="80.2" r="0.85"/><circle cx="108.8" cy="77.0" r="0.85"/><circle cx="108.8" cy="73.8" r="0.85"/><circle cx="108.8" cy="64.2" r="0.85"/><circle cx="108.8" cy="38.6" r="0.85"/><circle cx="108.8" cy="35.4" r="0.85"/><circle cx="108.8" cy="32.2" r="0.85"/><circle cx="108.8" cy="29.0" r="0.85"/><circle cx="108.8" cy="25.8" r="0.85"/><circle cx="108.8" cy="22.6" r="0.85"/><circle cx="108.8" cy="19.4" r="0.85"/><circle cx="108.8" cy="16.2" r="0.85"/><circle cx="108.8" cy="13.0" r="0.85"/><circle cx="108.8" cy="0.2" r="0.85"/><circle cx="112.0" cy="137.8" r="0.85"/><circle cx="112.0" cy="131.4" r="0.85"/><circle cx="112.0" cy="128.2" r="0.85"/><circle cx="112.0" cy="125.0" r="0.85"/><circle cx="112.0" cy="121.8" r="0.85"/><circle cx="112.0" cy="118.6" r="0.85"/><circle cx="112.0" cy="115.4" r="0.85"/><circle cx="112.0" cy="112.2" r="0.85"/><circle cx="112.0" cy="109.0" r="0.85"/><circle cx="112.0" cy="105.8" r="0.85"/><circle cx="112.0" cy="102.6" r="0.85"/><circle cx="112.0" cy="99.4" r="0.85"/><circle cx="112.0" cy="96.2" r="0.85"/><circle cx="112.0" cy="93.0" r="0.85"/><circle cx="112.0" cy="89.8" r="0.85"/><circle cx="112.0" cy="86.6" r="0.85"/><circle cx="112.0" cy="83.4" r="0.85"/><circle cx="112.0" cy="80.2" r="0.85"/><circle cx="112.0" cy="77.0" r="0.85"/><circle cx="112.0" cy="73.8" r="0.85"/><circle cx="112.0" cy="38.6" r="0.85"/><circle cx="112.0" cy="35.4" r="0.85"/><circle cx="112.0" cy="32.2" r="0.85"/><circle cx="112.0" cy="29.0" r="0.85"/><circle cx="112.0" cy="25.8" r="0.85"/><circle cx="112.0" cy="19.4" r="0.85"/><circle cx="112.0" cy="16.2" r="0.85"/><circle cx="112.0" cy="13.0" r="0.85"/><circle cx="112.0" cy="6.6" r="0.85"/><circle cx="112.0" cy="0.2" r="0.85"/><circle cx="115.2" cy="121.8" r="0.85"/><circle cx="115.2" cy="118.6" r="0.85"/><circle cx="115.2" cy="115.4" r="0.85"/><circle cx="115.2" cy="112.2" r="0.85"/><circle cx="115.2" cy="109.0" r="0.85"/><circle cx="115.2" cy="105.8" r="0.85"/><circle cx="115.2" cy="102.6" r="0.85"/><circle cx="115.2" cy="99.4" r="0.85"/><circle cx="115.2" cy="96.2" r="0.85"/><circle cx="115.2" cy="93.0" r="0.85"/><circle cx="115.2" cy="89.8" r="0.85"/><circle cx="115.2" cy="86.6" r="0.85"/><circle cx="115.2" cy="83.4" r="0.85"/><circle cx="115.2" cy="80.2" r="0.85"/><circle cx="115.2" cy="77.0" r="0.85"/><circle cx="115.2" cy="73.8" r="0.85"/><circle cx="115.2" cy="38.6" r="0.85"/><circle cx="115.2" cy="32.2" r="0.85"/><circle cx="115.2" cy="29.0" r="0.85"/><circle cx="115.2" cy="25.8" r="0.85"/><circle cx="115.2" cy="16.2" r="0.85"/><circle cx="115.2" cy="6.6" r="0.85"/><circle cx="115.2" cy="3.4" r="0.85"/><circle cx="115.2" cy="0.2" r="0.85"/><circle cx="118.4" cy="121.8" r="0.85"/><circle cx="118.4" cy="118.6" r="0.85"/><circle cx="118.4" cy="115.4" r="0.85"/><circle cx="118.4" cy="112.2" r="0.85"/><circle cx="118.4" cy="109.0" r="0.85"/><circle cx="118.4" cy="105.8" r="0.85"/><circle cx="118.4" cy="102.6" r="0.85"/><circle cx="118.4" cy="99.4" r="0.85"/><circle cx="118.4" cy="96.2" r="0.85"/><circle cx="118.4" cy="93.0" r="0.85"/><circle cx="118.4" cy="89.8" r="0.85"/><circle cx="118.4" cy="86.6" r="0.85"/><circle cx="118.4" cy="83.4" r="0.85"/><circle cx="118.4" cy="80.2" r="0.85"/><circle cx="118.4" cy="77.0" r="0.85"/><circle cx="118.4" cy="73.8" r="0.85"/><circle cx="118.4" cy="32.2" r="0.85"/><circle cx="118.4" cy="29.0" r="0.85"/><circle cx="118.4" cy="6.6" r="0.85"/><circle cx="118.4" cy="3.4" r="0.85"/><circle cx="121.6" cy="134.6" r="0.85"/><circle cx="121.6" cy="118.6" r="0.85"/><circle cx="121.6" cy="115.4" r="0.85"/><circle cx="121.6" cy="112.2" r="0.85"/><circle cx="121.6" cy="109.0" r="0.85"/><circle cx="121.6" cy="105.8" r="0.85"/><circle cx="121.6" cy="102.6" r="0.85"/><circle cx="121.6" cy="99.4" r="0.85"/><circle cx="121.6" cy="96.2" r="0.85"/><circle cx="121.6" cy="93.0" r="0.85"/><circle cx="121.6" cy="89.8" r="0.85"/><circle cx="121.6" cy="86.6" r="0.85"/><circle cx="121.6" cy="83.4" r="0.85"/><circle cx="121.6" cy="80.2" r="0.85"/><circle cx="121.6" cy="77.0" r="0.85"/><circle cx="121.6" cy="35.4" r="0.85"/><circle cx="121.6" cy="29.0" r="0.85"/><circle cx="121.6" cy="6.6" r="0.85"/><circle cx="121.6" cy="3.4" r="0.85"/><circle cx="124.8" cy="115.4" r="0.85"/><circle cx="124.8" cy="112.2" r="0.85"/><circle cx="124.8" cy="109.0" r="0.85"/><circle cx="124.8" cy="105.8" r="0.85"/><circle cx="124.8" cy="102.6" r="0.85"/><circle cx="124.8" cy="99.4" r="0.85"/><circle cx="124.8" cy="96.2" r="0.85"/><circle cx="124.8" cy="93.0" r="0.85"/><circle cx="124.8" cy="89.8" r="0.85"/><circle cx="124.8" cy="86.6" r="0.85"/><circle cx="124.8" cy="83.4" r="0.85"/><circle cx="124.8" cy="80.2" r="0.85"/><circle cx="124.8" cy="77.0" r="0.85"/><circle cx="124.8" cy="35.4" r="0.85"/><circle cx="124.8" cy="9.8" r="0.85"/><circle cx="124.8" cy="6.6" r="0.85"/><circle cx="124.8" cy="3.4" r="0.85"/><circle cx="128.0" cy="112.2" r="0.85"/><circle cx="128.0" cy="109.0" r="0.85"/><circle cx="128.0" cy="105.8" r="0.85"/><circle cx="128.0" cy="102.6" r="0.85"/><circle cx="128.0" cy="99.4" r="0.85"/><circle cx="128.0" cy="96.2" r="0.85"/><circle cx="128.0" cy="93.0" r="0.85"/><circle cx="128.0" cy="89.8" r="0.85"/><circle cx="128.0" cy="86.6" r="0.85"/><circle cx="128.0" cy="83.4" r="0.85"/><circle cx="128.0" cy="80.2" r="0.85"/><circle cx="128.0" cy="16.2" r="0.85"/><circle cx="128.0" cy="13.0" r="0.85"/><circle cx="128.0" cy="9.8" r="0.85"/><circle cx="128.0" cy="6.6" r="0.85"/><circle cx="128.0" cy="3.4" r="0.85"/><circle cx="131.2" cy="109.0" r="0.85"/><circle cx="131.2" cy="105.8" r="0.85"/><circle cx="131.2" cy="102.6" r="0.85"/><circle cx="131.2" cy="99.4" r="0.85"/><circle cx="131.2" cy="96.2" r="0.85"/><circle cx="131.2" cy="93.0" r="0.85"/><circle cx="131.2" cy="89.8" r="0.85"/><circle cx="131.2" cy="86.6" r="0.85"/><circle cx="131.2" cy="83.4" r="0.85"/><circle cx="131.2" cy="19.4" r="0.85"/><circle cx="131.2" cy="16.2" r="0.85"/><circle cx="131.2" cy="13.0" r="0.85"/><circle cx="131.2" cy="9.8" r="0.85"/><circle cx="131.2" cy="6.6" r="0.85"/><circle cx="131.2" cy="3.4" r="0.85"/><circle cx="134.4" cy="105.8" r="0.85"/><circle cx="134.4" cy="102.6" r="0.85"/><circle cx="134.4" cy="99.4" r="0.85"/><circle cx="134.4" cy="96.2" r="0.85"/><circle cx="134.4" cy="93.0" r="0.85"/><circle cx="134.4" cy="89.8" r="0.85"/><circle cx="134.4" cy="86.6" r="0.85"/><circle cx="134.4" cy="19.4" r="0.85"/><circle cx="134.4" cy="16.2" r="0.85"/><circle cx="134.4" cy="13.0" r="0.85"/><circle cx="134.4" cy="9.8" r="0.85"/><circle cx="134.4" cy="6.6" r="0.85"/><circle cx="134.4" cy="3.4" r="0.85"/><circle cx="134.4" cy="0.2" r="0.85"/><circle cx="137.6" cy="105.8" r="0.85"/><circle cx="137.6" cy="102.6" r="0.85"/><circle cx="137.6" cy="99.4" r="0.85"/><circle cx="137.6" cy="96.2" r="0.85"/><circle cx="137.6" cy="93.0" r="0.85"/><circle cx="137.6" cy="89.8" r="0.85"/><circle cx="137.6" cy="86.6" r="0.85"/><circle cx="137.6" cy="19.4" r="0.85"/><circle cx="137.6" cy="16.2" r="0.85"/><circle cx="137.6" cy="13.0" r="0.85"/><circle cx="137.6" cy="9.8" r="0.85"/><circle cx="137.6" cy="6.6" r="0.85"/><circle cx="137.6" cy="3.4" r="0.85"/><circle cx="137.6" cy="0.2" r="0.85"/><circle cx="140.8" cy="99.4" r="0.85"/><circle cx="140.8" cy="96.2" r="0.85"/><circle cx="140.8" cy="93.0" r="0.85"/><circle cx="140.8" cy="89.8" r="0.85"/><circle cx="140.8" cy="86.6" r="0.85"/><circle cx="140.8" cy="16.2" r="0.85"/><circle cx="140.8" cy="13.0" r="0.85"/><circle cx="140.8" cy="9.8" r="0.85"/><circle cx="140.8" cy="6.6" r="0.85"/><circle cx="140.8" cy="3.4" r="0.85"/><circle cx="140.8" cy="0.2" r="0.85"/><circle cx="144.0" cy="93.0" r="0.85"/><circle cx="144.0" cy="89.8" r="0.85"/><circle cx="144.0" cy="16.2" r="0.85"/><circle cx="144.0" cy="13.0" r="0.85"/><circle cx="144.0" cy="9.8" r="0.85"/><circle cx="144.0" cy="6.6" r="0.85"/><circle cx="144.0" cy="3.4" r="0.85"/><circle cx="144.0" cy="0.2" r="0.85"/><circle cx="147.2" cy="13.0" r="0.85"/><circle cx="147.2" cy="9.8" r="0.85"/><circle cx="147.2" cy="6.6" r="0.85"/><circle cx="147.2" cy="3.4" r="0.85"/><circle cx="147.2" cy="0.2" r="0.85"/><circle cx="150.4" cy="13.0" r="0.85"/><circle cx="150.4" cy="9.8" r="0.85"/><circle cx="150.4" cy="6.6" r="0.85"/><circle cx="150.4" cy="3.4" r="0.85"/><circle cx="150.4" cy="0.2" r="0.85"/><circle cx="153.6" cy="13.0" r="0.85"/><circle cx="153.6" cy="9.8" r="0.85"/><circle cx="153.6" cy="6.6" r="0.85"/><circle cx="153.6" cy="3.4" r="0.85"/><circle cx="153.6" cy="0.2" r="0.85"/><circle cx="156.8" cy="13.0" r="0.85"/><circle cx="156.8" cy="6.6" r="0.85"/><circle cx="156.8" cy="3.4" r="0.85"/><circle cx="156.8" cy="0.2" r="0.85"/><circle cx="160.0" cy="3.4" r="0.85"/><circle cx="163.2" cy="61.0" r="0.85"/><circle cx="166.4" cy="70.6" r="0.85"/><circle cx="166.4" cy="67.4" r="0.85"/><circle cx="166.4" cy="64.2" r="0.85"/><circle cx="166.4" cy="61.0" r="0.85"/><circle cx="166.4" cy="57.8" r="0.85"/><circle cx="169.6" cy="77.0" r="0.85"/><circle cx="169.6" cy="73.8" r="0.85"/><circle cx="169.6" cy="70.6" r="0.85"/><circle cx="169.6" cy="67.4" r="0.85"/><circle cx="169.6" cy="64.2" r="0.85"/><circle cx="169.6" cy="61.0" r="0.85"/><circle cx="169.6" cy="57.8" r="0.85"/><circle cx="169.6" cy="54.6" r="0.85"/><circle cx="172.8" cy="77.0" r="0.85"/><circle cx="172.8" cy="73.8" r="0.85"/><circle cx="172.8" cy="70.6" r="0.85"/><circle cx="172.8" cy="67.4" r="0.85"/><circle cx="172.8" cy="64.2" r="0.85"/><circle cx="172.8" cy="61.0" r="0.85"/><circle cx="172.8" cy="57.8" r="0.85"/><circle cx="172.8" cy="54.6" r="0.85"/><circle cx="172.8" cy="51.4" r="0.85"/><circle cx="172.8" cy="45.0" r="0.85"/><circle cx="172.8" cy="41.8" r="0.85"/><circle cx="172.8" cy="29.0" r="0.85"/><circle cx="176.0" cy="77.0" r="0.85"/><circle cx="176.0" cy="73.8" r="0.85"/><circle cx="176.0" cy="70.6" r="0.85"/><circle cx="176.0" cy="67.4" r="0.85"/><circle cx="176.0" cy="64.2" r="0.85"/><circle cx="176.0" cy="61.0" r="0.85"/><circle cx="176.0" cy="57.8" r="0.85"/><circle cx="176.0" cy="54.6" r="0.85"/><circle cx="176.0" cy="51.4" r="0.85"/><circle cx="176.0" cy="48.2" r="0.85"/><circle cx="176.0" cy="45.0" r="0.85"/><circle cx="176.0" cy="41.8" r="0.85"/><circle cx="176.0" cy="32.2" r="0.85"/><circle cx="176.0" cy="25.8" r="0.85"/><circle cx="179.2" cy="77.0" r="0.85"/><circle cx="179.2" cy="73.8" r="0.85"/><circle cx="179.2" cy="70.6" r="0.85"/><circle cx="179.2" cy="67.4" r="0.85"/><circle cx="179.2" cy="64.2" r="0.85"/><circle cx="179.2" cy="61.0" r="0.85"/><circle cx="179.2" cy="57.8" r="0.85"/><circle cx="179.2" cy="54.6" r="0.85"/><circle cx="179.2" cy="51.4" r="0.85"/><circle cx="179.2" cy="48.2" r="0.85"/><circle cx="179.2" cy="45.0" r="0.85"/><circle cx="179.2" cy="41.8" r="0.85"/><circle cx="179.2" cy="38.6" r="0.85"/><circle cx="179.2" cy="35.4" r="0.85"/><circle cx="179.2" cy="32.2" r="0.85"/><circle cx="179.2" cy="29.0" r="0.85"/><circle cx="182.4" cy="73.8" r="0.85"/><circle cx="182.4" cy="70.6" r="0.85"/><circle cx="182.4" cy="67.4" r="0.85"/><circle cx="182.4" cy="64.2" r="0.85"/><circle cx="182.4" cy="61.0" r="0.85"/><circle cx="182.4" cy="57.8" r="0.85"/><circle cx="182.4" cy="54.6" r="0.85"/><circle cx="182.4" cy="51.4" r="0.85"/><circle cx="182.4" cy="48.2" r="0.85"/><circle cx="182.4" cy="38.6" r="0.85"/><circle cx="182.4" cy="35.4" r="0.85"/><circle cx="182.4" cy="32.2" r="0.85"/><circle cx="185.6" cy="77.0" r="0.85"/><circle cx="185.6" cy="73.8" r="0.85"/><circle cx="185.6" cy="70.6" r="0.85"/><circle cx="185.6" cy="67.4" r="0.85"/><circle cx="185.6" cy="64.2" r="0.85"/><circle cx="185.6" cy="61.0" r="0.85"/><circle cx="185.6" cy="57.8" r="0.85"/><circle cx="185.6" cy="54.6" r="0.85"/><circle cx="185.6" cy="51.4" r="0.85"/><circle cx="185.6" cy="48.2" r="0.85"/><circle cx="185.6" cy="38.6" r="0.85"/><circle cx="185.6" cy="35.4" r="0.85"/><circle cx="185.6" cy="32.2" r="0.85"/><circle cx="185.6" cy="22.6" r="0.85"/><circle cx="188.8" cy="77.0" r="0.85"/><circle cx="188.8" cy="73.8" r="0.85"/><circle cx="188.8" cy="70.6" r="0.85"/><circle cx="188.8" cy="67.4" r="0.85"/><circle cx="188.8" cy="64.2" r="0.85"/><circle cx="188.8" cy="61.0" r="0.85"/><circle cx="188.8" cy="57.8" r="0.85"/><circle cx="188.8" cy="54.6" r="0.85"/><circle cx="188.8" cy="51.4" r="0.85"/><circle cx="188.8" cy="48.2" r="0.85"/><circle cx="188.8" cy="38.6" r="0.85"/><circle cx="188.8" cy="35.4" r="0.85"/><circle cx="188.8" cy="32.2" r="0.85"/><circle cx="188.8" cy="29.0" r="0.85"/><circle cx="188.8" cy="22.6" r="0.85"/><circle cx="192.0" cy="99.4" r="0.85"/><circle cx="192.0" cy="86.6" r="0.85"/><circle cx="192.0" cy="83.4" r="0.85"/><circle cx="192.0" cy="80.2" r="0.85"/><circle cx="192.0" cy="77.0" r="0.85"/><circle cx="192.0" cy="73.8" r="0.85"/><circle cx="192.0" cy="70.6" r="0.85"/><circle cx="192.0" cy="67.4" r="0.85"/><circle cx="192.0" cy="64.2" r="0.85"/><circle cx="192.0" cy="61.0" r="0.85"/><circle cx="192.0" cy="57.8" r="0.85"/><circle cx="192.0" cy="54.6" r="0.85"/><circle cx="192.0" cy="51.4" r="0.85"/><circle cx="192.0" cy="38.6" r="0.85"/><circle cx="192.0" cy="35.4" r="0.85"/><circle cx="192.0" cy="32.2" r="0.85"/><circle cx="192.0" cy="29.0" r="0.85"/><circle cx="192.0" cy="25.8" r="0.85"/><circle cx="192.0" cy="22.6" r="0.85"/><circle cx="192.0" cy="19.4" r="0.85"/><circle cx="192.0" cy="3.4" r="0.85"/><circle cx="195.2" cy="109.0" r="0.85"/><circle cx="195.2" cy="105.8" r="0.85"/><circle cx="195.2" cy="102.6" r="0.85"/><circle cx="195.2" cy="99.4" r="0.85"/><circle cx="195.2" cy="96.2" r="0.85"/><circle cx="195.2" cy="93.0" r="0.85"/><circle cx="195.2" cy="89.8" r="0.85"/><circle cx="195.2" cy="86.6" r="0.85"/><circle cx="195.2" cy="83.4" r="0.85"/><circle cx="195.2" cy="80.2" r="0.85"/><circle cx="195.2" cy="77.0" r="0.85"/><circle cx="195.2" cy="73.8" r="0.85"/><circle cx="195.2" cy="70.6" r="0.85"/><circle cx="195.2" cy="67.4" r="0.85"/><circle cx="195.2" cy="64.2" r="0.85"/><circle cx="195.2" cy="61.0" r="0.85"/><circle cx="195.2" cy="57.8" r="0.85"/><circle cx="195.2" cy="54.6" r="0.85"/><circle cx="195.2" cy="51.4" r="0.85"/><circle cx="195.2" cy="45.0" r="0.85"/><circle cx="195.2" cy="41.8" r="0.85"/><circle cx="195.2" cy="35.4" r="0.85"/><circle cx="195.2" cy="32.2" r="0.85"/><circle cx="195.2" cy="29.0" r="0.85"/><circle cx="195.2" cy="25.8" r="0.85"/><circle cx="195.2" cy="22.6" r="0.85"/><circle cx="195.2" cy="19.4" r="0.85"/><circle cx="195.2" cy="16.2" r="0.85"/><circle cx="195.2" cy="3.4" r="0.85"/><circle cx="198.4" cy="115.4" r="0.85"/><circle cx="198.4" cy="112.2" r="0.85"/><circle cx="198.4" cy="109.0" r="0.85"/><circle cx="198.4" cy="105.8" r="0.85"/><circle cx="198.4" cy="102.6" r="0.85"/><circle cx="198.4" cy="99.4" r="0.85"/><circle cx="198.4" cy="96.2" r="0.85"/><circle cx="198.4" cy="93.0" r="0.85"/><circle cx="198.4" cy="89.8" r="0.85"/><circle cx="198.4" cy="86.6" r="0.85"/><circle cx="198.4" cy="83.4" r="0.85"/><circle cx="198.4" cy="80.2" r="0.85"/><circle cx="198.4" cy="77.0" r="0.85"/><circle cx="198.4" cy="73.8" r="0.85"/><circle cx="198.4" cy="70.6" r="0.85"/><circle cx="198.4" cy="67.4" r="0.85"/><circle cx="198.4" cy="64.2" r="0.85"/><circle cx="198.4" cy="61.0" r="0.85"/><circle cx="198.4" cy="57.8" r="0.85"/><circle cx="198.4" cy="54.6" r="0.85"/><circle cx="198.4" cy="38.6" r="0.85"/><circle cx="198.4" cy="35.4" r="0.85"/><circle cx="198.4" cy="32.2" r="0.85"/><circle cx="198.4" cy="29.0" r="0.85"/><circle cx="198.4" cy="19.4" r="0.85"/><circle cx="198.4" cy="16.2" r="0.85"/><circle cx="198.4" cy="3.4" r="0.85"/><circle cx="201.6" cy="115.4" r="0.85"/><circle cx="201.6" cy="112.2" r="0.85"/><circle cx="201.6" cy="109.0" r="0.85"/><circle cx="201.6" cy="105.8" r="0.85"/><circle cx="201.6" cy="102.6" r="0.85"/><circle cx="201.6" cy="99.4" r="0.85"/><circle cx="201.6" cy="96.2" r="0.85"/><circle cx="201.6" cy="93.0" r="0.85"/><circle cx="201.6" cy="89.8" r="0.85"/><circle cx="201.6" cy="86.6" r="0.85"/><circle cx="201.6" cy="83.4" r="0.85"/><circle cx="201.6" cy="80.2" r="0.85"/><circle cx="201.6" cy="77.0" r="0.85"/><circle cx="201.6" cy="73.8" r="0.85"/><circle cx="201.6" cy="70.6" r="0.85"/><circle cx="201.6" cy="67.4" r="0.85"/><circle cx="201.6" cy="64.2" r="0.85"/><circle cx="201.6" cy="61.0" r="0.85"/><circle cx="201.6" cy="57.8" r="0.85"/><circle cx="201.6" cy="54.6" r="0.85"/><circle cx="201.6" cy="51.4" r="0.85"/><circle cx="201.6" cy="45.0" r="0.85"/><circle cx="201.6" cy="41.8" r="0.85"/><circle cx="201.6" cy="38.6" r="0.85"/><circle cx="201.6" cy="35.4" r="0.85"/><circle cx="201.6" cy="32.2" r="0.85"/><circle cx="201.6" cy="29.0" r="0.85"/><circle cx="201.6" cy="25.8" r="0.85"/><circle cx="201.6" cy="16.2" r="0.85"/><circle cx="201.6" cy="13.0" r="0.85"/><circle cx="201.6" cy="3.4" r="0.85"/><circle cx="204.8" cy="115.4" r="0.85"/><circle cx="204.8" cy="112.2" r="0.85"/><circle cx="204.8" cy="109.0" r="0.85"/><circle cx="204.8" cy="105.8" r="0.85"/><circle cx="204.8" cy="102.6" r="0.85"/><circle cx="204.8" cy="99.4" r="0.85"/><circle cx="204.8" cy="96.2" r="0.85"/><circle cx="204.8" cy="93.0" r="0.85"/><circle cx="204.8" cy="89.8" r="0.85"/><circle cx="204.8" cy="86.6" r="0.85"/><circle cx="204.8" cy="83.4" r="0.85"/><circle cx="204.8" cy="80.2" r="0.85"/><circle cx="204.8" cy="77.0" r="0.85"/><circle cx="204.8" cy="73.8" r="0.85"/><circle cx="204.8" cy="70.6" r="0.85"/><circle cx="204.8" cy="67.4" r="0.85"/><circle cx="204.8" cy="64.2" r="0.85"/><circle cx="204.8" cy="61.0" r="0.85"/><circle cx="204.8" cy="57.8" r="0.85"/><circle cx="204.8" cy="54.6" r="0.85"/><circle cx="204.8" cy="51.4" r="0.85"/><circle cx="204.8" cy="41.8" r="0.85"/><circle cx="204.8" cy="38.6" r="0.85"/><circle cx="204.8" cy="35.4" r="0.85"/><circle cx="204.8" cy="32.2" r="0.85"/><circle cx="204.8" cy="29.0" r="0.85"/><circle cx="204.8" cy="25.8" r="0.85"/><circle cx="204.8" cy="22.6" r="0.85"/><circle cx="204.8" cy="19.4" r="0.85"/><circle cx="204.8" cy="16.2" r="0.85"/><circle cx="204.8" cy="13.0" r="0.85"/><circle cx="204.8" cy="3.4" r="0.85"/><circle cx="208.0" cy="115.4" r="0.85"/><circle cx="208.0" cy="112.2" r="0.85"/><circle cx="208.0" cy="109.0" r="0.85"/><circle cx="208.0" cy="105.8" r="0.85"/><circle cx="208.0" cy="102.6" r="0.85"/><circle cx="208.0" cy="99.4" r="0.85"/><circle cx="208.0" cy="96.2" r="0.85"/><circle cx="208.0" cy="93.0" r="0.85"/><circle cx="208.0" cy="89.8" r="0.85"/><circle cx="208.0" cy="86.6" r="0.85"/><circle cx="208.0" cy="83.4" r="0.85"/><circle cx="208.0" cy="80.2" r="0.85"/><circle cx="208.0" cy="77.0" r="0.85"/><circle cx="208.0" cy="73.8" r="0.85"/><circle cx="208.0" cy="70.6" r="0.85"/><circle cx="208.0" cy="67.4" r="0.85"/><circle cx="208.0" cy="64.2" r="0.85"/><circle cx="208.0" cy="61.0" r="0.85"/><circle cx="208.0" cy="57.8" r="0.85"/><circle cx="208.0" cy="54.6" r="0.85"/><circle cx="208.0" cy="45.0" r="0.85"/><circle cx="208.0" cy="41.8" r="0.85"/><circle cx="208.0" cy="38.6" r="0.85"/><circle cx="208.0" cy="35.4" r="0.85"/><circle cx="208.0" cy="32.2" r="0.85"/><circle cx="208.0" cy="29.0" r="0.85"/><circle cx="208.0" cy="25.8" r="0.85"/><circle cx="208.0" cy="19.4" r="0.85"/><circle cx="208.0" cy="16.2" r="0.85"/><circle cx="208.0" cy="13.0" r="0.85"/><circle cx="211.2" cy="112.2" r="0.85"/><circle cx="211.2" cy="109.0" r="0.85"/><circle cx="211.2" cy="105.8" r="0.85"/><circle cx="211.2" cy="102.6" r="0.85"/><circle cx="211.2" cy="99.4" r="0.85"/><circle cx="211.2" cy="96.2" r="0.85"/><circle cx="211.2" cy="93.0" r="0.85"/><circle cx="211.2" cy="89.8" r="0.85"/><circle cx="211.2" cy="86.6" r="0.85"/><circle cx="211.2" cy="83.4" r="0.85"/><circle cx="211.2" cy="80.2" r="0.85"/><circle cx="211.2" cy="77.0" r="0.85"/><circle cx="211.2" cy="73.8" r="0.85"/><circle cx="211.2" cy="70.6" r="0.85"/><circle cx="211.2" cy="67.4" r="0.85"/><circle cx="211.2" cy="64.2" r="0.85"/><circle cx="211.2" cy="61.0" r="0.85"/><circle cx="211.2" cy="57.8" r="0.85"/><circle cx="211.2" cy="54.6" r="0.85"/><circle cx="211.2" cy="45.0" r="0.85"/><circle cx="211.2" cy="35.4" r="0.85"/><circle cx="211.2" cy="32.2" r="0.85"/><circle cx="211.2" cy="29.0" r="0.85"/><circle cx="211.2" cy="25.8" r="0.85"/><circle cx="211.2" cy="22.6" r="0.85"/><circle cx="211.2" cy="19.4" r="0.85"/><circle cx="211.2" cy="16.2" r="0.85"/><circle cx="214.4" cy="105.8" r="0.85"/><circle cx="214.4" cy="102.6" r="0.85"/><circle cx="214.4" cy="99.4" r="0.85"/><circle cx="214.4" cy="96.2" r="0.85"/><circle cx="214.4" cy="93.0" r="0.85"/><circle cx="214.4" cy="89.8" r="0.85"/><circle cx="214.4" cy="86.6" r="0.85"/><circle cx="214.4" cy="83.4" r="0.85"/><circle cx="214.4" cy="80.2" r="0.85"/><circle cx="214.4" cy="77.0" r="0.85"/><circle cx="214.4" cy="73.8" r="0.85"/><circle cx="214.4" cy="70.6" r="0.85"/><circle cx="214.4" cy="67.4" r="0.85"/><circle cx="214.4" cy="64.2" r="0.85"/><circle cx="214.4" cy="61.0" r="0.85"/><circle cx="214.4" cy="57.8" r="0.85"/><circle cx="214.4" cy="54.6" r="0.85"/><circle cx="214.4" cy="45.0" r="0.85"/><circle cx="214.4" cy="41.8" r="0.85"/><circle cx="214.4" cy="35.4" r="0.85"/><circle cx="214.4" cy="32.2" r="0.85"/><circle cx="214.4" cy="29.0" r="0.85"/><circle cx="214.4" cy="25.8" r="0.85"/><circle cx="214.4" cy="22.6" r="0.85"/><circle cx="214.4" cy="19.4" r="0.85"/><circle cx="214.4" cy="16.2" r="0.85"/><circle cx="217.6" cy="99.4" r="0.85"/><circle cx="217.6" cy="96.2" r="0.85"/><circle cx="217.6" cy="93.0" r="0.85"/><circle cx="217.6" cy="89.8" r="0.85"/><circle cx="217.6" cy="86.6" r="0.85"/><circle cx="217.6" cy="83.4" r="0.85"/><circle cx="217.6" cy="80.2" r="0.85"/><circle cx="217.6" cy="77.0" r="0.85"/><circle cx="217.6" cy="73.8" r="0.85"/><circle cx="217.6" cy="70.6" r="0.85"/><circle cx="217.6" cy="67.4" r="0.85"/><circle cx="217.6" cy="57.8" r="0.85"/><circle cx="217.6" cy="54.6" r="0.85"/><circle cx="217.6" cy="51.4" r="0.85"/><circle cx="217.6" cy="48.2" r="0.85"/><circle cx="217.6" cy="45.0" r="0.85"/><circle cx="217.6" cy="35.4" r="0.85"/><circle cx="217.6" cy="32.2" r="0.85"/><circle cx="217.6" cy="29.0" r="0.85"/><circle cx="217.6" cy="25.8" r="0.85"/><circle cx="217.6" cy="22.6" r="0.85"/><circle cx="217.6" cy="19.4" r="0.85"/><circle cx="217.6" cy="16.2" r="0.85"/><circle cx="220.8" cy="83.4" r="0.85"/><circle cx="220.8" cy="80.2" r="0.85"/><circle cx="220.8" cy="77.0" r="0.85"/><circle cx="220.8" cy="73.8" r="0.85"/><circle cx="220.8" cy="70.6" r="0.85"/><circle cx="220.8" cy="61.0" r="0.85"/><circle cx="220.8" cy="57.8" r="0.85"/><circle cx="220.8" cy="54.6" r="0.85"/><circle cx="220.8" cy="51.4" r="0.85"/><circle cx="220.8" cy="48.2" r="0.85"/><circle cx="220.8" cy="45.0" r="0.85"/><circle cx="220.8" cy="41.8" r="0.85"/><circle cx="220.8" cy="38.6" r="0.85"/><circle cx="220.8" cy="35.4" r="0.85"/><circle cx="220.8" cy="32.2" r="0.85"/><circle cx="220.8" cy="29.0" r="0.85"/><circle cx="220.8" cy="25.8" r="0.85"/><circle cx="220.8" cy="22.6" r="0.85"/><circle cx="220.8" cy="19.4" r="0.85"/><circle cx="220.8" cy="16.2" r="0.85"/><circle cx="224.0" cy="105.8" r="0.85"/><circle cx="224.0" cy="80.2" r="0.85"/><circle cx="224.0" cy="77.0" r="0.85"/><circle cx="224.0" cy="73.8" r="0.85"/><circle cx="224.0" cy="67.4" r="0.85"/><circle cx="224.0" cy="64.2" r="0.85"/><circle cx="224.0" cy="61.0" r="0.85"/><circle cx="224.0" cy="57.8" r="0.85"/><circle cx="224.0" cy="54.6" r="0.85"/><circle cx="224.0" cy="51.4" r="0.85"/><circle cx="224.0" cy="48.2" r="0.85"/><circle cx="224.0" cy="45.0" r="0.85"/><circle cx="224.0" cy="41.8" r="0.85"/><circle cx="224.0" cy="38.6" r="0.85"/><circle cx="224.0" cy="35.4" r="0.85"/><circle cx="224.0" cy="32.2" r="0.85"/><circle cx="224.0" cy="29.0" r="0.85"/><circle cx="224.0" cy="25.8" r="0.85"/><circle cx="224.0" cy="22.6" r="0.85"/><circle cx="224.0" cy="19.4" r="0.85"/><circle cx="227.2" cy="105.8" r="0.85"/><circle cx="227.2" cy="102.6" r="0.85"/><circle cx="227.2" cy="99.4" r="0.85"/><circle cx="227.2" cy="77.0" r="0.85"/><circle cx="227.2" cy="73.8" r="0.85"/><circle cx="227.2" cy="67.4" r="0.85"/><circle cx="227.2" cy="64.2" r="0.85"/><circle cx="227.2" cy="61.0" r="0.85"/><circle cx="227.2" cy="57.8" r="0.85"/><circle cx="227.2" cy="54.6" r="0.85"/><circle cx="227.2" cy="51.4" r="0.85"/><circle cx="227.2" cy="48.2" r="0.85"/><circle cx="227.2" cy="45.0" r="0.85"/><circle cx="227.2" cy="41.8" r="0.85"/><circle cx="227.2" cy="35.4" r="0.85"/><circle cx="227.2" cy="32.2" r="0.85"/><circle cx="227.2" cy="29.0" r="0.85"/><circle cx="227.2" cy="25.8" r="0.85"/><circle cx="227.2" cy="22.6" r="0.85"/><circle cx="227.2" cy="19.4" r="0.85"/><circle cx="230.4" cy="73.8" r="0.85"/><circle cx="230.4" cy="67.4" r="0.85"/><circle cx="230.4" cy="64.2" r="0.85"/><circle cx="230.4" cy="61.0" r="0.85"/><circle cx="230.4" cy="57.8" r="0.85"/><circle cx="230.4" cy="51.4" r="0.85"/><circle cx="230.4" cy="48.2" r="0.85"/><circle cx="230.4" cy="38.6" r="0.85"/><circle cx="230.4" cy="35.4" r="0.85"/><circle cx="230.4" cy="32.2" r="0.85"/><circle cx="230.4" cy="29.0" r="0.85"/><circle cx="230.4" cy="25.8" r="0.85"/><circle cx="230.4" cy="22.6" r="0.85"/><circle cx="230.4" cy="19.4" r="0.85"/><circle cx="230.4" cy="16.2" r="0.85"/><circle cx="233.6" cy="64.2" r="0.85"/><circle cx="233.6" cy="61.0" r="0.85"/><circle cx="233.6" cy="54.6" r="0.85"/><circle cx="233.6" cy="51.4" r="0.85"/><circle cx="233.6" cy="48.2" r="0.85"/><circle cx="233.6" cy="38.6" r="0.85"/><circle cx="233.6" cy="35.4" r="0.85"/><circle cx="233.6" cy="32.2" r="0.85"/><circle cx="233.6" cy="29.0" r="0.85"/><circle cx="233.6" cy="25.8" r="0.85"/><circle cx="233.6" cy="22.6" r="0.85"/><circle cx="233.6" cy="19.4" r="0.85"/><circle cx="233.6" cy="16.2" r="0.85"/><circle cx="233.6" cy="9.8" r="0.85"/><circle cx="236.8" cy="64.2" r="0.85"/><circle cx="236.8" cy="61.0" r="0.85"/><circle cx="236.8" cy="54.6" r="0.85"/><circle cx="236.8" cy="51.4" r="0.85"/><circle cx="236.8" cy="48.2" r="0.85"/><circle cx="236.8" cy="45.0" r="0.85"/><circle cx="236.8" cy="41.8" r="0.85"/><circle cx="236.8" cy="38.6" r="0.85"/><circle cx="236.8" cy="35.4" r="0.85"/><circle cx="236.8" cy="32.2" r="0.85"/><circle cx="236.8" cy="29.0" r="0.85"/><circle cx="236.8" cy="25.8" r="0.85"/><circle cx="236.8" cy="22.6" r="0.85"/><circle cx="236.8" cy="19.4" r="0.85"/><circle cx="236.8" cy="16.2" r="0.85"/><circle cx="240.0" cy="54.6" r="0.85"/><circle cx="240.0" cy="51.4" r="0.85"/><circle cx="240.0" cy="48.2" r="0.85"/><circle cx="240.0" cy="45.0" r="0.85"/><circle cx="240.0" cy="41.8" r="0.85"/><circle cx="240.0" cy="38.6" r="0.85"/><circle cx="240.0" cy="35.4" r="0.85"/><circle cx="240.0" cy="32.2" r="0.85"/><circle cx="240.0" cy="29.0" r="0.85"/><circle cx="240.0" cy="25.8" r="0.85"/><circle cx="240.0" cy="22.6" r="0.85"/><circle cx="240.0" cy="19.4" r="0.85"/><circle cx="240.0" cy="16.2" r="0.85"/><circle cx="243.2" cy="54.6" r="0.85"/><circle cx="243.2" cy="51.4" r="0.85"/><circle cx="243.2" cy="48.2" r="0.85"/><circle cx="243.2" cy="45.0" r="0.85"/><circle cx="243.2" cy="41.8" r="0.85"/><circle cx="243.2" cy="38.6" r="0.85"/><circle cx="243.2" cy="35.4" r="0.85"/><circle cx="243.2" cy="32.2" r="0.85"/><circle cx="243.2" cy="29.0" r="0.85"/><circle cx="243.2" cy="25.8" r="0.85"/><circle cx="243.2" cy="22.6" r="0.85"/><circle cx="243.2" cy="19.4" r="0.85"/><circle cx="243.2" cy="16.2" r="0.85"/><circle cx="246.4" cy="54.6" r="0.85"/><circle cx="246.4" cy="51.4" r="0.85"/><circle cx="246.4" cy="48.2" r="0.85"/><circle cx="246.4" cy="45.0" r="0.85"/><circle cx="246.4" cy="41.8" r="0.85"/><circle cx="246.4" cy="38.6" r="0.85"/><circle cx="246.4" cy="35.4" r="0.85"/><circle cx="246.4" cy="32.2" r="0.85"/><circle cx="246.4" cy="29.0" r="0.85"/><circle cx="246.4" cy="25.8" r="0.85"/><circle cx="246.4" cy="22.6" r="0.85"/><circle cx="246.4" cy="19.4" r="0.85"/><circle cx="246.4" cy="16.2" r="0.85"/><circle cx="246.4" cy="6.6" r="0.85"/><circle cx="249.6" cy="61.0" r="0.85"/><circle cx="249.6" cy="57.8" r="0.85"/><circle cx="249.6" cy="54.6" r="0.85"/><circle cx="249.6" cy="51.4" r="0.85"/><circle cx="249.6" cy="48.2" r="0.85"/><circle cx="249.6" cy="45.0" r="0.85"/><circle cx="249.6" cy="41.8" r="0.85"/><circle cx="249.6" cy="38.6" r="0.85"/><circle cx="249.6" cy="35.4" r="0.85"/><circle cx="249.6" cy="32.2" r="0.85"/><circle cx="249.6" cy="29.0" r="0.85"/><circle cx="249.6" cy="25.8" r="0.85"/><circle cx="249.6" cy="22.6" r="0.85"/><circle cx="249.6" cy="19.4" r="0.85"/><circle cx="249.6" cy="16.2" r="0.85"/><circle cx="249.6" cy="13.0" r="0.85"/><circle cx="252.8" cy="61.0" r="0.85"/><circle cx="252.8" cy="57.8" r="0.85"/><circle cx="252.8" cy="54.6" r="0.85"/><circle cx="252.8" cy="51.4" r="0.85"/><circle cx="252.8" cy="48.2" r="0.85"/><circle cx="252.8" cy="45.0" r="0.85"/><circle cx="252.8" cy="41.8" r="0.85"/><circle cx="252.8" cy="38.6" r="0.85"/><circle cx="252.8" cy="35.4" r="0.85"/><circle cx="252.8" cy="32.2" r="0.85"/><circle cx="252.8" cy="29.0" r="0.85"/><circle cx="252.8" cy="25.8" r="0.85"/><circle cx="252.8" cy="22.6" r="0.85"/><circle cx="252.8" cy="19.4" r="0.85"/><circle cx="256.0" cy="70.6" r="0.85"/><circle cx="256.0" cy="67.4" r="0.85"/><circle cx="256.0" cy="64.2" r="0.85"/><circle cx="256.0" cy="61.0" r="0.85"/><circle cx="256.0" cy="57.8" r="0.85"/><circle cx="256.0" cy="54.6" r="0.85"/><circle cx="256.0" cy="51.4" r="0.85"/><circle cx="256.0" cy="48.2" r="0.85"/><circle cx="256.0" cy="45.0" r="0.85"/><circle cx="256.0" cy="41.8" r="0.85"/><circle cx="256.0" cy="38.6" r="0.85"/><circle cx="256.0" cy="35.4" r="0.85"/><circle cx="256.0" cy="32.2" r="0.85"/><circle cx="256.0" cy="29.0" r="0.85"/><circle cx="256.0" cy="25.8" r="0.85"/><circle cx="256.0" cy="22.6" r="0.85"/><circle cx="256.0" cy="19.4" r="0.85"/><circle cx="256.0" cy="16.2" r="0.85"/><circle cx="256.0" cy="13.0" r="0.85"/><circle cx="259.2" cy="70.6" r="0.85"/><circle cx="259.2" cy="67.4" r="0.85"/><circle cx="259.2" cy="64.2" r="0.85"/><circle cx="259.2" cy="61.0" r="0.85"/><circle cx="259.2" cy="57.8" r="0.85"/><circle cx="259.2" cy="54.6" r="0.85"/><circle cx="259.2" cy="51.4" r="0.85"/><circle cx="259.2" cy="48.2" r="0.85"/><circle cx="259.2" cy="45.0" r="0.85"/><circle cx="259.2" cy="41.8" r="0.85"/><circle cx="259.2" cy="38.6" r="0.85"/><circle cx="259.2" cy="35.4" r="0.85"/><circle cx="259.2" cy="32.2" r="0.85"/><circle cx="259.2" cy="29.0" r="0.85"/><circle cx="259.2" cy="25.8" r="0.85"/><circle cx="259.2" cy="22.6" r="0.85"/><circle cx="259.2" cy="19.4" r="0.85"/><circle cx="259.2" cy="16.2" r="0.85"/><circle cx="259.2" cy="13.0" r="0.85"/><circle cx="262.4" cy="64.2" r="0.85"/><circle cx="262.4" cy="61.0" r="0.85"/><circle cx="262.4" cy="57.8" r="0.85"/><circle cx="262.4" cy="54.6" r="0.85"/><circle cx="262.4" cy="51.4" r="0.85"/><circle cx="262.4" cy="48.2" r="0.85"/><circle cx="262.4" cy="45.0" r="0.85"/><circle cx="262.4" cy="41.8" r="0.85"/><circle cx="262.4" cy="38.6" r="0.85"/><circle cx="262.4" cy="35.4" r="0.85"/><circle cx="262.4" cy="32.2" r="0.85"/><circle cx="262.4" cy="29.0" r="0.85"/><circle cx="262.4" cy="25.8" r="0.85"/><circle cx="262.4" cy="22.6" r="0.85"/><circle cx="262.4" cy="19.4" r="0.85"/><circle cx="262.4" cy="16.2" r="0.85"/><circle cx="262.4" cy="13.0" r="0.85"/><circle cx="262.4" cy="9.8" r="0.85"/><circle cx="265.6" cy="61.0" r="0.85"/><circle cx="265.6" cy="57.8" r="0.85"/><circle cx="265.6" cy="54.6" r="0.85"/><circle cx="265.6" cy="51.4" r="0.85"/><circle cx="265.6" cy="48.2" r="0.85"/><circle cx="265.6" cy="45.0" r="0.85"/><circle cx="265.6" cy="41.8" r="0.85"/><circle cx="265.6" cy="38.6" r="0.85"/><circle cx="265.6" cy="35.4" r="0.85"/><circle cx="265.6" cy="32.2" r="0.85"/><circle cx="265.6" cy="29.0" r="0.85"/><circle cx="265.6" cy="25.8" r="0.85"/><circle cx="265.6" cy="22.6" r="0.85"/><circle cx="265.6" cy="19.4" r="0.85"/><circle cx="265.6" cy="16.2" r="0.85"/><circle cx="265.6" cy="13.0" r="0.85"/><circle cx="265.6" cy="9.8" r="0.85"/><circle cx="268.8" cy="61.0" r="0.85"/><circle cx="268.8" cy="57.8" r="0.85"/><circle cx="268.8" cy="54.6" r="0.85"/><circle cx="268.8" cy="51.4" r="0.85"/><circle cx="268.8" cy="48.2" r="0.85"/><circle cx="268.8" cy="45.0" r="0.85"/><circle cx="268.8" cy="41.8" r="0.85"/><circle cx="268.8" cy="38.6" r="0.85"/><circle cx="268.8" cy="35.4" r="0.85"/><circle cx="268.8" cy="32.2" r="0.85"/><circle cx="268.8" cy="29.0" r="0.85"/><circle cx="268.8" cy="25.8" r="0.85"/><circle cx="268.8" cy="22.6" r="0.85"/><circle cx="268.8" cy="19.4" r="0.85"/><circle cx="268.8" cy="16.2" r="0.85"/><circle cx="268.8" cy="13.0" r="0.85"/><circle cx="268.8" cy="9.8" r="0.85"/><circle cx="272.0" cy="61.0" r="0.85"/><circle cx="272.0" cy="57.8" r="0.85"/><circle cx="272.0" cy="54.6" r="0.85"/><circle cx="272.0" cy="51.4" r="0.85"/><circle cx="272.0" cy="48.2" r="0.85"/><circle cx="272.0" cy="45.0" r="0.85"/><circle cx="272.0" cy="41.8" r="0.85"/><circle cx="272.0" cy="38.6" r="0.85"/><circle cx="272.0" cy="35.4" r="0.85"/><circle cx="272.0" cy="32.2" r="0.85"/><circle cx="272.0" cy="29.0" r="0.85"/><circle cx="272.0" cy="25.8" r="0.85"/><circle cx="272.0" cy="22.6" r="0.85"/><circle cx="272.0" cy="19.4" r="0.85"/><circle cx="272.0" cy="16.2" r="0.85"/><circle cx="272.0" cy="13.0" r="0.85"/><circle cx="272.0" cy="9.8" r="0.85"/><circle cx="275.2" cy="64.2" r="0.85"/><circle cx="275.2" cy="61.0" r="0.85"/><circle cx="275.2" cy="57.8" r="0.85"/><circle cx="275.2" cy="54.6" r="0.85"/><circle cx="275.2" cy="51.4" r="0.85"/><circle cx="275.2" cy="48.2" r="0.85"/><circle cx="275.2" cy="45.0" r="0.85"/><circle cx="275.2" cy="41.8" r="0.85"/><circle cx="275.2" cy="38.6" r="0.85"/><circle cx="275.2" cy="35.4" r="0.85"/><circle cx="275.2" cy="32.2" r="0.85"/><circle cx="275.2" cy="29.0" r="0.85"/><circle cx="275.2" cy="25.8" r="0.85"/><circle cx="275.2" cy="22.6" r="0.85"/><circle cx="275.2" cy="19.4" r="0.85"/><circle cx="275.2" cy="16.2" r="0.85"/><circle cx="275.2" cy="13.0" r="0.85"/><circle cx="275.2" cy="9.8" r="0.85"/><circle cx="275.2" cy="3.4" r="0.85"/><circle cx="278.4" cy="80.2" r="0.85"/><circle cx="278.4" cy="73.8" r="0.85"/><circle cx="278.4" cy="67.4" r="0.85"/><circle cx="278.4" cy="64.2" r="0.85"/><circle cx="278.4" cy="61.0" r="0.85"/><circle cx="278.4" cy="57.8" r="0.85"/><circle cx="278.4" cy="54.6" r="0.85"/><circle cx="278.4" cy="51.4" r="0.85"/><circle cx="278.4" cy="48.2" r="0.85"/><circle cx="278.4" cy="45.0" r="0.85"/><circle cx="278.4" cy="41.8" r="0.85"/><circle cx="278.4" cy="38.6" r="0.85"/><circle cx="278.4" cy="35.4" r="0.85"/><circle cx="278.4" cy="32.2" r="0.85"/><circle cx="278.4" cy="29.0" r="0.85"/><circle cx="278.4" cy="25.8" r="0.85"/><circle cx="278.4" cy="22.6" r="0.85"/><circle cx="278.4" cy="19.4" r="0.85"/><circle cx="278.4" cy="16.2" r="0.85"/><circle cx="278.4" cy="13.0" r="0.85"/><circle cx="278.4" cy="9.8" r="0.85"/><circle cx="278.4" cy="3.4" r="0.85"/><circle cx="281.6" cy="83.4" r="0.85"/><circle cx="281.6" cy="80.2" r="0.85"/><circle cx="281.6" cy="77.0" r="0.85"/><circle cx="281.6" cy="67.4" r="0.85"/><circle cx="281.6" cy="64.2" r="0.85"/><circle cx="281.6" cy="61.0" r="0.85"/><circle cx="281.6" cy="57.8" r="0.85"/><circle cx="281.6" cy="54.6" r="0.85"/><circle cx="281.6" cy="51.4" r="0.85"/><circle cx="281.6" cy="48.2" r="0.85"/><circle cx="281.6" cy="45.0" r="0.85"/><circle cx="281.6" cy="41.8" r="0.85"/><circle cx="281.6" cy="38.6" r="0.85"/><circle cx="281.6" cy="35.4" r="0.85"/><circle cx="281.6" cy="32.2" r="0.85"/><circle cx="281.6" cy="29.0" r="0.85"/><circle cx="281.6" cy="25.8" r="0.85"/><circle cx="281.6" cy="22.6" r="0.85"/><circle cx="281.6" cy="19.4" r="0.85"/><circle cx="281.6" cy="16.2" r="0.85"/><circle cx="281.6" cy="13.0" r="0.85"/><circle cx="281.6" cy="9.8" r="0.85"/><circle cx="281.6" cy="6.6" r="0.85"/><circle cx="284.8" cy="86.6" r="0.85"/><circle cx="284.8" cy="70.6" r="0.85"/><circle cx="284.8" cy="67.4" r="0.85"/><circle cx="284.8" cy="64.2" r="0.85"/><circle cx="284.8" cy="61.0" r="0.85"/><circle cx="284.8" cy="57.8" r="0.85"/><circle cx="284.8" cy="54.6" r="0.85"/><circle cx="284.8" cy="51.4" r="0.85"/><circle cx="284.8" cy="48.2" r="0.85"/><circle cx="284.8" cy="45.0" r="0.85"/><circle cx="284.8" cy="41.8" r="0.85"/><circle cx="284.8" cy="38.6" r="0.85"/><circle cx="284.8" cy="35.4" r="0.85"/><circle cx="284.8" cy="32.2" r="0.85"/><circle cx="284.8" cy="29.0" r="0.85"/><circle cx="284.8" cy="25.8" r="0.85"/><circle cx="284.8" cy="22.6" r="0.85"/><circle cx="284.8" cy="19.4" r="0.85"/><circle cx="284.8" cy="16.2" r="0.85"/><circle cx="284.8" cy="13.0" r="0.85"/><circle cx="284.8" cy="9.8" r="0.85"/><circle cx="284.8" cy="6.6" r="0.85"/><circle cx="288.0" cy="89.8" r="0.85"/><circle cx="288.0" cy="70.6" r="0.85"/><circle cx="288.0" cy="67.4" r="0.85"/><circle cx="288.0" cy="61.0" r="0.85"/><circle cx="288.0" cy="57.8" r="0.85"/><circle cx="288.0" cy="54.6" r="0.85"/><circle cx="288.0" cy="51.4" r="0.85"/><circle cx="288.0" cy="48.2" r="0.85"/><circle cx="288.0" cy="45.0" r="0.85"/><circle cx="288.0" cy="41.8" r="0.85"/><circle cx="288.0" cy="38.6" r="0.85"/><circle cx="288.0" cy="35.4" r="0.85"/><circle cx="288.0" cy="32.2" r="0.85"/><circle cx="288.0" cy="29.0" r="0.85"/><circle cx="288.0" cy="25.8" r="0.85"/><circle cx="288.0" cy="22.6" r="0.85"/><circle cx="288.0" cy="19.4" r="0.85"/><circle cx="288.0" cy="16.2" r="0.85"/><circle cx="288.0" cy="13.0" r="0.85"/><circle cx="288.0" cy="9.8" r="0.85"/><circle cx="288.0" cy="6.6" r="0.85"/><circle cx="291.2" cy="89.8" r="0.85"/><circle cx="291.2" cy="83.4" r="0.85"/><circle cx="291.2" cy="61.0" r="0.85"/><circle cx="291.2" cy="57.8" r="0.85"/><circle cx="291.2" cy="54.6" r="0.85"/><circle cx="291.2" cy="51.4" r="0.85"/><circle cx="291.2" cy="48.2" r="0.85"/><circle cx="291.2" cy="45.0" r="0.85"/><circle cx="291.2" cy="41.8" r="0.85"/><circle cx="291.2" cy="38.6" r="0.85"/><circle cx="291.2" cy="35.4" r="0.85"/><circle cx="291.2" cy="32.2" r="0.85"/><circle cx="291.2" cy="29.0" r="0.85"/><circle cx="291.2" cy="25.8" r="0.85"/><circle cx="291.2" cy="22.6" r="0.85"/><circle cx="291.2" cy="19.4" r="0.85"/><circle cx="291.2" cy="16.2" r="0.85"/><circle cx="291.2" cy="13.0" r="0.85"/><circle cx="291.2" cy="9.8" r="0.85"/><circle cx="291.2" cy="6.6" r="0.85"/><circle cx="294.4" cy="109.0" r="0.85"/><circle cx="294.4" cy="105.8" r="0.85"/><circle cx="294.4" cy="83.4" r="0.85"/><circle cx="294.4" cy="80.2" r="0.85"/><circle cx="294.4" cy="57.8" r="0.85"/><circle cx="294.4" cy="54.6" r="0.85"/><circle cx="294.4" cy="51.4" r="0.85"/><circle cx="294.4" cy="48.2" r="0.85"/><circle cx="294.4" cy="45.0" r="0.85"/><circle cx="294.4" cy="41.8" r="0.85"/><circle cx="294.4" cy="38.6" r="0.85"/><circle cx="294.4" cy="35.4" r="0.85"/><circle cx="294.4" cy="32.2" r="0.85"/><circle cx="294.4" cy="29.0" r="0.85"/><circle cx="294.4" cy="25.8" r="0.85"/><circle cx="294.4" cy="22.6" r="0.85"/><circle cx="294.4" cy="19.4" r="0.85"/><circle cx="294.4" cy="16.2" r="0.85"/><circle cx="294.4" cy="13.0" r="0.85"/><circle cx="294.4" cy="9.8" r="0.85"/><circle cx="297.6" cy="115.4" r="0.85"/><circle cx="297.6" cy="112.2" r="0.85"/><circle cx="297.6" cy="109.0" r="0.85"/><circle cx="297.6" cy="105.8" r="0.85"/><circle cx="297.6" cy="80.2" r="0.85"/><circle cx="297.6" cy="77.0" r="0.85"/><circle cx="297.6" cy="57.8" r="0.85"/><circle cx="297.6" cy="54.6" r="0.85"/><circle cx="297.6" cy="51.4" r="0.85"/><circle cx="297.6" cy="48.2" r="0.85"/><circle cx="297.6" cy="45.0" r="0.85"/><circle cx="297.6" cy="41.8" r="0.85"/><circle cx="297.6" cy="38.6" r="0.85"/><circle cx="297.6" cy="35.4" r="0.85"/><circle cx="297.6" cy="32.2" r="0.85"/><circle cx="297.6" cy="29.0" r="0.85"/><circle cx="297.6" cy="25.8" r="0.85"/><circle cx="297.6" cy="22.6" r="0.85"/><circle cx="297.6" cy="19.4" r="0.85"/><circle cx="297.6" cy="16.2" r="0.85"/><circle cx="297.6" cy="13.0" r="0.85"/><circle cx="297.6" cy="9.8" r="0.85"/><circle cx="300.8" cy="115.4" r="0.85"/><circle cx="300.8" cy="112.2" r="0.85"/><circle cx="300.8" cy="109.0" r="0.85"/><circle cx="300.8" cy="105.8" r="0.85"/><circle cx="300.8" cy="67.4" r="0.85"/><circle cx="300.8" cy="54.6" r="0.85"/><circle cx="300.8" cy="51.4" r="0.85"/><circle cx="300.8" cy="41.8" r="0.85"/><circle cx="300.8" cy="38.6" r="0.85"/><circle cx="300.8" cy="35.4" r="0.85"/><circle cx="300.8" cy="32.2" r="0.85"/><circle cx="300.8" cy="29.0" r="0.85"/><circle cx="300.8" cy="25.8" r="0.85"/><circle cx="300.8" cy="22.6" r="0.85"/><circle cx="300.8" cy="19.4" r="0.85"/><circle cx="300.8" cy="16.2" r="0.85"/><circle cx="300.8" cy="13.0" r="0.85"/><circle cx="304.0" cy="115.4" r="0.85"/><circle cx="304.0" cy="112.2" r="0.85"/><circle cx="304.0" cy="109.0" r="0.85"/><circle cx="304.0" cy="105.8" r="0.85"/><circle cx="304.0" cy="102.6" r="0.85"/><circle cx="304.0" cy="99.4" r="0.85"/><circle cx="304.0" cy="93.0" r="0.85"/><circle cx="304.0" cy="41.8" r="0.85"/><circle cx="304.0" cy="38.6" r="0.85"/><circle cx="304.0" cy="35.4" r="0.85"/><circle cx="304.0" cy="32.2" r="0.85"/><circle cx="304.0" cy="29.0" r="0.85"/><circle cx="304.0" cy="25.8" r="0.85"/><circle cx="304.0" cy="22.6" r="0.85"/><circle cx="304.0" cy="19.4" r="0.85"/><circle cx="304.0" cy="16.2" r="0.85"/><circle cx="304.0" cy="13.0" r="0.85"/><circle cx="304.0" cy="9.8" r="0.85"/><circle cx="307.2" cy="112.2" r="0.85"/><circle cx="307.2" cy="109.0" r="0.85"/><circle cx="307.2" cy="105.8" r="0.85"/><circle cx="307.2" cy="102.6" r="0.85"/><circle cx="307.2" cy="99.4" r="0.85"/><circle cx="307.2" cy="48.2" r="0.85"/><circle cx="307.2" cy="45.0" r="0.85"/><circle cx="307.2" cy="41.8" r="0.85"/><circle cx="307.2" cy="38.6" r="0.85"/><circle cx="307.2" cy="35.4" r="0.85"/><circle cx="307.2" cy="32.2" r="0.85"/><circle cx="307.2" cy="29.0" r="0.85"/><circle cx="307.2" cy="25.8" r="0.85"/><circle cx="307.2" cy="22.6" r="0.85"/><circle cx="307.2" cy="19.4" r="0.85"/><circle cx="307.2" cy="16.2" r="0.85"/><circle cx="307.2" cy="13.0" r="0.85"/><circle cx="307.2" cy="9.8" r="0.85"/><circle cx="310.4" cy="112.2" r="0.85"/><circle cx="310.4" cy="109.0" r="0.85"/><circle cx="310.4" cy="105.8" r="0.85"/><circle cx="310.4" cy="102.6" r="0.85"/><circle cx="310.4" cy="99.4" r="0.85"/><circle cx="310.4" cy="96.2" r="0.85"/><circle cx="310.4" cy="86.6" r="0.85"/><circle cx="310.4" cy="51.4" r="0.85"/><circle cx="310.4" cy="38.6" r="0.85"/><circle cx="310.4" cy="35.4" r="0.85"/><circle cx="310.4" cy="32.2" r="0.85"/><circle cx="310.4" cy="29.0" r="0.85"/><circle cx="310.4" cy="25.8" r="0.85"/><circle cx="310.4" cy="22.6" r="0.85"/><circle cx="310.4" cy="19.4" r="0.85"/><circle cx="310.4" cy="16.2" r="0.85"/><circle cx="310.4" cy="13.0" r="0.85"/><circle cx="313.6" cy="112.2" r="0.85"/><circle cx="313.6" cy="109.0" r="0.85"/><circle cx="313.6" cy="105.8" r="0.85"/><circle cx="313.6" cy="102.6" r="0.85"/><circle cx="313.6" cy="99.4" r="0.85"/><circle cx="313.6" cy="96.2" r="0.85"/><circle cx="313.6" cy="86.6" r="0.85"/><circle cx="313.6" cy="48.2" r="0.85"/><circle cx="313.6" cy="38.6" r="0.85"/><circle cx="313.6" cy="35.4" r="0.85"/><circle cx="313.6" cy="32.2" r="0.85"/><circle cx="313.6" cy="29.0" r="0.85"/><circle cx="313.6" cy="25.8" r="0.85"/><circle cx="313.6" cy="22.6" r="0.85"/><circle cx="313.6" cy="19.4" r="0.85"/><circle cx="313.6" cy="16.2" r="0.85"/><circle cx="313.6" cy="13.0" r="0.85"/><circle cx="316.8" cy="115.4" r="0.85"/><circle cx="316.8" cy="112.2" r="0.85"/><circle cx="316.8" cy="109.0" r="0.85"/><circle cx="316.8" cy="105.8" r="0.85"/><circle cx="316.8" cy="102.6" r="0.85"/><circle cx="316.8" cy="99.4" r="0.85"/><circle cx="316.8" cy="86.6" r="0.85"/><circle cx="316.8" cy="48.2" r="0.85"/><circle cx="316.8" cy="35.4" r="0.85"/><circle cx="316.8" cy="32.2" r="0.85"/><circle cx="316.8" cy="29.0" r="0.85"/><circle cx="316.8" cy="25.8" r="0.85"/><circle cx="316.8" cy="22.6" r="0.85"/><circle cx="316.8" cy="19.4" r="0.85"/><circle cx="316.8" cy="16.2" r="0.85"/><circle cx="316.8" cy="13.0" r="0.85"/><circle cx="320.0" cy="118.6" r="0.85"/><circle cx="320.0" cy="115.4" r="0.85"/><circle cx="320.0" cy="112.2" r="0.85"/><circle cx="320.0" cy="109.0" r="0.85"/><circle cx="320.0" cy="105.8" r="0.85"/><circle cx="320.0" cy="102.6" r="0.85"/><circle cx="320.0" cy="89.8" r="0.85"/><circle cx="320.0" cy="86.6" r="0.85"/><circle cx="320.0" cy="45.0" r="0.85"/><circle cx="320.0" cy="32.2" r="0.85"/><circle cx="320.0" cy="29.0" r="0.85"/><circle cx="320.0" cy="22.6" r="0.85"/><circle cx="320.0" cy="19.4" r="0.85"/><circle cx="320.0" cy="16.2" r="0.85"/><circle cx="320.0" cy="13.0" r="0.85"/><circle cx="323.2" cy="118.6" r="0.85"/><circle cx="323.2" cy="115.4" r="0.85"/><circle cx="323.2" cy="112.2" r="0.85"/><circle cx="323.2" cy="109.0" r="0.85"/><circle cx="323.2" cy="105.8" r="0.85"/><circle cx="323.2" cy="102.6" r="0.85"/><circle cx="323.2" cy="99.4" r="0.85"/><circle cx="323.2" cy="96.2" r="0.85"/><circle cx="323.2" cy="89.8" r="0.85"/><circle cx="323.2" cy="86.6" r="0.85"/><circle cx="323.2" cy="38.6" r="0.85"/><circle cx="323.2" cy="32.2" r="0.85"/><circle cx="323.2" cy="22.6" r="0.85"/><circle cx="323.2" cy="19.4" r="0.85"/><circle cx="323.2" cy="16.2" r="0.85"/><circle cx="323.2" cy="13.0" r="0.85"/><circle cx="326.4" cy="125.0" r="0.85"/><circle cx="326.4" cy="121.8" r="0.85"/><circle cx="326.4" cy="118.6" r="0.85"/><circle cx="326.4" cy="115.4" r="0.85"/><circle cx="326.4" cy="112.2" r="0.85"/><circle cx="326.4" cy="109.0" r="0.85"/><circle cx="326.4" cy="105.8" r="0.85"/><circle cx="326.4" cy="102.6" r="0.85"/><circle cx="326.4" cy="89.8" r="0.85"/><circle cx="326.4" cy="22.6" r="0.85"/><circle cx="326.4" cy="19.4" r="0.85"/><circle cx="326.4" cy="16.2" r="0.85"/><circle cx="326.4" cy="13.0" r="0.85"/><circle cx="329.6" cy="118.6" r="0.85"/><circle cx="329.6" cy="115.4" r="0.85"/><circle cx="329.6" cy="112.2" r="0.85"/><circle cx="329.6" cy="109.0" r="0.85"/><circle cx="329.6" cy="105.8" r="0.85"/><circle cx="329.6" cy="93.0" r="0.85"/><circle cx="329.6" cy="22.6" r="0.85"/><circle cx="329.6" cy="19.4" r="0.85"/><circle cx="329.6" cy="16.2" r="0.85"/><circle cx="329.6" cy="13.0" r="0.85"/><circle cx="332.8" cy="112.2" r="0.85"/><circle cx="332.8" cy="109.0" r="0.85"/><circle cx="332.8" cy="22.6" r="0.85"/><circle cx="332.8" cy="19.4" r="0.85"/><circle cx="332.8" cy="16.2" r="0.85"/><circle cx="332.8" cy="13.0" r="0.85"/><circle cx="336.0" cy="29.0" r="0.85"/><circle cx="336.0" cy="19.4" r="0.85"/><circle cx="336.0" cy="16.2" r="0.85"/><circle cx="336.0" cy="13.0" r="0.85"/><circle cx="339.2" cy="29.0" r="0.85"/><circle cx="339.2" cy="25.8" r="0.85"/><circle cx="339.2" cy="19.4" r="0.85"/><circle cx="339.2" cy="16.2" r="0.85"/><circle cx="339.2" cy="13.0" r="0.85"/><circle cx="342.4" cy="25.8" r="0.85"/><circle cx="342.4" cy="22.6" r="0.85"/><circle cx="342.4" cy="19.4" r="0.85"/><circle cx="342.4" cy="16.2" r="0.85"/><circle cx="345.6" cy="22.6" r="0.85"/><circle cx="345.6" cy="19.4" r="0.85"/><circle cx="345.6" cy="16.2" r="0.85"/><circle cx="348.8" cy="128.2" r="0.85"/><circle cx="348.8" cy="19.4" r="0.85"/><circle cx="348.8" cy="16.2" r="0.85"/><circle cx="352.0" cy="125.0" r="0.85"/><circle cx="352.0" cy="19.4" r="0.85"/><circle cx="352.0" cy="16.2" r="0.85"/><circle cx="355.2" cy="121.8" r="0.85"/><circle cx="355.2" cy="19.4" r="0.85"/><circle cx="355.2" cy="16.2" r="0.85"/><circle cx="358.4" cy="19.4" r="0.85"/><circle cx="358.4" cy="16.2" r="0.85"/></g>
+    <g class="world-arcs"><path class="arc" d="M 257.6 70.0 Q 157.6 11.6 57.6 45.2"/><path class="arc" d="M 257.6 70.0 Q 218.8 26.8 179.9 31.5"/><path class="arc" d="M 257.6 70.0 Q 181.8 18.9 106.0 42.3"/><path class="arc" d="M 257.6 70.0 Q 270.7 61.1 283.8 81.7"/><path class="arc" d="M 257.6 70.0 Q 288.6 37.5 319.7 47.3"/></g>
+    <g class="world-hubs"><circle class="hub-home" cx="257.6" cy="70.0" r="2.6"/><circle class="hub-node" cx="57.6" cy="45.2" r="1.6"/><circle class="hub-node" cx="179.9" cy="31.5" r="1.6"/><circle class="hub-node" cx="106.0" cy="42.3" r="1.6"/><circle class="hub-node" cx="283.8" cy="81.7" r="1.6"/><circle class="hub-node" cx="319.7" cy="47.3" r="1.6"/></g>
+  </svg>
+</div>
+
+<div id="spine"></div>
+
+<nav id="navbar">
+  <div class="wrap nav-inner">
+    <a href="#hero" class="nav-logo">PORTFOLIO<span>.</span></a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#about" data-nav="about">About</a></li>
+      <li><a href="#experience" data-nav="experience">Experience</a></li>
+      <li><a href="#projects" data-nav="projects">Projects</a></li>
+      <li><a href="#skills" data-nav="skills">Skills</a></li>
+      <li><a href="#education" data-nav="education">Education</a></li>
+      <li><a href="#contact" data-nav="contact">Contact</a></li>
+      <span class="nav-indicator" id="nav-indicator"></span>
+    </ul>
+    <button class="nav-search-btn desktop-only" id="cmdk-trigger" type="button" aria-label="Quick jump">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+      <span>Jump to</span><span class="kbd">⌘K</span>
+    </button>
+    <a href="Uzair_Mohammed_Resume.pdf" download class="nav-cta nav-cta-resume">Resume &darr;</a>
+    <a href="#contact" class="nav-cta">Let's Connect</a>
+  </div>
+</nav>
+
+<div id="cmdk-overlay" role="dialog" aria-modal="true" aria-label="Quick navigation">
+  <div class="cmdk-box">
+    <div class="cmdk-input-row">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+      <input id="cmdk-input" type="text" placeholder="Jump to a section, project, or skill…" autocomplete="off">
+      <span class="cmdk-esc">ESC</span>
+    </div>
+    <div id="cmdk-results"></div>
+    <div class="cmdk-hint-row"><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> navigate</span><span><kbd>&crarr;</kbd> select</span><span><kbd>ESC</kbd> close</span></div>
+  </div>
+</div>
+
+<div id="case-study-overlay" role="dialog" aria-modal="true" aria-label="STOCK 5 case study">
+  <div class="cs-box">
+    <button class="cs-close" id="cs-close" type="button" aria-label="Close case study">&times;</button>
+    <div class="cs-scroll">
+      <div class="cs-head">
+        <div class="cs-eyebrow">Case Study &nbsp;&middot;&nbsp; 01 / Data + ML</div>
+        <h2>STOCK 5: AI Stock Recommendation System</h2>
+        <p class="cs-sub">A hybrid LSTM + ARIMA engine that turns raw market data into ranked, risk-scored stock recommendations.</p>
+        <div class="proj-tags" style="margin-top:18px;">
+          <span class="tag">Python</span><span class="tag">LSTM</span><span class="tag">ARIMA</span>
+          <span class="tag">Pandas</span><span class="tag">NumPy</span><span class="tag">React</span>
+          <span class="tag">Node.js</span><span class="tag">Yahoo Finance</span>
+        </div>
+      </div>
+
+      <div class="cs-section">
+        <h4>The Problem</h4>
+        <p>Most retail-facing stock tools show raw price history and leave the interpretation to the user. I wanted to build something that goes a step further: take live market data and turn it into a ranked, explainable shortlist, complete with a confidence and risk score, so the output reads like an analyst's recommendation rather than a raw chart.</p>
+      </div>
+
+      <div class="cs-section">
+        <h4>Why a Hybrid Model</h4>
+        <p>Pure LSTM models are good at learning nonlinear patterns in sequential price data but can drift on longer horizons. ARIMA is the opposite: strong at capturing linear trend and seasonality but blind to the nonlinear structure LSTM picks up. Rather than pick one, STOCK 5 runs both and blends their outputs, using ARIMA to correct and stabilize the LSTM's forecast instead of treating either model as the sole source of truth.</p>
+      </div>
+
+      <div class="cs-section">
+        <h4>Architecture</h4>
+        <div class="cs-flow">
+          <div class="cs-flow-step">Yahoo Finance API</div>
+          <div class="cs-flow-arrow">&rarr;</div>
+          <div class="cs-flow-step">Pandas / NumPy Preprocessing</div>
+          <div class="cs-flow-arrow">&rarr;</div>
+          <div class="cs-flow-step">LSTM + ARIMA Ensemble</div>
+          <div class="cs-flow-arrow">&rarr;</div>
+          <div class="cs-flow-step">Risk &amp; Confidence Scoring</div>
+          <div class="cs-flow-arrow">&rarr;</div>
+          <div class="cs-flow-step accent">React Dashboard</div>
+        </div>
+        <p>Market data is pulled through the Yahoo Finance API, cleaned and windowed with Pandas and NumPy, then passed through the ensemble model. The Node.js backend exposes the scored output to a React frontend, which renders the top 5 recommendations, daily gainers and losers, and per-stock risk and confidence scores.</p>
+      </div>
+
+      <div class="cs-section">
+        <h4>Challenges &amp; Trade-offs</h4>
+        <ul class="cs-list">
+          <li><strong>Blending two very different models.</strong> LSTM and ARIMA output forecasts on different scales and with different error characteristics, so combining them cleanly took real tuning rather than a naive average.</li>
+          <li><strong>Turning a forecast into a decision.</strong> A predicted price isn't a recommendation. Converting raw predictions into a risk score and a confidence score meant defining what "confidence" should actually mean for a retail user, not just a model metric.</li>
+          <li><strong>Keeping it real-time.</strong> Market data changes constantly, so the pipeline had to refresh, re-score, and re-rank without becoming slow or inconsistent on the frontend.</li>
+        </ul>
+      </div>
+
+      <div class="cs-section">
+        <h4>What It Does Today</h4>
+        <ul class="cs-list">
+          <li>Ranks and surfaces the top 5 stock recommendations from live market data.</li>
+          <li>Scores each recommendation for risk and confidence, alongside a predicted return.</li>
+          <li>Surfaces daily gainers and losers for quick portfolio context.</li>
+          <li>Presents everything through a React dashboard backed by a Node.js API.</li>
+        </ul>
+      </div>
+
+      <a href="https://github.com/Pizzarrific" target="_blank" rel="noopener" class="proj-link">View on GitHub ↗</a>
+    </div>
+  </div>
+</div>
+
+<section id="hero">
+  <canvas id="hero-canvas"></canvas>
+  <div class="hero-fade"></div>
+  <div class="cursor-glow" id="cursor-glow"></div>
+  <div class="wrap hero-content">
+    <div class="status-pill"><span class="status-dot"></span>AI Engineer &nbsp;&middot;&nbsp; 2026 Graduate &nbsp;&middot;&nbsp; Open to Opportunities</div>
+    <div class="local-time"><span class="lt-dot"></span><span id="ist-clock">--:--</span> local time &middot; Bangalore, India</div>
+    <h1 class="hero-name">Uzair<br>Mohammed</h1>
+    <div class="hero-role">
+      <span>AI Engineer</span><span class="sep">&bull;</span>
+      <span>Machine Learning</span><span class="sep">&bull;</span>
+      <span>Computer Vision</span><span class="sep">&bull;</span>
+      <span>Full Stack Development</span>
+    </div>
+    <p class="hero-statement">Building intelligent, data driven systems that turn complex problems into practical engineering solutions.</p>
+    <div class="hero-actions">
+      <a href="#experience" class="btn btn-primary magnetic">View My Work &rarr;</a>
+      <a href="Uzair_Mohammed_Resume.pdf" download class="btn btn-ghost magnetic">Download Resume &darr;</a>
+      <a href="#contact" class="btn btn-ghost magnetic">Let's Connect</a>
+    </div>
+    <div class="hero-tags">
+      <span class="tag">AI.ENGINEER</span>
+      <span class="tag">ML.PIPELINE</span>
+      <span class="tag">COMPUTER.VISION</span>
+      <span class="tag">NLP</span>
+      <span class="tag">FULL.STACK</span>
+    </div>
+  </div>
+  <div class="scroll-cue"><span class="line"></span></div>
+</section>
+
+<section id="about">
+  <div class="wrap">
+    <div class="section-head-row reveal">
+      <div class="section-head" style="margin-bottom:0;">
+        <span class="eyebrow">01 / About</span>
+        <h2 class="section-title">A systems thinker who ships across the full AI stack.</h2>
+      </div>
+      <div class="section-illustration">
+        <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="70" y="52" width="60" height="26" rx="6" stroke="var(--accent)" stroke-width="1.6" opacity="0.9"/>
+          <rect x="55" y="94" width="90" height="26" rx="6" stroke="var(--accent)" stroke-width="1.6" opacity="0.75"/>
+          <rect x="38" y="136" width="124" height="26" rx="6" stroke="var(--accent)" stroke-width="1.6" opacity="0.6"/>
+          <path d="M100 78v16M100 120v16" stroke="var(--accent)" stroke-width="1.4" stroke-dasharray="2 3" opacity="0.6"/>
+          <circle cx="100" cy="65" r="3" fill="var(--accent)"/>
+          <circle cx="100" cy="107" r="2.4" fill="var(--accent)" opacity="0.8"/>
+          <circle cx="100" cy="149" r="2.4" fill="var(--accent)" opacity="0.6"/>
+          <path d="M130 60l24-18" stroke="var(--accent)" stroke-width="1.4" opacity="0.5"/>
+          <circle cx="158" cy="38" r="10" stroke="var(--accent)" stroke-width="1.6" opacity="0.8"/>
+          <path d="M158 32v4M158 40v4M152 38h4M160 38h4" stroke="var(--accent)" stroke-width="1.3" stroke-linecap="round" opacity="0.7"/>
+          <path d="M46 100l-20-14" stroke="var(--accent)" stroke-width="1.4" opacity="0.4"/>
+          <circle cx="20" cy="82" r="3" fill="var(--accent)" opacity="0.5"/>
+        </svg>
+      </div>
+    </div>
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <p>I'm a Computer Science engineer graduating in 2026, specializing in <strong>Artificial Intelligence &amp; Machine Learning</strong>. My work sits at the intersection of computer vision, NLP, and the backend systems that turn model output into something a real product can use.</p>
+        <p>Most recently, I spent a semester inside <strong>Quest Global's Energy Vertical</strong>, building an AI/NLP pipeline for ExxonMobil's engineering documents: pairing YOLO and OCR for extraction with GPT-4o for structuring unstructured text, then wiring the whole thing into a production FastAPI service.</p>
+        <p>Outside of internships, I build complete projects on my own: a hybrid LSTM + ARIMA stock recommender, a real time auction platform, an enterprise task management system, because I'd rather understand a system by building it than by reading about it. I care about data driven decisions, clean architecture, and shipping things that hold up under real use.</p>
+      </div>
+      <div class="about-stats reveal">
+        <div class="about-stat"><span class="num">8.8</span><span class="label">CGPA in B.E. Computer Science (AI &amp; ML)</span></div>
+        <div class="about-stat"><span class="num">40%</span><span class="label">Improvement in extraction accuracy at Quest Global</span></div>
+        <div class="about-stat"><span class="num">90%</span><span class="label">Increase in workflow efficiency delivered</span></div>
+        <div class="about-stat"><span class="num">4</span><span class="label">RC aircraft designed, built &amp; flown from scratch</span></div>
+        <div class="languages-block">
+          <div class="languages-label">Languages</div>
+          <div class="language-list">
+            <div class="language-item"><span class="lang-name">English</span><span class="lang-level">Fluent</span></div>
+            <div class="language-item"><span class="lang-name">Hindi</span><span class="lang-level">Fluent</span></div>
+            <div class="language-item"><span class="lang-name">Kannada</span><span class="lang-level">Fluent</span></div>
+            <div class="language-item"><span class="lang-name">Urdu</span><span class="lang-level">Fluent</span></div>
+            <div class="language-item"><span class="lang-name">Japanese</span><span class="lang-level accent">Conversational &middot; JLPT N5</span></div>
+          </div>
+          <div class="jlpt-track">
+            <svg viewBox="0 0 320 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <line x1="20" y1="26" x2="300" y2="26" stroke="var(--accent)" stroke-width="1.3" opacity="0.2" stroke-dasharray="3 4"/>
+              <line x1="20" y1="26" x2="90" y2="26" stroke="var(--accent)" stroke-width="1.6" opacity="0.9"/>
+              <circle cx="20" cy="26" r="10" fill="var(--accent)"/>
+              <path d="M15.5 26.5l3.5 3.5 6.5-7.5" stroke="var(--bg)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+              <circle cx="90" cy="26" r="7.5" stroke="var(--accent)" stroke-width="1.5" opacity="0.9" fill="none"/>
+              <circle cx="90" cy="26" r="2.6" fill="var(--accent)" opacity="0.9"/>
+              <circle cx="160" cy="26" r="7.5" stroke="var(--accent)" stroke-width="1.4" opacity="0.4" fill="none"/>
+              <circle cx="230" cy="26" r="7.5" stroke="var(--accent)" stroke-width="1.4" opacity="0.3" fill="none"/>
+              <circle cx="300" cy="26" r="7.5" stroke="var(--accent)" stroke-width="1.4" opacity="0.25" fill="none"/>
+              <text x="20" y="54" font-family="JetBrains Mono, monospace" font-size="10" fill="var(--accent)" text-anchor="middle">N5</text>
+              <text x="90" y="54" font-family="JetBrains Mono, monospace" font-size="10" fill="var(--accent)" text-anchor="middle">N4</text>
+              <text x="160" y="54" font-family="JetBrains Mono, monospace" font-size="10" fill="var(--text-faint)" text-anchor="middle">N3</text>
+              <text x="230" y="54" font-family="JetBrains Mono, monospace" font-size="10" fill="var(--text-faint)" text-anchor="middle">N2</text>
+              <text x="300" y="54" font-family="JetBrains Mono, monospace" font-size="10" fill="var(--text-faint)" text-anchor="middle">N1</text>
+              <text x="20" y="70" font-family="JetBrains Mono, monospace" font-size="8" fill="var(--accent)" text-anchor="middle" opacity="0.85">DONE</text>
+              <text x="90" y="70" font-family="JetBrains Mono, monospace" font-size="8" fill="var(--accent)" text-anchor="middle" opacity="0.85">PREPARING</text>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="profile">
+  <div class="wrap">
+    <div class="section-head-row reveal">
+      <div class="section-head" style="margin-bottom:0;">
+        <span class="eyebrow">02 / Engineering Profile</span>
+        <h2 class="section-title">What I actually work with.</h2>
+        <p class="section-sub">Hover or tap any item to see how it's actually been used, not just a logo wall.</p>
+      </div>
+      <div class="section-illustration">
+        <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="86" y="86" width="28" height="28" rx="5" stroke="var(--accent)" stroke-width="1.7" opacity="0.95"/>
+          <rect x="34" y="40" width="24" height="24" rx="5" stroke="var(--accent)" stroke-width="1.5" opacity="0.75"/>
+          <rect x="142" y="40" width="24" height="24" rx="5" stroke="var(--accent)" stroke-width="1.5" opacity="0.75"/>
+          <rect x="34" y="136" width="24" height="24" rx="5" stroke="var(--accent)" stroke-width="1.5" opacity="0.75"/>
+          <rect x="142" y="136" width="24" height="24" rx="5" stroke="var(--accent)" stroke-width="1.5" opacity="0.75"/>
+          <path d="M86 92L58 60M114 92l28-32M86 108l-28 32M114 108l28 32" stroke="var(--accent)" stroke-width="1.2" opacity="0.5"/>
+          <circle cx="100" cy="100" r="3" fill="var(--accent)"/>
+          <circle cx="46" cy="52" r="2" fill="var(--accent)" opacity="0.7"/>
+          <circle cx="154" cy="52" r="2" fill="var(--accent)" opacity="0.7"/>
+          <circle cx="46" cy="148" r="2" fill="var(--accent)" opacity="0.7"/>
+          <circle cx="154" cy="148" r="2" fill="var(--accent)" opacity="0.7"/>
+        </svg>
+      </div>
+    </div>
+    <div class="profile-grid reveal" id="profile-grid"></div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="wrap">
+    <div class="section-head-row reveal">
+      <div class="section-head" style="margin-bottom:0;">
+        <span class="eyebrow">03 / Experience</span>
+        <h2 class="section-title">Where I got real world experience.</h2>
+        <p class="section-sub">Click the card to see the pipeline and impact behind it.</p>
+      </div>
+      <div class="section-illustration">
+        <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="46" y="30" width="80" height="104" rx="6" stroke="var(--accent)" stroke-width="1.6" opacity="0.9"/>
+          <path d="M62 54h48M62 70h48M62 86h32" stroke="var(--accent)" stroke-width="1.6" stroke-linecap="round" opacity="0.7"/>
+          <rect x="46" y="30" width="80" height="104" rx="6" stroke="var(--accent)" stroke-width="1.6" opacity="0.3" class="scan-rect"/>
+          <line x1="40" y1="112" x2="132" y2="112" stroke="var(--accent)" stroke-width="1.4" class="scan-line" opacity="0.8"/>
+          <circle cx="150" cy="118" r="18" stroke="var(--accent)" stroke-width="1.6" opacity="0.9"/>
+          <path d="M150 106v6M150 124v6M138 118h6M156 118h6" stroke="var(--accent)" stroke-width="1.6" stroke-linecap="round"/>
+          <path d="M126 100l16 10" stroke="var(--accent)" stroke-width="1.4" stroke-dasharray="3 3" opacity="0.6"/>
+          <circle cx="60" cy="150" r="3" fill="var(--accent)" opacity="0.5"/>
+          <circle cx="140" cy="160" r="2.4" fill="var(--accent)" opacity="0.4"/>
+        </svg>
+      </div>
+    </div>
+    <div class="exp-card reveal" id="exp-card">
+      <div class="exp-head">
+        <div class="exp-head-left">
+          <h3>AI &amp; ML Intern</h3>
+          <div class="exp-org">Quest Global, Bangalore</div>
+          <div class="exp-meta">Energy Vertical · ExxonMobil AI Team &nbsp;·&nbsp; Oct 2025 to Mar 2026</div>
+        </div>
+        <div class="exp-toggle">+</div>
+      </div>
+      <div class="exp-stats-row">
+        <div class="exp-stat"><div class="n" data-count="40">0%</div><div class="l">Improvement in data extraction accuracy</div></div>
+        <div class="exp-stat"><div class="n" data-count="90">0%</div><div class="l">Increase in workflow efficiency</div></div>
+      </div>
+      <div class="exp-body">
+        <div class="exp-body-inner">
+          <ul class="exp-bullets">
+            <li>Developed an AI/NLP based data extraction pipeline for client forms and P&amp;ID engineering diagrams.</li>
+            <li>Used YOLO and OCR for computer vision based extraction.</li>
+            <li>Applied GPT-4o and Python to process, tag, and structure unstructured text.</li>
+            <li>Automated preprocessing, validation, and storage using Python and SQLite.</li>
+            <li>Worked with FastAPI and backend integration.</li>
+            <li>Integrated AI outputs into frontend interfaces using TypeScript.</li>
+            <li>Used Azure DevOps for version control and production deployment.</li>
+          </ul>
+          <div class="pipeline-row">
+            <span class="pipeline-step">Raw Documents</span><span class="pipeline-arrow">→</span>
+            <span class="pipeline-step">Computer Vision</span><span class="pipeline-arrow">→</span>
+            <span class="pipeline-step">OCR</span><span class="pipeline-arrow">→</span>
+            <span class="pipeline-step">NLP / LLM</span><span class="pipeline-arrow">→</span>
+            <span class="pipeline-step">Validation</span><span class="pipeline-arrow">→</span>
+            <span class="pipeline-step" style="border-color:var(--accent); color:var(--accent);">Structured Data</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="wrap">
+    <div class="section-head-row reveal">
+      <div class="section-head" style="margin-bottom:0;">
+        <span class="eyebrow">04 / Projects</span>
+        <h2 class="section-title">Things I've built end to end.</h2>
+        <p class="section-sub">Independent builds, from model to interface.</p>
+      </div>
+      <div class="section-illustration">
+        <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M100 40l60 30-60 30-60-30z" stroke="var(--accent)" stroke-width="1.6" stroke-linejoin="round" opacity="0.9"/>
+          <path d="M40 100l60 30 60-30" stroke="var(--accent)" stroke-width="1.6" stroke-linejoin="round" opacity="0.65"/>
+          <path d="M40 130l60 30 60-30" stroke="var(--accent)" stroke-width="1.6" stroke-linejoin="round" opacity="0.4"/>
+        </svg>
+      </div>
+    </div>
+    <div class="project-list">
+
+      <div class="project-card reveal">
+        <div>
+          <div class="proj-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 17 9 11 13 15 21 6"></polyline><polyline points="14 6 21 6 21 13"></polyline></svg></div>
+          <div class="proj-index">01 / Data + ML</div>
+          <h3 class="proj-title">STOCK 5: AI Stock Recommendation System</h3>
+          <p class="proj-desc">An AI powered stock recommendation platform using a hybrid LSTM + ARIMA model to analyze market data and generate ranked stock recommendations.</p>
+          <div class="proj-tags">
+            <span class="tag">Python</span><span class="tag">LSTM</span><span class="tag">ARIMA</span>
+            <span class="tag">Pandas</span><span class="tag">NumPy</span><span class="tag">React</span>
+            <span class="tag">Node.js</span><span class="tag">Yahoo Finance</span>
+          </div>
+          <ul class="proj-features">
+            <li>Top 5 stock recommendations</li>
+            <li>Real time market data</li>
+            <li>Risk scoring</li>
+            <li>Confidence scoring</li>
+            <li>Predicted returns</li>
+            <li>Portfolio analysis</li>
+            <li>Daily gainers &amp; losers</li>
+          </ul>
+          <div style="display:flex; flex-wrap:wrap; gap:10px 20px; align-items:center;">
+            <a href="https://github.com/Pizzarrific" target="_blank" rel="noopener" class="proj-link">View on GitHub ↗</a>
+            <button type="button" id="cs-trigger" class="proj-link" style="background:none; border:none; border-bottom:1px solid var(--accent-soft); cursor:pointer; font:inherit; padding:0 0 2px;">View Case Study ↗</button>
+          </div>
+        </div>
+        <div>
+          <div class="proj-illustration">
+            <svg viewBox="0 0 260 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <line x1="10" y1="60" x2="250" y2="60" stroke="var(--accent)" stroke-width="1" stroke-dasharray="2 4" opacity="0.3"/>
+              <polyline points="10,52 50,40 90,46 130,24 170,30 210,12 250,18" stroke="var(--accent)" stroke-width="1.6" fill="none" opacity="0.85"/>
+              <circle cx="10" cy="52" r="2.4" fill="var(--accent)" opacity="0.55"/>
+              <circle cx="90" cy="46" r="2.4" fill="var(--accent)" opacity="0.55"/>
+              <circle cx="170" cy="30" r="2.4" fill="var(--accent)" opacity="0.7"/>
+              <circle cx="250" cy="18" r="3.2" fill="var(--accent)"/>
+            </svg>
+          </div>
+          <div class="proj-flow">
+            <div class="fstep">Market Data</div>
+            <div class="fstep">Data Processing</div>
+            <div class="fstep">LSTM + ARIMA</div>
+            <div class="fstep">Prediction</div>
+            <div class="fstep">Risk Analysis</div>
+            <div class="fstep" style="color:var(--accent);">Recommendation</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card reveal">
+        <div>
+          <div class="proj-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4l6 6"></path><path d="M4 14l6 6"></path><path d="M9.5 8.5l-6 6 2 2 6-6"></path><path d="M13 5l6 6-2 2-6-6z"></path><line x1="16" y1="20" x2="22" y2="20"></line></svg></div>
+          <div class="proj-index">02 / Full Stack</div>
+          <h3 class="proj-title">Real Time Online Auction Platform</h3>
+          <p class="proj-desc">A web application enabling users to list items and place bids in real time, with secure backend handling of authentication, validation, and winner selection.</p>
+          <div class="proj-tags">
+            <span class="tag">React</span><span class="tag">Python</span><span class="tag">Node.js</span>
+          </div>
+          <ul class="proj-features">
+            <li>Real time bidding</li>
+            <li>User authentication</li>
+            <li>Item listings</li>
+            <li>Bid validation</li>
+            <li>Winner selection</li>
+            <li>Responsive interface</li>
+          </ul>
+          <a href="https://github.com/Pizzarrific" target="_blank" rel="noopener" class="proj-link">View on GitHub ↗</a>
+        </div>
+        <div>
+          <div class="proj-illustration">
+            <svg viewBox="0 0 260 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="40" cy="35" r="14" stroke="var(--accent)" stroke-width="1.4" opacity="0.5"/>
+              <circle cx="40" cy="35" r="24" stroke="var(--accent)" stroke-width="1.2" opacity="0.3" stroke-dasharray="3 4"/>
+              <circle cx="40" cy="35" r="3" fill="var(--accent)"/>
+              <path d="M64 35h34M126 35h34M188 35h34" stroke="var(--accent)" stroke-width="1.3" stroke-dasharray="3 3" opacity="0.5"/>
+              <circle cx="120" cy="35" r="4" stroke="var(--accent)" stroke-width="1.4" opacity="0.7"/>
+              <circle cx="182" cy="35" r="4" stroke="var(--accent)" stroke-width="1.4" opacity="0.85"/>
+              <circle cx="244" cy="35" r="5" fill="var(--accent)"/>
+            </svg>
+          </div>
+          <div class="proj-flow">
+            <div class="fstep">User Lists Item</div>
+            <div class="fstep">Live Bid Stream</div>
+            <div class="fstep">Bid Validation</div>
+            <div class="fstep" style="color:var(--accent);">Winner Selection</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card reveal">
+        <div>
+          <div class="proj-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="17" rx="2"></rect><path d="M7 9l2 2 4-4"></path><line x1="7" y1="16" x2="17" y2="16"></line></svg></div>
+          <div class="proj-index">03 / Systems</div>
+          <h3 class="proj-title">Enterprise Task Management Platform</h3>
+          <p class="proj-desc">An operations tool for supermarket teams to manage tasks, shifts, and daily workflows in one structured system.</p>
+          <div class="proj-tags">
+            <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">C#</span><span class="tag">SQLite</span>
+          </div>
+          <ul class="proj-features">
+            <li>Employee task management</li>
+            <li>Clock in and clock out</li>
+            <li>Inventory management</li>
+            <li>Restocking</li>
+            <li>Cleaning workflows</li>
+            <li>Delivery tracking</li>
+            <li>Customer service management</li>
+          </ul>
+          <a href="https://github.com/Pizzarrific" target="_blank" rel="noopener" class="proj-link">View on GitHub ↗</a>
+        </div>
+        <div>
+          <div class="proj-illustration">
+            <svg viewBox="0 0 260 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="14" y="16" width="16" height="16" rx="3" stroke="var(--accent)" stroke-width="1.4" opacity="0.85"/>
+              <path d="M18 24l3 3 6-6" stroke="var(--accent)" stroke-width="1.4" opacity="0.85" fill="none"/>
+              <rect x="60" y="16" width="16" height="16" rx="3" stroke="var(--accent)" stroke-width="1.4" opacity="0.6"/>
+              <path d="M64 24l3 3 6-6" stroke="var(--accent)" stroke-width="1.4" opacity="0.6" fill="none"/>
+              <rect x="106" y="16" width="16" height="16" rx="3" stroke="var(--accent)" stroke-width="1.4" opacity="0.4"/>
+              <line x1="34" y1="24" x2="58" y2="24" stroke="var(--accent)" stroke-width="1" stroke-dasharray="2 3" opacity="0.4"/>
+              <line x1="80" y1="24" x2="104" y2="24" stroke="var(--accent)" stroke-width="1" stroke-dasharray="2 3" opacity="0.4"/>
+              <path d="M14 52h212" stroke="var(--accent)" stroke-width="1" stroke-dasharray="2 4" opacity="0.25"/>
+              <circle cx="238" cy="52" r="3.2" fill="var(--accent)" opacity="0.85"/>
+            </svg>
+          </div>
+          <div class="proj-flow">
+            <div class="fstep">Task Created</div>
+            <div class="fstep">Assigned to Staff</div>
+            <div class="fstep">Tracked to Completion</div>
+            <div class="fstep" style="color:var(--accent);">Operations Log</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="howibuild">
+  <div class="wrap">
+    <div class="section-head-row reveal">
+      <div class="section-head" style="margin-bottom:0;">
+        <span class="eyebrow">05 / How I Build</span>
+        <h2 class="section-title">My experience spans the full lifecycle.</h2>
+        <p class="section-sub">From raw data to a deployed system. Click a stage to see what it means in practice.</p>
+      </div>
+      <div class="section-illustration">
+        <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M100 40a60 60 0 1 1 -42.4 17.6" stroke="var(--accent)" stroke-width="1.7" stroke-linecap="round" stroke-dasharray="4 5" opacity="0.85"/>
+          <path d="M50 50l7.6 7.6L65 46" stroke="var(--accent)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          <rect x="90" y="30" width="20" height="20" rx="5" stroke="var(--accent)" stroke-width="1.6" opacity="0.9"/>
+          <rect x="150" y="90" width="20" height="20" rx="5" stroke="var(--accent)" stroke-width="1.6" opacity="0.75"/>
+          <rect x="90" y="150" width="20" height="20" rx="5" stroke="var(--accent)" stroke-width="1.6" opacity="0.6"/>
+          <rect x="30" y="90" width="20" height="20" rx="5" stroke="var(--accent)" stroke-width="1.6" opacity="0.9"/>
+          <circle cx="100" cy="100" r="16" stroke="var(--accent)" stroke-width="1.4" opacity="0.5"/>
+          <circle cx="100" cy="100" r="3" fill="var(--accent)"/>
+        </svg>
+      </div>
+    </div>
+    <div class="reveal">
+      <div class="build-pipeline" id="build-pipeline"></div>
+      <div class="build-detail" id="build-detail"></div>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="wrap">
+    <div class="section-head-row reveal">
+      <div class="section-head" style="margin-bottom:0;">
+        <span class="eyebrow">06 / Technical Skills</span>
+        <h2 class="section-title">The full toolkit.</h2>
+      </div>
+      <div class="section-illustration">
+        <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="100" cy="100" r="10" stroke="var(--accent)" stroke-width="1.6"/>
+          <circle cx="50" cy="60" r="6" stroke="var(--accent)" stroke-width="1.5" opacity="0.85"/>
+          <circle cx="150" cy="60" r="6" stroke="var(--accent)" stroke-width="1.5" opacity="0.85"/>
+          <circle cx="46" cy="140" r="6" stroke="var(--accent)" stroke-width="1.5" opacity="0.85"/>
+          <circle cx="154" cy="140" r="6" stroke="var(--accent)" stroke-width="1.5" opacity="0.85"/>
+          <circle cx="100" cy="34" r="5" stroke="var(--accent)" stroke-width="1.5" opacity="0.7"/>
+          <circle cx="100" cy="166" r="5" stroke="var(--accent)" stroke-width="1.5" opacity="0.7"/>
+          <path d="M92 94L55 65M108 94l42-29M92 106l-41 30M108 106l43 29M100 90V39M100 110v51" stroke="var(--accent)" stroke-width="1.2" opacity="0.5"/>
+          <circle cx="100" cy="100" r="3" fill="var(--accent)"/>
+        </svg>
+      </div>
+    </div>
+    <div class="skills-groups reveal">
+      <div class="skill-group">
+        <h4><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg> Languages</h4>
+        <div class="skill-pills">
+          <span class="skill-pill">Python</span><span class="skill-pill">Java</span><span class="skill-pill">C</span>
+          <span class="skill-pill">C#</span><span class="skill-pill">HTML</span><span class="skill-pill">CSS</span>
+          <span class="skill-pill">TypeScript</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h4><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M12 2v4M12 18v4M4.9 4.9l2.8 2.8M16.3 16.3l2.8 2.8M2 12h4M18 12h4M4.9 19.1l2.8-2.8M16.3 7.7l2.8-2.8"></path></svg> AI / ML</h4>
+        <div class="skill-pills">
+          <span class="skill-pill">Machine Learning</span><span class="skill-pill">NLP</span>
+          <span class="skill-pill">Computer Vision</span><span class="skill-pill">YOLO</span>
+          <span class="skill-pill">OCR</span><span class="skill-pill">GPT-4o</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h4><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg> Frameworks</h4>
+        <div class="skill-pills">
+          <span class="skill-pill">React.js</span><span class="skill-pill">Node.js</span>
+          <span class="skill-pill">FastAPI</span><span class="skill-pill">Pandas</span><span class="skill-pill">NumPy</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h4><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="8" ry="3"></ellipse><path d="M4 5v14c0 1.7 3.6 3 8 3s8-1.3 8-3V5"></path><path d="M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"></path></svg> Databases</h4>
+        <div class="skill-pills">
+          <span class="skill-pill">SQLite</span><span class="skill-pill">MySQL</span><span class="skill-pill">MongoDB</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h4><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path></svg> Dev / Cloud</h4>
+        <div class="skill-pills">
+          <span class="skill-pill">Git</span><span class="skill-pill">Azure DevOps</span><span class="skill-pill">Docker</span>
+          <span class="skill-pill">AWS</span><span class="skill-pill">OCI</span><span class="skill-pill">VS Code</span>
+          <span class="skill-pill">Jupyter</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="education">
+  <div class="wrap">
+    <div class="section-head-row reveal">
+      <div class="section-head" style="margin-bottom:0;">
+        <span class="eyebrow">07 / Education</span>
+        <h2 class="section-title">Academic foundation.</h2>
+      </div>
+      <div class="section-illustration">
+        <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M30 78L100 46l70 32-70 32z" stroke="var(--accent)" stroke-width="1.6" stroke-linejoin="round" opacity="0.9"/>
+          <path d="M62 92v28c0 8 17 16 38 16s38-8 38-16V92" stroke="var(--accent)" stroke-width="1.6" opacity="0.8"/>
+          <path d="M170 78v34" stroke="var(--accent)" stroke-width="1.6" stroke-linecap="round" opacity="0.7"/>
+          <circle cx="170" cy="118" r="3" fill="var(--accent)" opacity="0.8"/>
+          <path d="M100 46v-8" stroke="var(--accent)" stroke-width="1.4" stroke-dasharray="2 3" opacity="0.4"/>
+        </svg>
+      </div>
+    </div>
+    <div class="edu-timeline reveal">
+      <div class="edu-item">
+        <div class="edu-year">2026</div>
+        <h3>Bachelor of Engineering</h3>
+        <div class="edu-org">Computer Science, Artificial Intelligence &amp; Machine Learning · CMR Institute of Technology, Bangalore</div>
+        <span class="edu-score">CGPA: 8.8</span>
+      </div>
+      <div class="edu-item">
+        <div class="edu-year">2022</div>
+        <h3>12th Grade · Science (CBSE)</h3>
+        <div class="edu-org">Sri Chaitanya Techno School, Bengaluru</div>
+        <span class="edu-score">83%</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="certs">
+  <div class="wrap">
+    <div class="section-head-row reveal">
+      <div class="section-head" style="margin-bottom:0;">
+        <span class="eyebrow">08 / Certifications</span>
+        <h2 class="section-title">Continuous learning, on record.</h2>
+      </div>
+      <div class="section-illustration">
+        <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="100" cy="86" r="38" stroke="var(--accent)" stroke-width="1.6" opacity="0.9"/>
+          <path d="M84 84l10 10 22-22" stroke="var(--accent)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M80 118l-10 32 22-10 8 18 12-40" stroke="var(--accent)" stroke-width="1.5" stroke-linejoin="round" opacity="0.75"/>
+          <path d="M120 118l10 32-22-10-8 18-12-40" stroke="var(--accent)" stroke-width="1.5" stroke-linejoin="round" opacity="0.75"/>
+        </svg>
+      </div>
+    </div>
+    <div class="cert-wall reveal" id="cert-wall"></div>
+  </div>
+</section>
+
+<section id="beyond">
+  <div class="wrap">
+    <div class="beyond-grid">
+      <div class="reveal">
+        <span class="eyebrow warm">09 / Beyond Code</span>
+        <h2 class="section-title">Engineering Beyond the Screen</h2>
+        <p class="beyond-quote">"I have built and successfully flown four fully functional RC aircraft made from balsa wood and powered by IC engines."</p>
+        <p class="section-sub">Aeromodelling taught me what a debugger can't: patience with physical systems, tolerance for repeated failure, and the discipline to test before you trust something with flight. It's the same mindset I bring to shipping AI systems: build, test, break, rebuild.</p>
+      </div>
+      <div class="reveal beyond-visual">
+        <svg class="plane-svg" viewBox="0 0 340 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <ellipse cx="170" cy="175" rx="120" ry="8" fill="var(--warm)" opacity="0.08"/>
+          <g stroke="var(--warm)" stroke-width="1.4" fill="none" opacity="0.9">
+            <path d="M40 100 L300 100" stroke-opacity="0.35"/>
+            <path d="M100 60 L240 60 L260 90 L220 100 L120 100 L80 90 Z"/>
+            <path d="M150 60 L130 20 L150 30 L165 60 Z"/>
+            <path d="M195 60 L210 20 L195 30 L182 60 Z"/>
+            <path d="M220 92 L270 70 L272 78 L226 98 Z"/>
+            <path d="M220 100 L270 122 L272 114 L226 100 Z"/>
+            <circle cx="235" cy="95" r="6"/>
+          </g>
+        </svg>
+        <div class="beyond-caption">BALSA WOOD · IC ENGINE · 4 SUCCESSFUL BUILDS</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="achievements">
+  <div class="wrap">
+    <div class="section-head-row reveal">
+      <div class="section-head" style="margin-bottom:0;">
+        <span class="eyebrow">10 / Achievements</span>
+        <h2 class="section-title">Competitions &amp; challenges.</h2>
+      </div>
+      <div class="section-illustration">
+        <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M78 50h44v34c0 14-10 24-22 24s-22-10-22-24z" stroke="var(--accent)" stroke-width="1.6" opacity="0.9"/>
+          <path d="M78 56H60c0 16 8 26 20 28" stroke="var(--accent)" stroke-width="1.6" opacity="0.7"/>
+          <path d="M122 56h18c0 16-8 26-20 28" stroke="var(--accent)" stroke-width="1.6" opacity="0.7"/>
+          <path d="M100 108v18" stroke="var(--accent)" stroke-width="1.6"/>
+          <path d="M82 144h36l-6-18H88z" stroke="var(--accent)" stroke-width="1.6" stroke-linejoin="round" opacity="0.85"/>
+          <path d="M74 150h52" stroke="var(--accent)" stroke-width="1.6" stroke-linecap="round"/>
+          <path d="M100 62l4 8 9 1-6.5 6 1.5 9-8-4.5-8 4.5 1.5-9-6.5-6 9-1z" fill="var(--accent)" opacity="0.85" class="trophy-glow"/>
+        </svg>
+      </div>
+    </div>
+    <div class="ach-track reveal">
+      <div class="ach-card"><div class="ac-tag">Innovation</div><h4>IEEE Rapid Innovation Challenge</h4></div>
+      <div class="ach-card"><div class="ac-tag">Hackathon · 2023</div><h4>Aptitude Hackathon 2023</h4></div>
+      <div class="ach-card"><div class="ac-tag">Hackathon · 2024</div><h4>Aptitude Hackathon 2024</h4></div>
+      <div class="ach-card"><div class="ac-tag">Hackathon · 2025</div><h4>Full Stack Fiesta 2025</h4></div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="contact-grid">
+      <div class="reveal">
+        <div class="contact-head-row">
+          <div>
+            <span class="eyebrow">11 / Contact</span>
+            <h2 class="section-title">Let's Build Something Intelligent.</h2>
+            <p class="section-sub">Open to AI Engineer, Machine Learning Engineer, and full stack roles. I usually reply within a day.</p>
+            <div class="contact-quickfacts">
+              <span class="tag">2026 GRADUATE</span>
+              <span class="tag">BANGALORE, INDIA</span>
+              <span class="tag">REPLIES WITHIN A DAY</span>
+              <a href="Uzair_Mohammed_Resume.pdf" download class="tag tag-link">RESUME ↓</a>
+            </div>
+          </div>
+          <div class="compact-illustration">
+            <svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="60" cy="60" r="4" fill="var(--accent)"/>
+              <circle cx="60" cy="60" r="18" stroke="var(--accent)" stroke-width="1.5" opacity="0.75"/>
+              <circle cx="60" cy="60" r="34" stroke="var(--accent)" stroke-width="1.3" opacity="0.45" stroke-dasharray="3 4"/>
+              <circle cx="60" cy="60" r="50" stroke="var(--accent)" stroke-width="1.1" opacity="0.25"/>
+              <circle cx="94" cy="60" r="2.6" fill="var(--accent)" opacity="0.85"/>
+              <circle cx="60" cy="26" r="2.2" fill="var(--accent)" opacity="0.6"/>
+              <circle cx="26" cy="80" r="2.2" fill="var(--accent)" opacity="0.6"/>
+            </svg>
+          </div>
+        </div>
+        <div class="contact-links">
+          <a class="contact-link" href="mailto:mohammeduzair873@gmail.com"><span><span class="cl-label">Email</span><br>mohammeduzair873@gmail.com</span><span>↗</span></a>
+          <a class="contact-link" href="https://www.linkedin.com/in/uzair-mohammed-9060b9308/" target="_blank" rel="noopener"><span><span class="cl-label">LinkedIn</span><br>/in/uzair-mohammed-9060b9308</span><span>↗</span></a>
+          <a class="contact-link" href="https://github.com/Pizzarrific" target="_blank" rel="noopener"><span><span class="cl-label">GitHub</span><br>github.com/Pizzarrific</span><span>↗</span></a>
+        </div>
+      </div>
+      <div class="reveal">
+        <form id="contact-form">
+          <div class="form-field"><label for="cf-name">Name</label><input id="cf-name" name="name" type="text" required placeholder="Your name"></div>
+          <div class="form-field"><label for="cf-email">Email</label><input id="cf-email" name="email" type="email" required placeholder="you@example.com"></div>
+          <div class="form-field"><label for="cf-msg">Message</label><textarea id="cf-msg" name="message" required placeholder="What are you building?"></textarea></div>
+          <button type="submit" class="btn btn-primary" id="cf-submit" style="width:100%; justify-content:center;">Send Message</button>
+          <div id="contact-status"></div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap footer-inner">
+    <span class="fmono">© 2026 Uzair Mohammed</span>
+    <span class="fmono">Designed &amp; built with intent.</span>
+  </div>
+</footer>
+
+<script>
+/* ====================== DATA ====================== */
+const SECTIONS = [
+  {id:'hero', label:'Home'},
+  {id:'about', label:'About'},
+  {id:'profile', label:'Profile'},
+  {id:'experience', label:'Experience'},
+  {id:'projects', label:'Projects'},
+  {id:'howibuild', label:'Build'},
+  {id:'skills', label:'Skills'},
+  {id:'education', label:'Education'},
+  {id:'certs', label:'Certs'},
+  {id:'beyond', label:'Beyond'},
+  {id:'achievements', label:'Achievements'},
+  {id:'contact', label:'Contact'}
+];
+
+const PROFILE = [
+  {icon:'01 / AI', title:'Artificial Intelligence', items:[
+    {name:'Machine Learning', tip:'Core to the stock recommendation engine and the Quest Global extraction pipeline.'},
+    {name:'NLP', tip:'Used GPT-4o + Python to parse and structure unstructured engineering text at Quest Global.'},
+    {name:'Computer Vision', tip:'Paired with OCR to extract data straight from P&ID diagrams and client forms.'},
+    {name:'YOLO', tip:'Used for object detection during document and diagram data extraction.'},
+    {name:'OCR', tip:'Extracted structured fields from scanned engineering forms and diagrams.'},
+    {name:'GPT-4o', tip:'Processed and tagged unstructured text into structured, usable data.'}
+  ]},
+  {icon:'02 / ENG', title:'Software Engineering', items:[
+    {name:'Python', tip:'Primary language across ML models, backend services, and automation scripts.'},
+    {name:'Java', tip:'Core language from coursework and DSA problem solving.'},
+    {name:'C', tip:'Foundation from Mastering DSA using C and C++.'},
+    {name:'C#', tip:'Built the backend logic for the Enterprise Task Management Platform.'},
+    {name:'TypeScript', tip:'Integrated AI outputs into frontend interfaces at Quest Global.'},
+    {name:'Node.js', tip:'Backend runtime for STOCK 5 and the Online Auction Platform.'},
+    {name:'React.js', tip:'Frontend framework for STOCK 5 and the Online Auction Platform.'},
+    {name:'FastAPI', tip:'Built backend integration and workflow support at Quest Global.'}
+  ]},
+  {icon:'03 / DATA', title:'Data', items:[
+    {name:'Pandas', tip:'Data preprocessing for market data in the STOCK 5 recommendation engine.'},
+    {name:'NumPy', tip:'Numerical processing underlying the LSTM + ARIMA forecasting pipeline.'},
+    {name:'SQL', tip:'Structured querying across relational data stores.'},
+    {name:'SQLite', tip:'Automated storage and validation layer for the Quest Global extraction pipeline.'},
+    {name:'MySQL', tip:'Relational database experience from coursework and personal projects.'},
+    {name:'MongoDB', tip:'NoSQL data modeling for flexible, document based storage.'}
+  ]},
+  {icon:'04 / OPS', title:'Cloud & DevOps', items:[
+    {name:'Azure DevOps', tip:'Used for version control and production deployment at Quest Global.'},
+    {name:'Docker', tip:'Containerized services for consistent, portable deployment.'},
+    {name:'AWS', tip:'Certified in AWS for Beginners (GreatLearning).'},
+    {name:'Oracle Cloud Infrastructure', tip:'Certified in OCI 2025 Foundations & AI Foundations Associate.'},
+    {name:'Git', tip:'Version control across every project in this portfolio.'}
+  ]}
+];
+
+const BUILD_STAGES = [
+  {name:'Problem', icon:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>', detail:'Every build starts by scoping the real problem: what data exists, what decision it needs to support, and what "done" looks like for the end user.'},
+  {name:'Data', icon:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="20" x2="5" y2="11"></line><line x1="12" y1="20" x2="12" y2="5"></line><line x1="19" y1="20" x2="19" y2="14"></line></svg>', detail:'Sourcing, cleaning, and structuring data, from live market feeds in STOCK 5 to scanned engineering diagrams at Quest Global.'},
+  {name:'AI / ML', icon:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="2.5"></circle><path d="M12 3v4M12 17v4M3 12h4M17 12h4M5.6 5.6l2.8 2.8M15.6 15.6l2.8 2.8M18.4 5.6l-2.8 2.8M8.4 15.6l-2.8 2.8"></path></svg>', detail:'Model selection and training: LSTM + ARIMA for forecasting, YOLO + OCR + GPT-4o for document intelligence.'},
+  {name:'Backend', icon:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="6" rx="1.5"></rect><rect x="3" y="14" width="18" height="6" rx="1.5"></rect><line x1="7" y1="7" x2="7.01" y2="7"></line><line x1="7" y1="17" x2="7.01" y2="17"></line></svg>', detail:'Wrapping model output in a real service layer with FastAPI, Node.js, validation, and persistent storage.'},
+  {name:'Integration', icon:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10 14a4 4 0 0 0 6 0l2.5-2.5a4 4 0 0 0-5.5-5.8"></path><path d="M14 10a4 4 0 0 0-6 0l-2.5 2.5a4 4 0 0 0 5.5 5.8"></path></svg>', detail:'Wiring AI output into a usable interface: React or TypeScript frontends that make the system usable by real people.'},
+  {name:'Deployment', icon:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2c2.8 2 4.5 5.6 4.5 9.2 0 2-.8 3.9-1.8 5l-2.7 2.8-2.7-2.8c-1-1.1-1.8-3-1.8-5C7.5 7.6 9.2 4 12 2z"></path><circle cx="12" cy="9.5" r="1.6"></circle><path d="M8.3 15.5L6 19M15.7 15.5L18 19"></path></svg>', detail:'Shipping and maintaining the system in production, with version control and CI workflows via Azure DevOps and Git.'}
+];
+
+const CERTS = [
+  {title:'Mastering Data Structures and Algorithms Using C and C++', issuer:'Udemy', note:'In depth DSA coursework covering core algorithmic problem solving in C and C++.'},
+  {title:'Learn Machine Learning and AI', issuer:'Udemy', note:'Foundational machine learning and AI concepts and applied techniques.'},
+  {title:'Artificial Intelligence & Machine Learning', issuer:'Teachnook', note:'Applied AI/ML training program covering core model development concepts.'},
+  {title:'CAMPK12 Coding Trial: Top 10%', issuer:'CAMPK12', note:'Ranked in the top 10% of participants in a competitive coding trial.'},
+  {title:'Web Development (Levels 2 to 4 + Backend)', issuer:'CAMPK12', note:'Progressive certification track covering frontend through backend web development.'},
+  {title:'Foundation Course on Drones and Robotics', issuer:'CMRIT Centre of Excellence', note:'Introductory coursework in robotics and drone systems fundamentals.'},
+  {title:'Oracle Cloud Infrastructure 2025: Foundations Associate', issuer:'Oracle', note:'Core OCI concepts including compute, storage, and networking fundamentals.'},
+  {title:'Oracle Cloud Infrastructure 2025: AI Foundations Associate', issuer:'Oracle', note:'AI and ML fundamentals as implemented within the OCI ecosystem.'},
+  {title:'Foundation of C#', issuer:'Microsoft', note:'Core C# language fundamentals, later applied in the Task Management Platform.'},
+  {title:'AWS for Beginners', issuer:'GreatLearning', note:'Introductory cloud computing concepts on Amazon Web Services.'},
+  {title:'JLPT N5', issuer:'Japan Foundation', note:'Certified at N5 level. Conversational Japanese proficiency, alongside fluent English, Hindi, Kannada, and Urdu.'}
+];
+
+/* ====================== RENDER: PROFILE GRID ====================== */
+const profileGrid = document.getElementById('profile-grid');
+PROFILE.forEach(cat=>{
+  const card = document.createElement('div');
+  card.className = 'profile-card';
+  card.innerHTML = `<div class="pc-icon">${cat.icon}</div><h3>${cat.title}</h3><div class="profile-chip-list"></div>`;
+  const list = card.querySelector('.profile-chip-list');
+  cat.items.forEach(it=>{
+    const chip = document.createElement('div');
+    chip.className = 'profile-chip';
+    chip.innerHTML = `<span>${it.name}</span><div class="chip-tip">${it.tip}</div>`;
+    chip.addEventListener('click', ()=>{
+      const wasOpen = chip.classList.contains('open');
+      list.querySelectorAll('.profile-chip').forEach(c=>c.classList.remove('open'));
+      if(!wasOpen) chip.classList.add('open');
+    });
+    list.appendChild(chip);
+  });
+  profileGrid.appendChild(card);
+});
+
+/* ====================== RENDER: BUILD PIPELINE ====================== */
+const buildPipeline = document.getElementById('build-pipeline');
+const buildDetail = document.getElementById('build-detail');
+BUILD_STAGES.forEach((stage, i)=>{
+  const el = document.createElement('div');
+  el.className = 'build-stage' + (i===0 ? ' active' : '');
+  el.innerHTML = `<div class="bs-icon">${stage.icon}</div><div class="bs-num">0${i+1}</div><div class="bs-name">${stage.name}</div>`;
+  el.addEventListener('click', ()=>{
+    buildPipeline.querySelectorAll('.build-stage').forEach(s=>s.classList.remove('active'));
+    el.classList.add('active');
+    buildDetail.textContent = stage.detail;
+  });
+  buildPipeline.appendChild(el);
+});
+buildDetail.textContent = BUILD_STAGES[0].detail;
+
+/* ====================== RENDER: CERT WALL ====================== */
+const certWall = document.getElementById('cert-wall');
+CERTS.forEach(c=>{
+  const row = document.createElement('div');
+  row.className = 'cert-row';
+  row.innerHTML = `
+    <div class="cert-row-head">
+      <div><div class="cert-title">${c.title}</div><div class="cert-issuer">${c.issuer}</div></div>
+      <div class="cert-plus">+</div>
+    </div>
+    <div class="cert-row-body"><p>${c.note}</p></div>`;
+  row.querySelector('.cert-row-head').addEventListener('click', ()=>{
+    row.classList.toggle('open');
+  });
+  certWall.appendChild(row);
+});
+
+/* ====================== NAV ====================== */
+const navbar = document.getElementById('navbar');
+window.addEventListener('scroll', ()=>{
+  navbar.classList.toggle('scrolled', window.scrollY > 20);
+}, {passive:true});
+
+/* ====================== SPINE (signature nav) ====================== */
+const spine = document.getElementById('spine');
+const spineNavSections = SECTIONS.filter(s=>s.id!=='hero');
+spineNavSections.forEach((s,i)=>{
+  const node = document.createElement('a');
+  node.href = '#'+s.id;
+  node.className = 'spine-node';
+  node.dataset.id = s.id;
+  node.innerHTML = `<span class="spine-label">${s.label}</span>`;
+  spine.appendChild(node);
+  if(i < spineNavSections.length-1){
+    const connector = document.createElement('div');
+    connector.className = 'spine-connector';
+    spine.appendChild(connector);
+  }
+});
+
+/* ====================== SCROLL SPY (nav links + spine) ====================== */
+const navLinkEls = document.querySelectorAll('.nav-links a[data-nav]');
+const spineNodeEls = document.querySelectorAll('.spine-node');
+const sectionEls = spineNavSections.map(s=>document.getElementById(s.id));
+const navIndicator = document.getElementById('nav-indicator');
+const navLinksList = document.getElementById('nav-links');
+function moveNavIndicator(linkEl){
+  if(!linkEl || !navIndicator || !navLinksList) return;
+  const listRect = navLinksList.getBoundingClientRect();
+  const rect = linkEl.getBoundingClientRect();
+  navIndicator.style.left = (rect.left - listRect.left) + 'px';
+  navIndicator.style.width = rect.width + 'px';
+  navIndicator.style.opacity = '1';
+}
+function updateActiveSection(){
+  let current = sectionEls[0];
+  const scrollPos = window.scrollY + window.innerHeight * 0.35;
+  sectionEls.forEach(sec=>{
+    if(sec && sec.offsetTop <= scrollPos) current = sec;
+  });
+  if(!current) return;
+  let activeLink = null;
+  navLinkEls.forEach(a=>{
+    const isActive = a.dataset.nav === current.id;
+    a.classList.toggle('active', isActive);
+    if(isActive) activeLink = a;
+  });
+  spineNodeEls.forEach(n=>n.classList.toggle('active', n.dataset.id === current.id));
+  if(activeLink) moveNavIndicator(activeLink);
+}
+window.addEventListener('scroll', updateActiveSection, {passive:true});
+window.addEventListener('resize', updateActiveSection, {passive:true});
+updateActiveSection();
+
+/* ====================== SCROLL REVEAL (with stagger) ====================== */
+const staggerGroups = [
+  '#profile-grid > *',
+  '.project-list > *',
+  '.skills-groups > *',
+  '#build-pipeline > *'
+];
+staggerGroups.forEach(sel=>{
+  document.querySelectorAll(sel).forEach((el, i)=>{
+    el.classList.add('reveal');
+    el.style.setProperty('--reveal-delay', Math.min(i * 0.09, 0.5) + 's');
+  });
+});
+const revealEls = document.querySelectorAll('.reveal');
+const revealObserver = new IntersectionObserver((entries)=>{
+  entries.forEach(entry=>{
+    if(entry.isIntersecting){
+      entry.target.classList.add('in');
+      revealObserver.unobserve(entry.target);
+    }
+  });
+}, {threshold:0.12});
+revealEls.forEach(el=>revealObserver.observe(el));
+
+/* ====================== CURSOR GLOW (hero) ====================== */
+(function(){
+  const heroEl = document.getElementById('hero');
+  const glow = document.getElementById('cursor-glow');
+  if(!heroEl || !glow) return;
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(reduceMotion) return;
+  heroEl.addEventListener('mousemove', (e)=>{
+    const rect = heroEl.getBoundingClientRect();
+    glow.style.left = (e.clientX - rect.left) + 'px';
+    glow.style.top = (e.clientY - rect.top) + 'px';
+    glow.style.opacity = '1';
+  });
+  heroEl.addEventListener('mouseleave', ()=>{ glow.style.opacity = '0'; });
+})();
+
+/* ====================== MAGNETIC BUTTONS ====================== */
+(function(){
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(reduceMotion) return;
+  document.querySelectorAll('.magnetic').forEach(btn=>{
+    btn.addEventListener('mouseenter', ()=>{ btn.style.transition = 'transform .15s ease-out'; });
+    btn.addEventListener('mousemove', (e)=>{
+      const rect = btn.getBoundingClientRect();
+      const relX = e.clientX - rect.left - rect.width/2;
+      const relY = e.clientY - rect.top - rect.height/2;
+      btn.style.transform = `translate(${relX*0.25}px, ${relY*0.35}px)`;
+    });
+    btn.addEventListener('mouseleave', ()=>{
+      btn.style.transition = 'transform .5s var(--ease-fluid)';
+      btn.style.transform = 'translate(0,0)';
+    });
+  });
+})();
+
+/* ====================== EXPERIENCE CARD EXPAND + COUNTERS ====================== */
+const expCard = document.getElementById('exp-card');
+expCard.querySelector('.exp-head').addEventListener('click', ()=>{
+  expCard.classList.toggle('open');
+});
+let countersRun = false;
+function runCounters(){
+  if(countersRun) return;
+  countersRun = true;
+  document.querySelectorAll('.exp-stat .n').forEach(el=>{
+    const target = parseInt(el.dataset.count, 10);
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if(reduceMotion){ el.textContent = target + '%'; return; }
+    let cur = 0;
+    const step = Math.max(1, Math.round(target/40));
+    const iv = setInterval(()=>{
+      cur += step;
+      if(cur >= target){ cur = target; clearInterval(iv); }
+      el.textContent = cur + '%';
+    }, 25);
+  });
+}
+new IntersectionObserver((entries, obs)=>{
+  entries.forEach(entry=>{
+    if(entry.isIntersecting){ runCounters(); obs.disconnect(); }
+  });
+}, {threshold:0.4}).observe(document.getElementById('experience'));
+
+/* ====================== CONTACT FORM ====================== */
+// To make this form deliver messages straight to your inbox:
+// 1. Go to https://formspree.io and sign up free (no credit card).
+// 2. Create a new form, connect it to mohammeduzair873@gmail.com, and verify it.
+// 3. Copy the endpoint it gives you (looks like https://formspree.io/f/abcdwxyz)
+// 4. Paste it below, replacing 'YOUR_FORM_ID'.
+// Until you do that, the button falls back to opening the visitor's email app instead.
+const FORMSPREE_ENDPOINT = 'https://formspree.io/f/xeajlrpr';
+
+const contactForm = document.getElementById('contact-form');
+const contactStatus = document.getElementById('contact-status');
+const contactSubmitBtn = document.getElementById('cf-submit');
+
+function mailtoFallback(name, email, msg){
+  const subject = encodeURIComponent(`Portfolio contact from ${name}`);
+  const body = encodeURIComponent(`${msg}\n\nFrom: ${name} (${email})`);
+  window.location.href = `mailto:mohammeduzair873@gmail.com?subject=${subject}&body=${body}`;
+  contactStatus.textContent = 'Opening your email app...';
+}
+
+contactForm.addEventListener('submit', async (e)=>{
+  e.preventDefault();
+  const nameEl = document.getElementById('cf-name');
+  const emailEl = document.getElementById('cf-email');
+  const msgEl = document.getElementById('cf-msg');
+  const name = nameEl.value.trim();
+  const email = emailEl.value.trim();
+  const msg = msgEl.value.trim();
+
+  if(!name || !email || !msg){
+    contactStatus.style.color = 'var(--warm)';
+    contactStatus.textContent = 'Please fill in all fields.';
+    return;
+  }
+
+  if(FORMSPREE_ENDPOINT.includes('YOUR_FORM_ID')){
+    mailtoFallback(name, email, msg);
+    return;
+  }
+
+  const originalLabel = contactSubmitBtn.textContent;
+  contactSubmitBtn.disabled = true;
+  contactSubmitBtn.textContent = 'Sending...';
+  contactStatus.style.color = 'var(--accent)';
+  contactStatus.textContent = '';
+
+  try{
+    const formData = new FormData(contactForm);
+    const controller = new AbortController();
+    const timeoutId = setTimeout(()=>controller.abort(), 10000);
+    const res = await fetch(FORMSPREE_ENDPOINT, {
+      method:'POST',
+      headers:{ 'Accept':'application/json' },
+      body: formData,
+      signal: controller.signal
+    });
+    clearTimeout(timeoutId);
+    if(res.ok){
+      contactForm.reset();
+      contactStatus.style.color = 'var(--accent)';
+      contactStatus.textContent = 'Message sent. I will get back to you soon.';
+      if(typeof fireConfetti === 'function') fireConfetti();
+    } else {
+      let reason = 'Request failed with status ' + res.status;
+      try{
+        const data = await res.json();
+        if(data && data.errors && data.errors.length){
+          reason = data.errors.map(er=>er.message).join(', ');
+        }
+      } catch(parseErr){ /* ignore, keep default reason */ }
+      console.error('Formspree error:', reason);
+      throw new Error(reason);
+    }
+  } catch(err){
+    console.error('Contact form submit error:', err);
+    contactStatus.style.color = 'var(--warm)';
+    contactStatus.textContent = 'Could not reach the server, opening your email app instead.';
+    mailtoFallback(name, email, msg);
+  } finally {
+    contactSubmitBtn.disabled = false;
+    contactSubmitBtn.textContent = originalLabel;
+  }
+});
+
+/* ====================== HERO CANVAS: DATA FLOW PARTICLES ====================== */
+(function(){
+  const canvas = document.getElementById('hero-canvas');
+  const ctx = canvas.getContext('2d');
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  let w, h, particles = [];
+  const COUNT = 46;
+
+  function resize(){
+    w = canvas.width = canvas.offsetWidth * devicePixelRatio;
+    h = canvas.height = canvas.offsetHeight * devicePixelRatio;
+  }
+  function initParticles(){
+    particles = Array.from({length:COUNT}, ()=>({
+      x: Math.random()*w,
+      y: Math.random()*h,
+      vx: (Math.random()-0.5)*0.25*devicePixelRatio,
+      vy: (Math.random()-0.5)*0.25*devicePixelRatio,
+      r: (Math.random()*1.6+0.6)*devicePixelRatio
+    }));
+  }
+  function draw(){
+    ctx.clearRect(0,0,w,h);
+    const maxDist = 150*devicePixelRatio;
+    for(let i=0;i<particles.length;i++){
+      const p = particles[i];
+      p.x += p.vx; p.y += p.vy;
+      if(p.x<0||p.x>w) p.vx*=-1;
+      if(p.y<0||p.y>h) p.vy*=-1;
+      for(let j=i+1;j<particles.length;j++){
+        const q = particles[j];
+        const dx = p.x-q.x, dy = p.y-q.y;
+        const dist = Math.sqrt(dx*dx+dy*dy);
+        if(dist < maxDist){
+          ctx.strokeStyle = `rgba(167,139,250,${0.14*(1-dist/maxDist)})`;
+          ctx.lineWidth = 1;
+          ctx.beginPath(); ctx.moveTo(p.x,p.y); ctx.lineTo(q.x,q.y); ctx.stroke();
+        }
+      }
+    }
+    particles.forEach(p=>{
+      ctx.beginPath();
+      ctx.fillStyle = 'rgba(167,139,250,0.55)';
+      ctx.arc(p.x,p.y,p.r,0,Math.PI*2);
+      ctx.fill();
+    });
+    if(!reduceMotion) requestAnimationFrame(draw);
+  }
+  resize(); initParticles(); draw();
+  window.addEventListener('resize', ()=>{ resize(); initParticles(); }, {passive:true});
+})();
+
+/* ====================== LIVE LOCAL CLOCK (IST) ====================== */
+(function(){
+  const clockEl = document.getElementById('ist-clock');
+  if(!clockEl) return;
+  function tick(){
+    try{
+      const now = new Date();
+      const fmt = new Intl.DateTimeFormat('en-GB', {
+        timeZone: 'Asia/Kolkata', hour: '2-digit', minute: '2-digit', hour12: false
+      });
+      clockEl.textContent = fmt.format(now);
+    }catch(e){
+      clockEl.textContent = new Date().toLocaleTimeString();
+    }
+  }
+  tick();
+  setInterval(tick, 30000);
+})();
+
+/* ====================== COMMAND PALETTE (⌘K QUICK JUMP) ====================== */
+(function(){
+  const overlay = document.getElementById('cmdk-overlay');
+  const trigger = document.getElementById('cmdk-trigger');
+  const input = document.getElementById('cmdk-input');
+  const results = document.getElementById('cmdk-results');
+  if(!overlay || !input || !results) return;
+
+  const INDEX = [];
+  SECTIONS.filter(s=>s.id!=='hero').forEach(s=>{
+    INDEX.push({title:s.label, sub:'Section', cat:'SEC', href:'#'+s.id});
+  });
+  document.querySelectorAll('.proj-title').forEach(t=>{
+    INDEX.push({title:t.textContent.trim(), sub:'Project', cat:'PRJ', href:'#projects'});
+  });
+  const seenSkills = new Set();
+  document.querySelectorAll('.skill-pill').forEach(p=>{
+    const name = p.textContent.trim();
+    if(seenSkills.has(name)) return;
+    seenSkills.add(name);
+    INDEX.push({title:name, sub:'Skill', cat:'SKL', href:'#skills'});
+  });
+  INDEX.push({title:'Email Uzair', sub:'mohammeduzair873@gmail.com', cat:'GO', href:'mailto:mohammeduzair873@gmail.com'});
+  INDEX.push({title:'GitHub', sub:'github.com/Pizzarrific', cat:'GO', href:'https://github.com/Pizzarrific'});
+  INDEX.push({title:'LinkedIn', sub:'/in/uzair-mohammed-9060b9308', cat:'GO', href:'https://www.linkedin.com/in/uzair-mohammed-9060b9308/'});
+
+  let activeIdx = 0;
+  let currentList = [];
+
+  function render(list){
+    currentList = list;
+    activeIdx = 0;
+    if(!list.length){
+      results.innerHTML = '<div class="cmdk-empty">No matches. Try “project”, “python”, or a section name.</div>';
+      return;
+    }
+    results.innerHTML = list.map((item, i)=>`
+      <div class="cmdk-item${i===0 ? ' active' : ''}" data-idx="${i}">
+        <div class="ci-icon">${item.cat}</div>
+        <div class="ci-text"><div class="ci-title">${item.title}</div><div class="ci-sub">${item.sub}</div></div>
+        <div class="ci-go">&rarr;</div>
+      </div>`).join('');
+  }
+
+  function filter(q){
+    q = q.trim().toLowerCase();
+    if(!q) return INDEX.slice(0, 8);
+    return INDEX.filter(item => item.title.toLowerCase().includes(q) || item.sub.toLowerCase().includes(q));
+  }
+
+  function go(item){
+    if(!item) return;
+    close();
+    if(item.href.startsWith('#')){
+      const target = document.querySelector(item.href);
+      if(target) target.scrollIntoView({behavior:'smooth', block:'start'});
+    } else {
+      window.open(item.href, item.href.startsWith('mailto') ? '_self' : '_blank');
+    }
+  }
+
+  function open(){
+    overlay.classList.add('open');
+    input.value = '';
+    render(filter(''));
+    setTimeout(()=>input.focus(), 60);
+  }
+  function close(){
+    overlay.classList.remove('open');
+  }
+
+  trigger && trigger.addEventListener('click', open);
+  overlay.addEventListener('click', (e)=>{ if(e.target === overlay) close(); });
+  input.addEventListener('input', ()=> render(filter(input.value)));
+  results.addEventListener('click', (e)=>{
+    const item = e.target.closest('.cmdk-item');
+    if(item) go(currentList[parseInt(item.dataset.idx, 10)]);
+  });
+  window.addEventListener('keydown', (e)=>{
+    const isK = (e.key === 'k' || e.key === 'K') && (e.metaKey || e.ctrlKey);
+    if(isK){ e.preventDefault(); overlay.classList.contains('open') ? close() : open(); return; }
+    if(!overlay.classList.contains('open')) return;
+    if(e.key === 'Escape'){ close(); return; }
+    if(e.key === 'ArrowDown'){
+      e.preventDefault();
+      activeIdx = Math.min(activeIdx + 1, currentList.length - 1);
+      results.querySelectorAll('.cmdk-item').forEach((el,i)=>el.classList.toggle('active', i===activeIdx));
+      const el = results.children[activeIdx]; if(el) el.scrollIntoView({block:'nearest'});
+    }
+    if(e.key === 'ArrowUp'){
+      e.preventDefault();
+      activeIdx = Math.max(activeIdx - 1, 0);
+      results.querySelectorAll('.cmdk-item').forEach((el,i)=>el.classList.toggle('active', i===activeIdx));
+      const el = results.children[activeIdx]; if(el) el.scrollIntoView({block:'nearest'});
+    }
+    if(e.key === 'Enter'){ e.preventDefault(); go(currentList[activeIdx]); }
+  });
+})();
+
+/* ====================== PROJECT CARD 3D TILT ====================== */
+(function(){
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(reduceMotion) return;
+  if(window.matchMedia('(pointer: coarse)').matches) return;
+  document.querySelectorAll('.project-card').forEach(card=>{
+    card.addEventListener('mousemove', (e)=>{
+      const rect = card.getBoundingClientRect();
+      const px = (e.clientX - rect.left) / rect.width - 0.5;
+      const py = (e.clientY - rect.top) / rect.height - 0.5;
+      const rotX = (py * -6).toFixed(2);
+      const rotY = (px * 8).toFixed(2);
+      card.style.transition = 'transform .08s linear';
+      card.style.transform = `perspective(900px) rotateX(${rotX}deg) rotateY(${rotY}deg) translateY(-3px)`;
+    });
+    card.addEventListener('mouseleave', ()=>{
+      card.style.transition = 'transform .5s var(--ease-fluid)';
+      card.style.transform = 'perspective(900px) rotateX(0) rotateY(0) translateY(0)';
+    });
+  });
+})();
+
+/* ====================== ACHIEVEMENTS: DRAG TO SCROLL ====================== */
+(function(){
+  const track = document.querySelector('.ach-track');
+  if(!track) return;
+  let isDown = false, startX = 0, startScroll = 0, moved = false;
+  track.addEventListener('mousedown', (e)=>{
+    isDown = true; moved = false;
+    track.classList.add('dragging');
+    startX = e.pageX; startScroll = track.scrollLeft;
+  });
+  window.addEventListener('mouseup', ()=>{ isDown = false; track.classList.remove('dragging'); });
+  window.addEventListener('mousemove', (e)=>{
+    if(!isDown) return;
+    e.preventDefault();
+    const dx = e.pageX - startX;
+    if(Math.abs(dx) > 4) moved = true;
+    track.scrollLeft = startScroll - dx;
+  });
+  track.addEventListener('click', (e)=>{ if(moved){ e.preventDefault(); e.stopPropagation(); } }, true);
+  track.addEventListener('wheel', (e)=>{
+    if(Math.abs(e.deltaY) > Math.abs(e.deltaX)){
+      track.scrollLeft += e.deltaY;
+      e.preventDefault();
+    }
+  }, {passive:false});
+})();
+
+/* ====================== CONFETTI BURST (ON MESSAGE SENT) ====================== */
+function fireConfetti(){
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(reduceMotion) return;
+  const canvas = document.getElementById('confetti-canvas');
+  if(!canvas) return;
+  const ctx = canvas.getContext('2d');
+  canvas.width = window.innerWidth * devicePixelRatio;
+  canvas.height = window.innerHeight * devicePixelRatio;
+  canvas.style.width = window.innerWidth + 'px';
+  canvas.style.height = window.innerHeight + 'px';
+  const colors = ['#a78bfa', '#ff9d5c', '#e9edf3', '#453a6b'];
+  const pieces = Array.from({length:110}, ()=>({
+    x: canvas.width/2 + (Math.random()-0.5)*140*devicePixelRatio,
+    y: canvas.height*0.28,
+    vx: (Math.random()-0.5)*9*devicePixelRatio,
+    vy: (Math.random()*-9 - 3)*devicePixelRatio,
+    size: (Math.random()*5+3)*devicePixelRatio,
+    color: colors[Math.floor(Math.random()*colors.length)],
+    rot: Math.random()*Math.PI,
+    vr: (Math.random()-0.5)*0.3,
+    life: 0
+  }));
+  const gravity = 0.28*devicePixelRatio;
+  function frame(){
+    ctx.clearRect(0,0,canvas.width,canvas.height);
+    let alive = false;
+    pieces.forEach(p=>{
+      p.life++;
+      p.vy += gravity;
+      p.x += p.vx; p.y += p.vy; p.rot += p.vr;
+      if(p.life < 130){
+        alive = true;
+        ctx.save();
+        ctx.translate(p.x, p.y);
+        ctx.rotate(p.rot);
+        ctx.fillStyle = p.color;
+        ctx.globalAlpha = Math.max(0, 1 - p.life/130);
+        ctx.fillRect(-p.size/2, -p.size/2, p.size, p.size*0.6);
+        ctx.restore();
+      }
+    });
+    if(alive) requestAnimationFrame(frame);
+    else ctx.clearRect(0,0,canvas.width,canvas.height);
+  }
+  frame();
+}
+
+/* ====================== CASE STUDY MODAL ====================== */
+(function(){
+  const overlay = document.getElementById('case-study-overlay');
+  const trigger = document.getElementById('cs-trigger');
+  const closeBtn = document.getElementById('cs-close');
+  if(!overlay || !trigger || !closeBtn) return;
+
+  function open(){
+    overlay.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+  function close(){
+    overlay.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+  trigger.addEventListener('click', open);
+  closeBtn.addEventListener('click', close);
+  overlay.addEventListener('click', (e)=>{ if(e.target === overlay) close(); });
+  document.addEventListener('keydown', (e)=>{
+    if(e.key === 'Escape' && overlay.classList.contains('open')) close();
+  });
+})();
+
+/* ====================== DEVTOOLS EASTER EGG ====================== */
+(function(){
+  const accent = '#a78bfa';
+  console.log(
+    '%cUzair Mohammed%c — AI Engineer',
+    'font-family:monospace; font-size:20px; font-weight:700; color:' + accent + ';',
+    'font-family:monospace; font-size:13px; color:#8a94a3;'
+  );
+  console.log(
+    '%cLooks like you like reading source, not just résumés. Let\'s talk →%c\nmohammeduzair873@gmail.com  ·  linkedin.com/in/uzair-mohammed-9060b9308  ·  github.com/Pizzarrific',
+    'font-family:monospace; font-size:12.5px; color:#e8eaed;',
+    'font-family:monospace; font-size:11.5px; color:#57616f;'
+  );
+})();
+</script>
+
+</body>
+</html>
