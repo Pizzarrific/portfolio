@@ -1,0 +1,127 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --radius: 0.9rem;
+
+  /* Ported 1:1 from the original dark/purple aesthetic */
+  --background: #090c11;
+  --foreground: #e9edf3;
+
+  --card: #11151d;
+  --card-foreground: #e9edf3;
+
+  --popover: #11151d;
+  --popover-foreground: #e9edf3;
+
+  /* primary = the inverted "light button on dark bg" look from the original */
+  --primary: #e9edf3;
+  --primary-foreground: #090c11;
+
+  --secondary: #161b25;
+  --secondary-foreground: #e9edf3;
+
+  --muted: #11151d;
+  --muted-foreground: #8b96a8;
+
+  --accent: #161b25;
+  --accent-foreground: #e9edf3;
+
+  --destructive: oklch(0.6 0.2 25);
+
+  --border: #212836;
+  --border-hover: #37455a;
+  --input: #212836;
+  --ring: #a78bfa;
+
+  /* brand accents, used directly (not shadcn semantic slots) */
+  --brand: #a78bfa;
+  --brand-glow: rgba(167, 139, 250, 0.18);
+  --warm: #ff9d5c;
+  --warm-glow: rgba(255, 157, 92, 0.14);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-brand: var(--brand);
+  --color-warm: var(--warm);
+
+  --radius-sm: calc(var(--radius) - 6px);
+  --radius-md: calc(var(--radius) - 4px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 6px);
+
+  --font-display: 'Space Grotesk', 'Noto Sans JP', ui-sans-serif, system-ui, sans-serif;
+  --font-sans: 'Inter', 'Noto Sans JP', ui-sans-serif, system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Noto Sans JP', ui-monospace, monospace;
+
+  --animate-marquee: marquee var(--duration, 40s) linear infinite;
+  --animate-marquee-vertical: marquee-vertical var(--duration, 40s) linear infinite;
+  --animate-accordion-down: accordion-down 0.25s ease-out;
+  --animate-accordion-up: accordion-up 0.25s ease-out;
+
+  @keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(calc(-100% - var(--gap))); }
+  }
+  @keyframes marquee-vertical {
+    from { transform: translateY(0); }
+    to { transform: translateY(calc(-100% - var(--gap))); }
+  }
+  @keyframes accordion-down {
+    from { height: 0; }
+    to { height: var(--radix-accordion-content-height); }
+  }
+  @keyframes accordion-up {
+    from { height: var(--radix-accordion-content-height); }
+    to { height: 0; }
+  }
+}
+
+* {
+  border-color: var(--border);
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  background-image:
+    radial-gradient(ellipse 900px 500px at 88% -5%, var(--brand-glow), transparent 60%),
+    radial-gradient(ellipse 700px 500px at -5% 15%, var(--warm-glow), transparent 60%);
+}
+
+::selection { background: var(--brand-glow); color: var(--brand); }
+
+/* small recurring accent dot (replaces the watermelon seed) */
+.seed {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--brand);
+  flex-shrink: 0;
+}
+.seed.pink,
+.seed.gold {
+  background: var(--warm);
+}
